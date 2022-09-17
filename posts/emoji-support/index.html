@@ -1,0 +1,5993 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Emoji 支持 - </title><meta name="Description" content="Hugo 和 LoveIt 中的 Emoji 的用法指南."><meta property="og:title" content="Emoji 支持" />
+<meta property="og:description" content="Hugo 和 LoveIt 中的 Emoji 的用法指南." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/emoji-support/" /><meta property="og:image" content="/posts/emoji-support/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-10-01T17:55:28+08:00" />
+<meta property="article:modified_time" content="2019-10-01T17:55:28+08:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/emoji-support/featured-image.jpg"/>
+<meta name="twitter:title" content="Emoji 支持"/>
+<meta name="twitter:description" content="Hugo 和 LoveIt 中的 Emoji 的用法指南."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/emoji-support/" /><link rel="prev" href="/posts/theme-documentation-echarts-shortcode/" /><link rel="next" href="/posts/theme-documentation-mermaid-shortcode/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Emoji 支持",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/emoji-support\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/posts\/emoji-support\/featured-image.jpg",
+                            "width":  1420 ,
+                            "height":  708 
+                        }],"genre": "posts","keywords": "emoji","wordcount":  3448 ,
+        "url": "\/posts\/emoji-support\/","datePublished": "2019-10-01T17:55:28+08:00","dateModified": "2019-10-01T17:55:28+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Dillon"
+            },"description": "Hugo 和 LoveIt 中的 Emoji 的用法指南."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Emoji 支持</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/markdown/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Markdown</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2019-10-01">2019-10-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;3448 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;17 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/emoji-support/featured-image.jpg"
+        data-srcset="/posts/emoji-support/featured-image.jpg, /posts/emoji-support/featured-image.jpg 1.5x, /posts/emoji-support/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/emoji-support/featured-image.jpg"
+        title="Hugo 和 LoveIt 中的 Emoji 的用法指南." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#表情与情感">表情与情感</a>
+      <ul>
+        <li><a href="#笑脸表情">笑脸表情</a></li>
+        <li><a href="#爱意表情">爱意表情</a></li>
+        <li><a href="#吐舌头表情">吐舌头表情</a></li>
+        <li><a href="#带手的表情">带手的表情</a></li>
+        <li><a href="#中性表情">中性表情</a></li>
+        <li><a href="#困倦的表情">困倦的表情</a></li>
+        <li><a href="#不适的表情">不适的表情</a></li>
+        <li><a href="#戴帽子的表情">戴帽子的表情</a></li>
+        <li><a href="#戴眼镜的表情">戴眼镜的表情</a></li>
+        <li><a href="#担心的表情">担心的表情</a></li>
+        <li><a href="#否定的表情">否定的表情</a></li>
+        <li><a href="#特殊打扮的表情">特殊打扮的表情</a></li>
+        <li><a href="#猫脸表情">猫脸表情</a></li>
+        <li><a href="#猴脸表情">猴脸表情</a></li>
+        <li><a href="#情感">情感</a></li>
+      </ul>
+    </li>
+    <li><a href="#人与身体">人与身体</a>
+      <ul>
+        <li><a href="#张开手掌的手势">张开手掌的手势</a></li>
+        <li><a href="#部分手指的手势">部分手指的手势</a></li>
+        <li><a href="#一根手指的手势">一根手指的手势</a></li>
+        <li><a href="#握紧的手势">握紧的手势</a></li>
+        <li><a href="#两只手">两只手</a></li>
+        <li><a href="#握住东西的手势">握住东西的手势</a></li>
+        <li><a href="#身体部位">身体部位</a></li>
+        <li><a href="#人">人</a></li>
+        <li><a href="#身体动作">身体动作</a></li>
+        <li><a href="#人物角色">人物角色</a></li>
+        <li><a href="#幻想的人物">幻想的人物</a></li>
+        <li><a href="#人物活动">人物活动</a></li>
+        <li><a href="#体育">体育</a></li>
+        <li><a href="#休息">休息</a></li>
+        <li><a href="#家庭">家庭</a></li>
+        <li><a href="#人物符号">人物符号</a></li>
+      </ul>
+    </li>
+    <li><a href="#动物与自然">动物与自然</a>
+      <ul>
+        <li><a href="#哺乳动物">哺乳动物</a></li>
+        <li><a href="#鸟类">鸟类</a></li>
+        <li><a href="#两栖动物">两栖动物</a></li>
+        <li><a href="#爬虫类">爬虫类</a></li>
+        <li><a href="#海洋动物">海洋动物</a></li>
+        <li><a href="#虫类">虫类</a></li>
+        <li><a href="#花类植物">花类植物</a></li>
+        <li><a href="#其它植物">其它植物</a></li>
+      </ul>
+    </li>
+    <li><a href="#食物与饮料">食物与饮料</a>
+      <ul>
+        <li><a href="#水果">水果</a></li>
+        <li><a href="#蔬菜">蔬菜</a></li>
+        <li><a href="#快餐">快餐</a></li>
+        <li><a href="#亚洲食物">亚洲食物</a></li>
+        <li><a href="#海鲜">海鲜</a></li>
+        <li><a href="#甜点">甜点</a></li>
+        <li><a href="#饮料">饮料</a></li>
+        <li><a href="#餐具">餐具</a></li>
+      </ul>
+    </li>
+    <li><a href="#旅游与地理">旅游与地理</a>
+      <ul>
+        <li><a href="#地图">地图</a></li>
+        <li><a href="#地理现象">地理现象</a></li>
+        <li><a href="#建筑物">建筑物</a></li>
+        <li><a href="#宗教建筑">宗教建筑</a></li>
+        <li><a href="#其它地点">其它地点</a></li>
+        <li><a href="#陆路运输">陆路运输</a></li>
+        <li><a href="#水路运输">水路运输</a></li>
+        <li><a href="#空中运输">空中运输</a></li>
+        <li><a href="#旅馆">旅馆</a></li>
+        <li><a href="#时间">时间</a></li>
+        <li><a href="#天空与天气">天空与天气</a></li>
+      </ul>
+    </li>
+    <li><a href="#活动">活动</a>
+      <ul>
+        <li><a href="#事件">事件</a></li>
+        <li><a href="#奖杯与奖牌">奖杯与奖牌</a></li>
+        <li><a href="#体育运动">体育运动</a></li>
+        <li><a href="#游戏">游戏</a></li>
+        <li><a href="#艺术与工艺">艺术与工艺</a></li>
+      </ul>
+    </li>
+    <li><a href="#物品">物品</a>
+      <ul>
+        <li><a href="#服装">服装</a></li>
+        <li><a href="#声音">声音</a></li>
+        <li><a href="#音乐">音乐</a></li>
+        <li><a href="#乐器">乐器</a></li>
+        <li><a href="#电话">电话</a></li>
+        <li><a href="#电脑">电脑</a></li>
+        <li><a href="#灯光与影像">灯光与影像</a></li>
+        <li><a href="#书与纸张">书与纸张</a></li>
+        <li><a href="#钱">钱</a></li>
+        <li><a href="#邮件">邮件</a></li>
+        <li><a href="#书写">书写</a></li>
+        <li><a href="#办公">办公</a></li>
+        <li><a href="#锁">锁</a></li>
+        <li><a href="#工具">工具</a></li>
+        <li><a href="#科学">科学</a></li>
+        <li><a href="#医疗">医疗</a></li>
+        <li><a href="#生活用品">生活用品</a></li>
+        <li><a href="#其它物品">其它物品</a></li>
+      </ul>
+    </li>
+    <li><a href="#符号">符号</a>
+      <ul>
+        <li><a href="#交通标识">交通标识</a></li>
+        <li><a href="#警告">警告</a></li>
+        <li><a href="#箭头">箭头</a></li>
+        <li><a href="#宗教">宗教</a></li>
+        <li><a href="#生肖">生肖</a></li>
+        <li><a href="#影像符号">影像符号</a></li>
+        <li><a href="#数学">数学</a></li>
+        <li><a href="#标点符号">标点符号</a></li>
+        <li><a href="#货币">货币</a></li>
+        <li><a href="#按键符号">按键符号</a></li>
+        <li><a href="#字母符号">字母符号</a></li>
+        <li><a href="#几何符号">几何符号</a></li>
+        <li><a href="#其它符合">其它符合</a></li>
+      </ul>
+    </li>
+    <li><a href="#旗帜">旗帜</a>
+      <ul>
+        <li><a href="#常用旗帜">常用旗帜</a></li>
+        <li><a href="#国家和地区旗帜">国家和地区旗帜</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Emoji 可以通过多种方式在 Hugo 项目中启用.</p>
+<p><a href="https://gohugo.io/functions/emojify/" target="_blank" rel="noopener noreffer "><code>emojify</code></a> 方法可以直接在模板中调用, 或者使用<a href="https://gohugo.io/templates/shortcode-templates#inline-shortcodes" target="_blank" rel="noopener noreffer ">行内 Shortcodes</a>.</p>
+<p>要全局使用 emoji, 需要在你的<a href="https://gohugo.io/getting-started/configuration/" target="_blank" rel="noopener noreffer ">网站配置</a>中设置 <code>enableEmoji</code> 为 <code>true</code>,
+然后你就可以直接在文章中输入 emoji 的代码.</p>
+<p>它们以<strong>冒号</strong>开头和结尾，并且包含 emoji 的 <strong>代码</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>去露营啦! :tent: 很快就回来.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>真开心! :joy:
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<p>去露营啦! :tent: 很快就回来.</p>
+<p>真开心! :joy:</p>
+<p>以下<strong>符号清单</strong>是 emoji 代码的非常有用的参考.</p>
+<h2 id="表情与情感">表情与情感</h2>
+<h3 id="笑脸表情">笑脸表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:grinning:</td>
+<td><code>grinning</code></td>
+<td style="text-align:center">:smiley:</td>
+<td><code>smiley</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:smile:</td>
+<td><code>smile</code></td>
+<td style="text-align:center">:grin:</td>
+<td><code>grin</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:laughing:</td>
+<td><code>laughing</code> <!-- raw HTML omitted --> <code>satisfied</code></td>
+<td style="text-align:center">:sweat_smile:</td>
+<td><code>sweat_smile</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rofl:</td>
+<td><code>rofl</code></td>
+<td style="text-align:center">:joy:</td>
+<td><code>joy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:slightly_smiling_face:</td>
+<td><code>slightly_smiling_face</code></td>
+<td style="text-align:center">:upside_down_face:</td>
+<td><code>upside_down_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wink:</td>
+<td><code>wink</code></td>
+<td style="text-align:center">:blush:</td>
+<td><code>blush</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:innocent:</td>
+<td><code>innocent</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="爱意表情">爱意表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:heart_eyes:</td>
+<td><code>heart_eyes</code></td>
+<td style="text-align:center">:kissing_heart:</td>
+<td><code>kissing_heart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kissing:</td>
+<td><code>kissing</code></td>
+<td style="text-align:center">:relaxed:</td>
+<td><code>relaxed</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kissing_closed_eyes:</td>
+<td><code>kissing_closed_eyes</code></td>
+<td style="text-align:center">:kissing_smiling_eyes:</td>
+<td><code>kissing_smiling_eyes</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="吐舌头表情">吐舌头表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:yum:</td>
+<td><code>yum</code></td>
+<td style="text-align:center">:stuck_out_tongue:</td>
+<td><code>stuck_out_tongue</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:stuck_out_tongue_winking_eye:</td>
+<td><code>stuck_out_tongue_winking_eye</code></td>
+<td style="text-align:center">:stuck_out_tongue_closed_eyes:</td>
+<td><code>stuck_out_tongue_closed_eyes</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:money_mouth_face:</td>
+<td><code>money_mouth_face</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="带手的表情">带手的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:hugs:</td>
+<td><code>hugs</code></td>
+<td style="text-align:center">:thinking:</td>
+<td><code>thinking</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="中性表情">中性表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:zipper_mouth_face:</td>
+<td><code>zipper_mouth_face</code></td>
+<td style="text-align:center">:neutral_face:</td>
+<td><code>neutral_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:expressionless:</td>
+<td><code>expressionless</code></td>
+<td style="text-align:center">:no_mouth:</td>
+<td><code>no_mouth</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:smirk:</td>
+<td><code>smirk</code></td>
+<td style="text-align:center">:unamused:</td>
+<td><code>unamused</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:roll_eyes:</td>
+<td><code>roll_eyes</code></td>
+<td style="text-align:center">:grimacing:</td>
+<td><code>grimacing</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lying_face:</td>
+<td><code>lying_face</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="困倦的表情">困倦的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:relieved:</td>
+<td><code>relieved</code></td>
+<td style="text-align:center">:pensive:</td>
+<td><code>pensive</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sleepy:</td>
+<td><code>sleepy</code></td>
+<td style="text-align:center">:drooling_face:</td>
+<td><code>drooling_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sleeping:</td>
+<td><code>sleeping</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="不适的表情">不适的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:mask:</td>
+<td><code>mask</code></td>
+<td style="text-align:center">:face_with_thermometer:</td>
+<td><code>face_with_thermometer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:face_with_head_bandage:</td>
+<td><code>face_with_head_bandage</code></td>
+<td style="text-align:center">:nauseated_face:</td>
+<td><code>nauseated_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sneezing_face:</td>
+<td><code>sneezing_face</code></td>
+<td style="text-align:center">:dizzy_face:</td>
+<td><code>dizzy_face</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="戴帽子的表情">戴帽子的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:cowboy_hat_face:</td>
+<td><code>cowboy_hat_face</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="戴眼镜的表情">戴眼镜的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:sunglasses:</td>
+<td><code>sunglasses</code></td>
+<td style="text-align:center">:nerd_face:</td>
+<td><code>nerd_face</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="担心的表情">担心的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:confused:</td>
+<td><code>confused</code></td>
+<td style="text-align:center">:worried:</td>
+<td><code>worried</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:slightly_frowning_face:</td>
+<td><code>slightly_frowning_face</code></td>
+<td style="text-align:center">:frowning_face:</td>
+<td><code>frowning_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:open_mouth:</td>
+<td><code>open_mouth</code></td>
+<td style="text-align:center">:hushed:</td>
+<td><code>hushed</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:astonished:</td>
+<td><code>astonished</code></td>
+<td style="text-align:center">:flushed:</td>
+<td><code>flushed</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:frowning:</td>
+<td><code>frowning</code></td>
+<td style="text-align:center">:anguished:</td>
+<td><code>anguished</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fearful:</td>
+<td><code>fearful</code></td>
+<td style="text-align:center">:cold_sweat:</td>
+<td><code>cold_sweat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:disappointed_relieved:</td>
+<td><code>disappointed_relieved</code></td>
+<td style="text-align:center">:cry:</td>
+<td><code>cry</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sob:</td>
+<td><code>sob</code></td>
+<td style="text-align:center">:scream:</td>
+<td><code>scream</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:confounded:</td>
+<td><code>confounded</code></td>
+<td style="text-align:center">:persevere:</td>
+<td><code>persevere</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:disappointed:</td>
+<td><code>disappointed</code></td>
+<td style="text-align:center">:sweat:</td>
+<td><code>sweat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:weary:</td>
+<td><code>weary</code></td>
+<td style="text-align:center">:tired_face:</td>
+<td><code>tired_face</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="否定的表情">否定的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:triumph:</td>
+<td><code>triumph</code></td>
+<td style="text-align:center">:pout:</td>
+<td><code>pout</code> <!-- raw HTML omitted --> <code>rage</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:angry:</td>
+<td><code>angry</code></td>
+<td style="text-align:center">:smiling_imp:</td>
+<td><code>smiling_imp</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:imp:</td>
+<td><code>imp</code></td>
+<td style="text-align:center">:skull:</td>
+<td><code>skull</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:skull_and_crossbones:</td>
+<td><code>skull_and_crossbones</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="特殊打扮的表情">特殊打扮的表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:hankey:</td>
+<td><code>hankey</code> <!-- raw HTML omitted --> <code>poop</code> <!-- raw HTML omitted --> <code>shit</code></td>
+<td style="text-align:center">:clown_face:</td>
+<td><code>clown_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:japanese_ogre:</td>
+<td><code>japanese_ogre</code></td>
+<td style="text-align:center">:japanese_goblin:</td>
+<td><code>japanese_goblin</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ghost:</td>
+<td><code>ghost</code></td>
+<td style="text-align:center">:alien:</td>
+<td><code>alien</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:space_invader:</td>
+<td><code>space_invader</code></td>
+<td style="text-align:center">:robot:</td>
+<td><code>robot</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="猫脸表情">猫脸表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:smiley_cat:</td>
+<td><code>smiley_cat</code></td>
+<td style="text-align:center">:smile_cat:</td>
+<td><code>smile_cat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:joy_cat:</td>
+<td><code>joy_cat</code></td>
+<td style="text-align:center">:heart_eyes_cat:</td>
+<td><code>heart_eyes_cat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:smirk_cat:</td>
+<td><code>smirk_cat</code></td>
+<td style="text-align:center">:kissing_cat:</td>
+<td><code>kissing_cat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:scream_cat:</td>
+<td><code>scream_cat</code></td>
+<td style="text-align:center">:crying_cat_face:</td>
+<td><code>crying_cat_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pouting_cat:</td>
+<td><code>pouting_cat</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="猴脸表情">猴脸表情</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:see_no_evil:</td>
+<td><code>see_no_evil</code></td>
+<td style="text-align:center">:hear_no_evil:</td>
+<td><code>hear_no_evil</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:speak_no_evil:</td>
+<td><code>speak_no_evil</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="情感">情感</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:kiss:</td>
+<td><code>kiss</code></td>
+<td style="text-align:center">:love_letter:</td>
+<td><code>love_letter</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cupid:</td>
+<td><code>cupid</code></td>
+<td style="text-align:center">:gift_heart:</td>
+<td><code>gift_heart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sparkling_heart:</td>
+<td><code>sparkling_heart</code></td>
+<td style="text-align:center">:heartpulse:</td>
+<td><code>heartpulse</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:heartbeat:</td>
+<td><code>heartbeat</code></td>
+<td style="text-align:center">:revolving_hearts:</td>
+<td><code>revolving_hearts</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:two_hearts:</td>
+<td><code>two_hearts</code></td>
+<td style="text-align:center">:heart_decoration:</td>
+<td><code>heart_decoration</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:heavy_heart_exclamation:</td>
+<td><code>heavy_heart_exclamation</code></td>
+<td style="text-align:center">:broken_heart:</td>
+<td><code>broken_heart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:heart:</td>
+<td><code>heart</code></td>
+<td style="text-align:center">:yellow_heart:</td>
+<td><code>yellow_heart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:green_heart:</td>
+<td><code>green_heart</code></td>
+<td style="text-align:center">:blue_heart:</td>
+<td><code>blue_heart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:purple_heart:</td>
+<td><code>purple_heart</code></td>
+<td style="text-align:center">:black_heart:</td>
+<td><code>black_heart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:100:</td>
+<td><code>100</code></td>
+<td style="text-align:center">:anger:</td>
+<td><code>anger</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:boom:</td>
+<td><code>boom</code> <!-- raw HTML omitted --> <code>collision</code></td>
+<td style="text-align:center">:dizzy:</td>
+<td><code>dizzy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sweat_drops:</td>
+<td><code>sweat_drops</code></td>
+<td style="text-align:center">:dash:</td>
+<td><code>dash</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hole:</td>
+<td><code>hole</code></td>
+<td style="text-align:center">:bomb:</td>
+<td><code>bomb</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:speech_balloon:</td>
+<td><code>speech_balloon</code></td>
+<td style="text-align:center">:eye_speech_bubble:</td>
+<td><code>eye_speech_bubble</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:right_anger_bubble:</td>
+<td><code>right_anger_bubble</code></td>
+<td style="text-align:center">:thought_balloon:</td>
+<td><code>thought_balloon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:zzz:</td>
+<td><code>zzz</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="人与身体">人与身体</h2>
+<h3 id="张开手掌的手势">张开手掌的手势</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:wave:</td>
+<td><code>wave</code></td>
+<td style="text-align:center">:raised_back_of_hand:</td>
+<td><code>raised_back_of_hand</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:raised_hand_with_fingers_splayed:</td>
+<td><code>raised_hand_with_fingers_splayed</code></td>
+<td style="text-align:center">:hand:</td>
+<td><code>hand</code> <!-- raw HTML omitted --> <code>raised_hand</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:vulcan_salute:</td>
+<td><code>vulcan_salute</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="部分手指的手势">部分手指的手势</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:ok_hand:</td>
+<td><code>ok_hand</code></td>
+<td style="text-align:center">:v:</td>
+<td><code>v</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:crossed_fingers:</td>
+<td><code>crossed_fingers</code></td>
+<td style="text-align:center">:metal:</td>
+<td><code>metal</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:call_me_hand:</td>
+<td><code>call_me_hand</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="一根手指的手势">一根手指的手势</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:point_left:</td>
+<td><code>point_left</code></td>
+<td style="text-align:center">:point_right:</td>
+<td><code>point_right</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:point_up_2:</td>
+<td><code>point_up_2</code></td>
+<td style="text-align:center">:fu:</td>
+<td><code>fu</code> <!-- raw HTML omitted --> <code>middle_finger</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:point_down:</td>
+<td><code>point_down</code></td>
+<td style="text-align:center">:point_up:</td>
+<td><code>point_up</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="握紧的手势">握紧的手势</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:+1:</td>
+<td><code>+1</code> <!-- raw HTML omitted --> <code>thumbsup</code></td>
+<td style="text-align:center">:-1:</td>
+<td><code>-1</code> <!-- raw HTML omitted --> <code>thumbsdown</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fist:</td>
+<td><code>fist</code> <!-- raw HTML omitted --> <code>fist_raised</code></td>
+<td style="text-align:center">:facepunch:</td>
+<td><code>facepunch</code> <!-- raw HTML omitted --> <code>fist_oncoming</code> <!-- raw HTML omitted --> <code>punch</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fist_left:</td>
+<td><code>fist_left</code></td>
+<td style="text-align:center">:fist_right:</td>
+<td><code>fist_right</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="两只手">两只手</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:clap:</td>
+<td><code>clap</code></td>
+<td style="text-align:center">:raised_hands:</td>
+<td><code>raised_hands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:open_hands:</td>
+<td><code>open_hands</code></td>
+<td style="text-align:center">:handshake:</td>
+<td><code>handshake</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pray:</td>
+<td><code>pray</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="握住东西的手势">握住东西的手势</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:writing_hand:</td>
+<td><code>writing_hand</code></td>
+<td style="text-align:center">:nail_care:</td>
+<td><code>nail_care</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:selfie:</td>
+<td><code>selfie</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="身体部位">身体部位</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:muscle:</td>
+<td><code>muscle</code></td>
+<td style="text-align:center">:ear:</td>
+<td><code>ear</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:nose:</td>
+<td><code>nose</code></td>
+<td style="text-align:center">:eyes:</td>
+<td><code>eyes</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:eye:</td>
+<td><code>eye</code></td>
+<td style="text-align:center">:tongue:</td>
+<td><code>tongue</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lips:</td>
+<td><code>lips</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="人">人</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:baby:</td>
+<td><code>baby</code></td>
+<td style="text-align:center">:boy:</td>
+<td><code>boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:girl:</td>
+<td><code>girl</code></td>
+<td style="text-align:center">:blonde_man:</td>
+<td><code>blonde_man</code> <!-- raw HTML omitted --> <code>person_with_blond_hair</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man:</td>
+<td><code>man</code></td>
+<td style="text-align:center">:woman:</td>
+<td><code>woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:blonde_woman:</td>
+<td><code>blonde_woman</code></td>
+<td style="text-align:center">:older_man:</td>
+<td><code>older_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:older_woman:</td>
+<td><code>older_woman</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="身体动作">身体动作</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:frowning_woman:</td>
+<td><code>frowning_woman</code> <!-- raw HTML omitted --> <code>person_frowning</code></td>
+<td style="text-align:center">:frowning_man:</td>
+<td><code>frowning_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:person_with_pouting_face:</td>
+<td><code>person_with_pouting_face</code> <!-- raw HTML omitted --> <code>pouting_woman</code></td>
+<td style="text-align:center">:pouting_man:</td>
+<td><code>pouting_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ng_woman:</td>
+<td><code>ng_woman</code> <!-- raw HTML omitted --> <code>no_good</code> <!-- raw HTML omitted --> <code>no_good_woman</code></td>
+<td style="text-align:center">:ng_man:</td>
+<td><code>ng_man</code> <!-- raw HTML omitted --> <code>no_good_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ok_woman:</td>
+<td><code>ok_woman</code></td>
+<td style="text-align:center">:ok_man:</td>
+<td><code>ok_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:information_desk_person:</td>
+<td><code>information_desk_person</code> <!-- raw HTML omitted --> <code>sassy_woman</code> <!-- raw HTML omitted --> <code>tipping_hand_woman</code></td>
+<td style="text-align:center">:sassy_man:</td>
+<td><code>sassy_man</code> <!-- raw HTML omitted --> <code>tipping_hand_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:raising_hand:</td>
+<td><code>raising_hand</code> <!-- raw HTML omitted --> <code>raising_hand_woman</code></td>
+<td style="text-align:center">:raising_hand_man:</td>
+<td><code>raising_hand_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bow:</td>
+<td><code>bow</code> <!-- raw HTML omitted --> <code>bowing_man</code></td>
+<td style="text-align:center">:bowing_woman:</td>
+<td><code>bowing_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_facepalming:</td>
+<td><code>man_facepalming</code></td>
+<td style="text-align:center">:woman_facepalming:</td>
+<td><code>woman_facepalming</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_shrugging:</td>
+<td><code>man_shrugging</code></td>
+<td style="text-align:center">:woman_shrugging:</td>
+<td><code>woman_shrugging</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="人物角色">人物角色</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:man_health_worker:</td>
+<td><code>man_health_worker</code></td>
+<td style="text-align:center">:woman_health_worker:</td>
+<td><code>woman_health_worker</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_student:</td>
+<td><code>man_student</code></td>
+<td style="text-align:center">:woman_student:</td>
+<td><code>woman_student</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_teacher:</td>
+<td><code>man_teacher</code></td>
+<td style="text-align:center">:woman_teacher:</td>
+<td><code>woman_teacher</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_judge:</td>
+<td><code>man_judge</code></td>
+<td style="text-align:center">:woman_judge:</td>
+<td><code>woman_judge</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_farmer:</td>
+<td><code>man_farmer</code></td>
+<td style="text-align:center">:woman_farmer:</td>
+<td><code>woman_farmer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_cook:</td>
+<td><code>man_cook</code></td>
+<td style="text-align:center">:woman_cook:</td>
+<td><code>woman_cook</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_mechanic:</td>
+<td><code>man_mechanic</code></td>
+<td style="text-align:center">:woman_mechanic:</td>
+<td><code>woman_mechanic</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_factory_worker:</td>
+<td><code>man_factory_worker</code></td>
+<td style="text-align:center">:woman_factory_worker:</td>
+<td><code>woman_factory_worker</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_office_worker:</td>
+<td><code>man_office_worker</code></td>
+<td style="text-align:center">:woman_office_worker:</td>
+<td><code>woman_office_worker</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_scientist:</td>
+<td><code>man_scientist</code></td>
+<td style="text-align:center">:woman_scientist:</td>
+<td><code>woman_scientist</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_technologist:</td>
+<td><code>man_technologist</code></td>
+<td style="text-align:center">:woman_technologist:</td>
+<td><code>woman_technologist</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_singer:</td>
+<td><code>man_singer</code></td>
+<td style="text-align:center">:woman_singer:</td>
+<td><code>woman_singer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_artist:</td>
+<td><code>man_artist</code></td>
+<td style="text-align:center">:woman_artist:</td>
+<td><code>woman_artist</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_pilot:</td>
+<td><code>man_pilot</code></td>
+<td style="text-align:center">:woman_pilot:</td>
+<td><code>woman_pilot</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_astronaut:</td>
+<td><code>man_astronaut</code></td>
+<td style="text-align:center">:woman_astronaut:</td>
+<td><code>woman_astronaut</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_firefighter:</td>
+<td><code>man_firefighter</code></td>
+<td style="text-align:center">:woman_firefighter:</td>
+<td><code>woman_firefighter</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cop:</td>
+<td><code>cop</code> <!-- raw HTML omitted --> <code>policeman</code></td>
+<td style="text-align:center">:policewoman:</td>
+<td><code>policewoman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:detective:</td>
+<td><code>detective</code> <!-- raw HTML omitted --> <code>male_detective</code></td>
+<td style="text-align:center">:female_detective:</td>
+<td><code>female_detective</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:guardsman:</td>
+<td><code>guardsman</code></td>
+<td style="text-align:center">:guardswoman:</td>
+<td><code>guardswoman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:construction_worker:</td>
+<td><code>construction_worker</code> <!-- raw HTML omitted --> <code>construction_worker_man</code></td>
+<td style="text-align:center">:construction_worker_woman:</td>
+<td><code>construction_worker_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:prince:</td>
+<td><code>prince</code></td>
+<td style="text-align:center">:princess:</td>
+<td><code>princess</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_with_turban:</td>
+<td><code>man_with_turban</code></td>
+<td style="text-align:center">:woman_with_turban:</td>
+<td><code>woman_with_turban</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_with_gua_pi_mao:</td>
+<td><code>man_with_gua_pi_mao</code></td>
+<td style="text-align:center">:man_in_tuxedo:</td>
+<td><code>man_in_tuxedo</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bride_with_veil:</td>
+<td><code>bride_with_veil</code></td>
+<td style="text-align:center">:pregnant_woman:</td>
+<td><code>pregnant_woman</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="幻想的人物">幻想的人物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:angel:</td>
+<td><code>angel</code></td>
+<td style="text-align:center">:santa:</td>
+<td><code>santa</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mrs_claus:</td>
+<td><code>mrs_claus</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="人物活动">人物活动</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:massage:</td>
+<td><code>massage</code> <!-- raw HTML omitted --> <code>massage_woman</code></td>
+<td style="text-align:center">:massage_man:</td>
+<td><code>massage_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:haircut:</td>
+<td><code>haircut</code> <!-- raw HTML omitted --> <code>haircut_woman</code></td>
+<td style="text-align:center">:haircut_man:</td>
+<td><code>haircut_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:walking:</td>
+<td><code>walking</code> <!-- raw HTML omitted --> <code>walking_man</code></td>
+<td style="text-align:center">:walking_woman:</td>
+<td><code>walking_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:runner:</td>
+<td><code>runner</code> <!-- raw HTML omitted --> <code>running</code> <!-- raw HTML omitted --> <code>running_man</code></td>
+<td style="text-align:center">:running_woman:</td>
+<td><code>running_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dancer:</td>
+<td><code>dancer</code></td>
+<td style="text-align:center">:man_dancing:</td>
+<td><code>man_dancing</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:business_suit_levitating:</td>
+<td><code>business_suit_levitating</code></td>
+<td style="text-align:center">:dancers:</td>
+<td><code>dancers</code> <!-- raw HTML omitted --> <code>dancing_women</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dancing_men:</td>
+<td><code>dancing_men</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="体育">体育</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:person_fencing:</td>
+<td><code>person_fencing</code></td>
+<td style="text-align:center">:horse_racing:</td>
+<td><code>horse_racing</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:skier:</td>
+<td><code>skier</code></td>
+<td style="text-align:center">:snowboarder:</td>
+<td><code>snowboarder</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:golfing_man:</td>
+<td><code>golfing_man</code></td>
+<td style="text-align:center">:golfing_woman:</td>
+<td><code>golfing_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:surfer:</td>
+<td><code>surfer</code> <!-- raw HTML omitted --> <code>surfing_man</code></td>
+<td style="text-align:center">:surfing_woman:</td>
+<td><code>surfing_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rowboat:</td>
+<td><code>rowboat</code> <!-- raw HTML omitted --> <code>rowing_man</code></td>
+<td style="text-align:center">:rowing_woman:</td>
+<td><code>rowing_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:swimmer:</td>
+<td><code>swimmer</code> <!-- raw HTML omitted --> <code>swimming_man</code></td>
+<td style="text-align:center">:swimming_woman:</td>
+<td><code>swimming_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:basketball_man:</td>
+<td><code>basketball_man</code></td>
+<td style="text-align:center">:basketball_woman:</td>
+<td><code>basketball_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:weight_lifting_man:</td>
+<td><code>weight_lifting_man</code></td>
+<td style="text-align:center">:weight_lifting_woman:</td>
+<td><code>weight_lifting_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bicyclist:</td>
+<td><code>bicyclist</code> <!-- raw HTML omitted --> <code>biking_man</code></td>
+<td style="text-align:center">:biking_woman:</td>
+<td><code>biking_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mountain_bicyclist:</td>
+<td><code>mountain_bicyclist</code> <!-- raw HTML omitted --> <code>mountain_biking_man</code></td>
+<td style="text-align:center">:mountain_biking_woman:</td>
+<td><code>mountain_biking_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_cartwheeling:</td>
+<td><code>man_cartwheeling</code></td>
+<td style="text-align:center">:woman_cartwheeling:</td>
+<td><code>woman_cartwheeling</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:men_wrestling:</td>
+<td><code>men_wrestling</code></td>
+<td style="text-align:center">:women_wrestling:</td>
+<td><code>women_wrestling</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_playing_water_polo:</td>
+<td><code>man_playing_water_polo</code></td>
+<td style="text-align:center">:woman_playing_water_polo:</td>
+<td><code>woman_playing_water_polo</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_playing_handball:</td>
+<td><code>man_playing_handball</code></td>
+<td style="text-align:center">:woman_playing_handball:</td>
+<td><code>woman_playing_handball</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:man_juggling:</td>
+<td><code>man_juggling</code></td>
+<td style="text-align:center">:woman_juggling:</td>
+<td><code>woman_juggling</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="休息">休息</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:bath:</td>
+<td><code>bath</code></td>
+<td style="text-align:center">:sleeping_bed:</td>
+<td><code>sleeping_bed</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="家庭">家庭</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:two_women_holding_hands:</td>
+<td><code>two_women_holding_hands</code></td>
+<td style="text-align:center">:couple:</td>
+<td><code>couple</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:two_men_holding_hands:</td>
+<td><code>two_men_holding_hands</code></td>
+<td style="text-align:center">:couplekiss_man_woman:</td>
+<td><code>couplekiss_man_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:couplekiss_man_man:</td>
+<td><code>couplekiss_man_man</code></td>
+<td style="text-align:center">:couplekiss_woman_woman:</td>
+<td><code>couplekiss_woman_woman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:couple_with_heart:</td>
+<td><code>couple_with_heart</code> <!-- raw HTML omitted --> <code>couple_with_heart_woman_man</code></td>
+<td style="text-align:center">:couple_with_heart_man_man:</td>
+<td><code>couple_with_heart_man_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:couple_with_heart_woman_woman:</td>
+<td><code>couple_with_heart_woman_woman</code></td>
+<td style="text-align:center">:family:</td>
+<td><code>family</code> <!-- raw HTML omitted --> <code>family_man_woman_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_woman_girl:</td>
+<td><code>family_man_woman_girl</code></td>
+<td style="text-align:center">:family_man_woman_girl_boy:</td>
+<td><code>family_man_woman_girl_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_woman_boy_boy:</td>
+<td><code>family_man_woman_boy_boy</code></td>
+<td style="text-align:center">:family_man_woman_girl_girl:</td>
+<td><code>family_man_woman_girl_girl</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_man_boy:</td>
+<td><code>family_man_man_boy</code></td>
+<td style="text-align:center">:family_man_man_girl:</td>
+<td><code>family_man_man_girl</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_man_girl_boy:</td>
+<td><code>family_man_man_girl_boy</code></td>
+<td style="text-align:center">:family_man_man_boy_boy:</td>
+<td><code>family_man_man_boy_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_man_girl_girl:</td>
+<td><code>family_man_man_girl_girl</code></td>
+<td style="text-align:center">:family_woman_woman_boy:</td>
+<td><code>family_woman_woman_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_woman_woman_girl:</td>
+<td><code>family_woman_woman_girl</code></td>
+<td style="text-align:center">:family_woman_woman_girl_boy:</td>
+<td><code>family_woman_woman_girl_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_woman_woman_boy_boy:</td>
+<td><code>family_woman_woman_boy_boy</code></td>
+<td style="text-align:center">:family_woman_woman_girl_girl:</td>
+<td><code>family_woman_woman_girl_girl</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_boy:</td>
+<td><code>family_man_boy</code></td>
+<td style="text-align:center">:family_man_boy_boy:</td>
+<td><code>family_man_boy_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_girl:</td>
+<td><code>family_man_girl</code></td>
+<td style="text-align:center">:family_man_girl_boy:</td>
+<td><code>family_man_girl_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_man_girl_girl:</td>
+<td><code>family_man_girl_girl</code></td>
+<td style="text-align:center">:family_woman_boy:</td>
+<td><code>family_woman_boy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_woman_boy_boy:</td>
+<td><code>family_woman_boy_boy</code></td>
+<td style="text-align:center">:family_woman_girl:</td>
+<td><code>family_woman_girl</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:family_woman_girl_boy:</td>
+<td><code>family_woman_girl_boy</code></td>
+<td style="text-align:center">:family_woman_girl_girl:</td>
+<td><code>family_woman_girl_girl</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="人物符号">人物符号</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:speaking_head:</td>
+<td><code>speaking_head</code></td>
+<td style="text-align:center">:bust_in_silhouette:</td>
+<td><code>bust_in_silhouette</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:busts_in_silhouette:</td>
+<td><code>busts_in_silhouette</code></td>
+<td style="text-align:center">:footprints:</td>
+<td><code>footprints</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="动物与自然">动物与自然</h2>
+<h3 id="哺乳动物">哺乳动物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:monkey_face:</td>
+<td><code>monkey_face</code></td>
+<td style="text-align:center">:monkey:</td>
+<td><code>monkey</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:gorilla:</td>
+<td><code>gorilla</code></td>
+<td style="text-align:center">:dog:</td>
+<td><code>dog</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dog2:</td>
+<td><code>dog2</code></td>
+<td style="text-align:center">:poodle:</td>
+<td><code>poodle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wolf:</td>
+<td><code>wolf</code></td>
+<td style="text-align:center">:fox_face:</td>
+<td><code>fox_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cat:</td>
+<td><code>cat</code></td>
+<td style="text-align:center">:cat2:</td>
+<td><code>cat2</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lion:</td>
+<td><code>lion</code></td>
+<td style="text-align:center">:tiger:</td>
+<td><code>tiger</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tiger2:</td>
+<td><code>tiger2</code></td>
+<td style="text-align:center">:leopard:</td>
+<td><code>leopard</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:horse:</td>
+<td><code>horse</code></td>
+<td style="text-align:center">:racehorse:</td>
+<td><code>racehorse</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:unicorn:</td>
+<td><code>unicorn</code></td>
+<td style="text-align:center">:deer:</td>
+<td><code>deer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cow:</td>
+<td><code>cow</code></td>
+<td style="text-align:center">:ox:</td>
+<td><code>ox</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:water_buffalo:</td>
+<td><code>water_buffalo</code></td>
+<td style="text-align:center">:cow2:</td>
+<td><code>cow2</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pig:</td>
+<td><code>pig</code></td>
+<td style="text-align:center">:pig2:</td>
+<td><code>pig2</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:boar:</td>
+<td><code>boar</code></td>
+<td style="text-align:center">:pig_nose:</td>
+<td><code>pig_nose</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ram:</td>
+<td><code>ram</code></td>
+<td style="text-align:center">:sheep:</td>
+<td><code>sheep</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:goat:</td>
+<td><code>goat</code></td>
+<td style="text-align:center">:dromedary_camel:</td>
+<td><code>dromedary_camel</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:camel:</td>
+<td><code>camel</code></td>
+<td style="text-align:center">:elephant:</td>
+<td><code>elephant</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rhinoceros:</td>
+<td><code>rhinoceros</code></td>
+<td style="text-align:center">:mouse:</td>
+<td><code>mouse</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mouse2:</td>
+<td><code>mouse2</code></td>
+<td style="text-align:center">:rat:</td>
+<td><code>rat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hamster:</td>
+<td><code>hamster</code></td>
+<td style="text-align:center">:rabbit:</td>
+<td><code>rabbit</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rabbit2:</td>
+<td><code>rabbit2</code></td>
+<td style="text-align:center">:chipmunk:</td>
+<td><code>chipmunk</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bat:</td>
+<td><code>bat</code></td>
+<td style="text-align:center">:bear:</td>
+<td><code>bear</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:koala:</td>
+<td><code>koala</code></td>
+<td style="text-align:center">:panda_face:</td>
+<td><code>panda_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:feet:</td>
+<td><code>feet</code> <!-- raw HTML omitted --> <code>paw_prints</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="鸟类">鸟类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:turkey:</td>
+<td><code>turkey</code></td>
+<td style="text-align:center">:chicken:</td>
+<td><code>chicken</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rooster:</td>
+<td><code>rooster</code></td>
+<td style="text-align:center">:hatching_chick:</td>
+<td><code>hatching_chick</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:baby_chick:</td>
+<td><code>baby_chick</code></td>
+<td style="text-align:center">:hatched_chick:</td>
+<td><code>hatched_chick</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bird:</td>
+<td><code>bird</code></td>
+<td style="text-align:center">:penguin:</td>
+<td><code>penguin</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dove:</td>
+<td><code>dove</code></td>
+<td style="text-align:center">:eagle:</td>
+<td><code>eagle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:duck:</td>
+<td><code>duck</code></td>
+<td style="text-align:center">:owl:</td>
+<td><code>owl</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="两栖动物">两栖动物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">icon</th>
+<th>code</th>
+<th style="text-align:center">icon</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:frog:</td>
+<td><code>frog</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="爬虫类">爬虫类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:crocodile:</td>
+<td><code>crocodile</code></td>
+<td style="text-align:center">:turtle:</td>
+<td><code>turtle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lizard:</td>
+<td><code>lizard</code></td>
+<td style="text-align:center">:snake:</td>
+<td><code>snake</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dragon_face:</td>
+<td><code>dragon_face</code></td>
+<td style="text-align:center">:dragon:</td>
+<td><code>dragon</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="海洋动物">海洋动物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:whale:</td>
+<td><code>whale</code></td>
+<td style="text-align:center">:whale2:</td>
+<td><code>whale2</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dolphin:</td>
+<td><code>dolphin</code> <!-- raw HTML omitted --> <code>flipper</code></td>
+<td style="text-align:center">:fish:</td>
+<td><code>fish</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tropical_fish:</td>
+<td><code>tropical_fish</code></td>
+<td style="text-align:center">:blowfish:</td>
+<td><code>blowfish</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:shark:</td>
+<td><code>shark</code></td>
+<td style="text-align:center">:octopus:</td>
+<td><code>octopus</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:shell:</td>
+<td><code>shell</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="虫类">虫类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:snail:</td>
+<td><code>snail</code></td>
+<td style="text-align:center">:butterfly:</td>
+<td><code>butterfly</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bug:</td>
+<td><code>bug</code></td>
+<td style="text-align:center">:ant:</td>
+<td><code>ant</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bee:</td>
+<td><code>bee</code> <!-- raw HTML omitted --> <code>honeybee</code></td>
+<td style="text-align:center">:beetle:</td>
+<td><code>beetle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:spider:</td>
+<td><code>spider</code></td>
+<td style="text-align:center">:spider_web:</td>
+<td><code>spider_web</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:scorpion:</td>
+<td><code>scorpion</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="花类植物">花类植物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:bouquet:</td>
+<td><code>bouquet</code></td>
+<td style="text-align:center">:cherry_blossom:</td>
+<td><code>cherry_blossom</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:white_flower:</td>
+<td><code>white_flower</code></td>
+<td style="text-align:center">:rosette:</td>
+<td><code>rosette</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rose:</td>
+<td><code>rose</code></td>
+<td style="text-align:center">:wilted_flower:</td>
+<td><code>wilted_flower</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hibiscus:</td>
+<td><code>hibiscus</code></td>
+<td style="text-align:center">:sunflower:</td>
+<td><code>sunflower</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:blossom:</td>
+<td><code>blossom</code></td>
+<td style="text-align:center">:tulip:</td>
+<td><code>tulip</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它植物">其它植物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:seedling:</td>
+<td><code>seedling</code></td>
+<td style="text-align:center">:evergreen_tree:</td>
+<td><code>evergreen_tree</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:deciduous_tree:</td>
+<td><code>deciduous_tree</code></td>
+<td style="text-align:center">:palm_tree:</td>
+<td><code>palm_tree</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cactus:</td>
+<td><code>cactus</code></td>
+<td style="text-align:center">:ear_of_rice:</td>
+<td><code>ear_of_rice</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:herb:</td>
+<td><code>herb</code></td>
+<td style="text-align:center">:shamrock:</td>
+<td><code>shamrock</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:four_leaf_clover:</td>
+<td><code>four_leaf_clover</code></td>
+<td style="text-align:center">:maple_leaf:</td>
+<td><code>maple_leaf</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fallen_leaf:</td>
+<td><code>fallen_leaf</code></td>
+<td style="text-align:center">:leaves:</td>
+<td><code>leaves</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="食物与饮料">食物与饮料</h2>
+<h3 id="水果">水果</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:grapes:</td>
+<td><code>grapes</code></td>
+<td style="text-align:center">:melon:</td>
+<td><code>melon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:watermelon:</td>
+<td><code>watermelon</code></td>
+<td style="text-align:center">:mandarin:</td>
+<td><code>mandarin</code> <!-- raw HTML omitted --> <code>orange</code> <!-- raw HTML omitted --> <code>tangerine</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lemon:</td>
+<td><code>lemon</code></td>
+<td style="text-align:center">:banana:</td>
+<td><code>banana</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pineapple:</td>
+<td><code>pineapple</code></td>
+<td style="text-align:center">:apple:</td>
+<td><code>apple</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:green_apple:</td>
+<td><code>green_apple</code></td>
+<td style="text-align:center">:pear:</td>
+<td><code>pear</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:peach:</td>
+<td><code>peach</code></td>
+<td style="text-align:center">:cherries:</td>
+<td><code>cherries</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:strawberry:</td>
+<td><code>strawberry</code></td>
+<td style="text-align:center">:kiwi_fruit:</td>
+<td><code>kiwi_fruit</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tomato:</td>
+<td><code>tomato</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="蔬菜">蔬菜</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:avocado:</td>
+<td><code>avocado</code></td>
+<td style="text-align:center">:eggplant:</td>
+<td><code>eggplant</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:potato:</td>
+<td><code>potato</code></td>
+<td style="text-align:center">:carrot:</td>
+<td><code>carrot</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:corn:</td>
+<td><code>corn</code></td>
+<td style="text-align:center">:hot_pepper:</td>
+<td><code>hot_pepper</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cucumber:</td>
+<td><code>cucumber</code></td>
+<td style="text-align:center">:mushroom:</td>
+<td><code>mushroom</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:peanuts:</td>
+<td><code>peanuts</code></td>
+<td style="text-align:center">:chestnut:</td>
+<td><code>chestnut</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="快餐">快餐</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:bread:</td>
+<td><code>bread</code></td>
+<td style="text-align:center">:croissant:</td>
+<td><code>croissant</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:baguette_bread:</td>
+<td><code>baguette_bread</code></td>
+<td style="text-align:center">:pancakes:</td>
+<td><code>pancakes</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cheese:</td>
+<td><code>cheese</code></td>
+<td style="text-align:center">:meat_on_bone:</td>
+<td><code>meat_on_bone</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:poultry_leg:</td>
+<td><code>poultry_leg</code></td>
+<td style="text-align:center">:bacon:</td>
+<td><code>bacon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hamburger:</td>
+<td><code>hamburger</code></td>
+<td style="text-align:center">:fries:</td>
+<td><code>fries</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pizza:</td>
+<td><code>pizza</code></td>
+<td style="text-align:center">:hotdog:</td>
+<td><code>hotdog</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:taco:</td>
+<td><code>taco</code></td>
+<td style="text-align:center">:burrito:</td>
+<td><code>burrito</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:stuffed_flatbread:</td>
+<td><code>stuffed_flatbread</code></td>
+<td style="text-align:center">:egg:</td>
+<td><code>egg</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fried_egg:</td>
+<td><code>fried_egg</code></td>
+<td style="text-align:center">:shallow_pan_of_food:</td>
+<td><code>shallow_pan_of_food</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:stew:</td>
+<td><code>stew</code></td>
+<td style="text-align:center">:green_salad:</td>
+<td><code>green_salad</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:popcorn:</td>
+<td><code>popcorn</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="亚洲食物">亚洲食物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:bento:</td>
+<td><code>bento</code></td>
+<td style="text-align:center">:rice_cracker:</td>
+<td><code>rice_cracker</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rice_ball:</td>
+<td><code>rice_ball</code></td>
+<td style="text-align:center">:rice:</td>
+<td><code>rice</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:curry:</td>
+<td><code>curry</code></td>
+<td style="text-align:center">:ramen:</td>
+<td><code>ramen</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:spaghetti:</td>
+<td><code>spaghetti</code></td>
+<td style="text-align:center">:sweet_potato:</td>
+<td><code>sweet_potato</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:oden:</td>
+<td><code>oden</code></td>
+<td style="text-align:center">:sushi:</td>
+<td><code>sushi</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fried_shrimp:</td>
+<td><code>fried_shrimp</code></td>
+<td style="text-align:center">:fish_cake:</td>
+<td><code>fish_cake</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dango:</td>
+<td><code>dango</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="海鲜">海鲜</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:crab:</td>
+<td><code>crab</code></td>
+<td style="text-align:center">:shrimp:</td>
+<td><code>shrimp</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:squid:</td>
+<td><code>squid</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="甜点">甜点</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:icecream:</td>
+<td><code>icecream</code></td>
+<td style="text-align:center">:shaved_ice:</td>
+<td><code>shaved_ice</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ice_cream:</td>
+<td><code>ice_cream</code></td>
+<td style="text-align:center">:doughnut:</td>
+<td><code>doughnut</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cookie:</td>
+<td><code>cookie</code></td>
+<td style="text-align:center">:birthday:</td>
+<td><code>birthday</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cake:</td>
+<td><code>cake</code></td>
+<td style="text-align:center">:chocolate_bar:</td>
+<td><code>chocolate_bar</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:candy:</td>
+<td><code>candy</code></td>
+<td style="text-align:center">:lollipop:</td>
+<td><code>lollipop</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:custard:</td>
+<td><code>custard</code></td>
+<td style="text-align:center">:honey_pot:</td>
+<td><code>honey_pot</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="饮料">饮料</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:baby_bottle:</td>
+<td><code>baby_bottle</code></td>
+<td style="text-align:center">:milk_glass:</td>
+<td><code>milk_glass</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:coffee:</td>
+<td><code>coffee</code></td>
+<td style="text-align:center">:tea:</td>
+<td><code>tea</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sake:</td>
+<td><code>sake</code></td>
+<td style="text-align:center">:champagne:</td>
+<td><code>champagne</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wine_glass:</td>
+<td><code>wine_glass</code></td>
+<td style="text-align:center">:cocktail:</td>
+<td><code>cocktail</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tropical_drink:</td>
+<td><code>tropical_drink</code></td>
+<td style="text-align:center">:beer:</td>
+<td><code>beer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:beers:</td>
+<td><code>beers</code></td>
+<td style="text-align:center">:clinking_glasses:</td>
+<td><code>clinking_glasses</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tumbler_glass:</td>
+<td><code>tumbler_glass</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="餐具">餐具</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:plate_with_cutlery:</td>
+<td><code>plate_with_cutlery</code></td>
+<td style="text-align:center">:fork_and_knife:</td>
+<td><code>fork_and_knife</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:spoon:</td>
+<td><code>spoon</code></td>
+<td style="text-align:center">:hocho:</td>
+<td><code>hocho</code> <!-- raw HTML omitted --> <code>knife</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:amphora:</td>
+<td><code>amphora</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="旅游与地理">旅游与地理</h2>
+<h3 id="地图">地图</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:earth_africa:</td>
+<td><code>earth_africa</code></td>
+<td style="text-align:center">:earth_americas:</td>
+<td><code>earth_americas</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:earth_asia:</td>
+<td><code>earth_asia</code></td>
+<td style="text-align:center">:globe_with_meridians:</td>
+<td><code>globe_with_meridians</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:world_map:</td>
+<td><code>world_map</code></td>
+<td style="text-align:center">:japan:</td>
+<td><code>japan</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="地理现象">地理现象</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:mountain_snow:</td>
+<td><code>mountain_snow</code></td>
+<td style="text-align:center">:mountain:</td>
+<td><code>mountain</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:volcano:</td>
+<td><code>volcano</code></td>
+<td style="text-align:center">:mount_fuji:</td>
+<td><code>mount_fuji</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:camping:</td>
+<td><code>camping</code></td>
+<td style="text-align:center">:beach_umbrella:</td>
+<td><code>beach_umbrella</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:desert:</td>
+<td><code>desert</code></td>
+<td style="text-align:center">:desert_island:</td>
+<td><code>desert_island</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:national_park:</td>
+<td><code>national_park</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="建筑物">建筑物</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:stadium:</td>
+<td><code>stadium</code></td>
+<td style="text-align:center">:classical_building:</td>
+<td><code>classical_building</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:building_construction:</td>
+<td><code>building_construction</code></td>
+<td style="text-align:center">:houses:</td>
+<td><code>houses</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:derelict_house:</td>
+<td><code>derelict_house</code></td>
+<td style="text-align:center">:house:</td>
+<td><code>house</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:house_with_garden:</td>
+<td><code>house_with_garden</code></td>
+<td style="text-align:center">:office:</td>
+<td><code>office</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:post_office:</td>
+<td><code>post_office</code></td>
+<td style="text-align:center">:european_post_office:</td>
+<td><code>european_post_office</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hospital:</td>
+<td><code>hospital</code></td>
+<td style="text-align:center">:bank:</td>
+<td><code>bank</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hotel:</td>
+<td><code>hotel</code></td>
+<td style="text-align:center">:love_hotel:</td>
+<td><code>love_hotel</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:convenience_store:</td>
+<td><code>convenience_store</code></td>
+<td style="text-align:center">:school:</td>
+<td><code>school</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:department_store:</td>
+<td><code>department_store</code></td>
+<td style="text-align:center">:factory:</td>
+<td><code>factory</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:japanese_castle:</td>
+<td><code>japanese_castle</code></td>
+<td style="text-align:center">:european_castle:</td>
+<td><code>european_castle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wedding:</td>
+<td><code>wedding</code></td>
+<td style="text-align:center">:tokyo_tower:</td>
+<td><code>tokyo_tower</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:statue_of_liberty:</td>
+<td><code>statue_of_liberty</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="宗教建筑">宗教建筑</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:church:</td>
+<td><code>church</code></td>
+<td style="text-align:center">:mosque:</td>
+<td><code>mosque</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:synagogue:</td>
+<td><code>synagogue</code></td>
+<td style="text-align:center">:shinto_shrine:</td>
+<td><code>shinto_shrine</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kaaba:</td>
+<td><code>kaaba</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它地点">其它地点</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:fountain:</td>
+<td><code>fountain</code></td>
+<td style="text-align:center">:tent:</td>
+<td><code>tent</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:foggy:</td>
+<td><code>foggy</code></td>
+<td style="text-align:center">:night_with_stars:</td>
+<td><code>night_with_stars</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cityscape:</td>
+<td><code>cityscape</code></td>
+<td style="text-align:center">:sunrise_over_mountains:</td>
+<td><code>sunrise_over_mountains</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sunrise:</td>
+<td><code>sunrise</code></td>
+<td style="text-align:center">:city_sunset:</td>
+<td><code>city_sunset</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:city_sunrise:</td>
+<td><code>city_sunrise</code></td>
+<td style="text-align:center">:bridge_at_night:</td>
+<td><code>bridge_at_night</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hotsprings:</td>
+<td><code>hotsprings</code></td>
+<td style="text-align:center">:carousel_horse:</td>
+<td><code>carousel_horse</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ferris_wheel:</td>
+<td><code>ferris_wheel</code></td>
+<td style="text-align:center">:roller_coaster:</td>
+<td><code>roller_coaster</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:barber:</td>
+<td><code>barber</code></td>
+<td style="text-align:center">:circus_tent:</td>
+<td><code>circus_tent</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="陆路运输">陆路运输</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:steam_locomotive:</td>
+<td><code>steam_locomotive</code></td>
+<td style="text-align:center">:railway_car:</td>
+<td><code>railway_car</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bullettrain_side:</td>
+<td><code>bullettrain_side</code></td>
+<td style="text-align:center">:bullettrain_front:</td>
+<td><code>bullettrain_front</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:train2:</td>
+<td><code>train2</code></td>
+<td style="text-align:center">:metro:</td>
+<td><code>metro</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:light_rail:</td>
+<td><code>light_rail</code></td>
+<td style="text-align:center">:station:</td>
+<td><code>station</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tram:</td>
+<td><code>tram</code></td>
+<td style="text-align:center">:monorail:</td>
+<td><code>monorail</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mountain_railway:</td>
+<td><code>mountain_railway</code></td>
+<td style="text-align:center">:train:</td>
+<td><code>train</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bus:</td>
+<td><code>bus</code></td>
+<td style="text-align:center">:oncoming_bus:</td>
+<td><code>oncoming_bus</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:trolleybus:</td>
+<td><code>trolleybus</code></td>
+<td style="text-align:center">:minibus:</td>
+<td><code>minibus</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ambulance:</td>
+<td><code>ambulance</code></td>
+<td style="text-align:center">:fire_engine:</td>
+<td><code>fire_engine</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:police_car:</td>
+<td><code>police_car</code></td>
+<td style="text-align:center">:oncoming_police_car:</td>
+<td><code>oncoming_police_car</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:taxi:</td>
+<td><code>taxi</code></td>
+<td style="text-align:center">:oncoming_taxi:</td>
+<td><code>oncoming_taxi</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:car:</td>
+<td><code>car</code> <!-- raw HTML omitted --> <code>red_car</code></td>
+<td style="text-align:center">:oncoming_automobile:</td>
+<td><code>oncoming_automobile</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:blue_car:</td>
+<td><code>blue_car</code></td>
+<td style="text-align:center">:truck:</td>
+<td><code>truck</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:articulated_lorry:</td>
+<td><code>articulated_lorry</code></td>
+<td style="text-align:center">:tractor:</td>
+<td><code>tractor</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:racing_car:</td>
+<td><code>racing_car</code></td>
+<td style="text-align:center">:motorcycle:</td>
+<td><code>motorcycle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:motor_scooter:</td>
+<td><code>motor_scooter</code></td>
+<td style="text-align:center">:bike:</td>
+<td><code>bike</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kick_scooter:</td>
+<td><code>kick_scooter</code></td>
+<td style="text-align:center">:busstop:</td>
+<td><code>busstop</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:motorway:</td>
+<td><code>motorway</code></td>
+<td style="text-align:center">:railway_track:</td>
+<td><code>railway_track</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:oil_drum:</td>
+<td><code>oil_drum</code></td>
+<td style="text-align:center">:fuelpump:</td>
+<td><code>fuelpump</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rotating_light:</td>
+<td><code>rotating_light</code></td>
+<td style="text-align:center">:traffic_light:</td>
+<td><code>traffic_light</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:vertical_traffic_light:</td>
+<td><code>vertical_traffic_light</code></td>
+<td style="text-align:center">:stop_sign:</td>
+<td><code>stop_sign</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:construction:</td>
+<td><code>construction</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="水路运输">水路运输</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:anchor:</td>
+<td><code>anchor</code></td>
+<td style="text-align:center">:boat:</td>
+<td><code>boat</code> <!-- raw HTML omitted --> <code>sailboat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:canoe:</td>
+<td><code>canoe</code></td>
+<td style="text-align:center">:speedboat:</td>
+<td><code>speedboat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:passenger_ship:</td>
+<td><code>passenger_ship</code></td>
+<td style="text-align:center">:ferry:</td>
+<td><code>ferry</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:motor_boat:</td>
+<td><code>motor_boat</code></td>
+<td style="text-align:center">:ship:</td>
+<td><code>ship</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="空中运输">空中运输</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:airplane:</td>
+<td><code>airplane</code></td>
+<td style="text-align:center">:small_airplane:</td>
+<td><code>small_airplane</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:flight_departure:</td>
+<td><code>flight_departure</code></td>
+<td style="text-align:center">:flight_arrival:</td>
+<td><code>flight_arrival</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:seat:</td>
+<td><code>seat</code></td>
+<td style="text-align:center">:helicopter:</td>
+<td><code>helicopter</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:suspension_railway:</td>
+<td><code>suspension_railway</code></td>
+<td style="text-align:center">:mountain_cableway:</td>
+<td><code>mountain_cableway</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:aerial_tramway:</td>
+<td><code>aerial_tramway</code></td>
+<td style="text-align:center">:artificial_satellite:</td>
+<td><code>artificial_satellite</code></td>
+</tr>
+<tr>
+<td style="text-align:center"><i class="fas fa-rocket fa-fw" aria-hidden="true"></i></td>
+<td><code>rocket</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="旅馆">旅馆</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">icon</th>
+<th>code</th>
+<th style="text-align:center">icon</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:bellhop_bell:</td>
+<td><code>bellhop_bell</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="时间">时间</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:hourglass:</td>
+<td><code>hourglass</code></td>
+<td style="text-align:center">:hourglass_flowing_sand:</td>
+<td><code>hourglass_flowing_sand</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:watch:</td>
+<td><code>watch</code></td>
+<td style="text-align:center">:alarm_clock:</td>
+<td><code>alarm_clock</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:stopwatch:</td>
+<td><code>stopwatch</code></td>
+<td style="text-align:center">:timer_clock:</td>
+<td><code>timer_clock</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mantelpiece_clock:</td>
+<td><code>mantelpiece_clock</code></td>
+<td style="text-align:center">:clock12:</td>
+<td><code>clock12</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock1230:</td>
+<td><code>clock1230</code></td>
+<td style="text-align:center">:clock1:</td>
+<td><code>clock1</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock130:</td>
+<td><code>clock130</code></td>
+<td style="text-align:center">:clock2:</td>
+<td><code>clock2</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock230:</td>
+<td><code>clock230</code></td>
+<td style="text-align:center">:clock3:</td>
+<td><code>clock3</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock330:</td>
+<td><code>clock330</code></td>
+<td style="text-align:center">:clock4:</td>
+<td><code>clock4</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock430:</td>
+<td><code>clock430</code></td>
+<td style="text-align:center">:clock5:</td>
+<td><code>clock5</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock530:</td>
+<td><code>clock530</code></td>
+<td style="text-align:center">:clock6:</td>
+<td><code>clock6</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock630:</td>
+<td><code>clock630</code></td>
+<td style="text-align:center">:clock7:</td>
+<td><code>clock7</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock730:</td>
+<td><code>clock730</code></td>
+<td style="text-align:center">:clock8:</td>
+<td><code>clock8</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock830:</td>
+<td><code>clock830</code></td>
+<td style="text-align:center">:clock9:</td>
+<td><code>clock9</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock930:</td>
+<td><code>clock930</code></td>
+<td style="text-align:center">:clock10:</td>
+<td><code>clock10</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock1030:</td>
+<td><code>clock1030</code></td>
+<td style="text-align:center">:clock11:</td>
+<td><code>clock11</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clock1130:</td>
+<td><code>clock1130</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="天空与天气">天空与天气</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:new_moon:</td>
+<td><code>new_moon</code></td>
+<td style="text-align:center">:waxing_crescent_moon:</td>
+<td><code>waxing_crescent_moon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:first_quarter_moon:</td>
+<td><code>first_quarter_moon</code></td>
+<td style="text-align:center">:moon:</td>
+<td><code>moon</code> <!-- raw HTML omitted --> <code>waxing_gibbous_moon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:full_moon:</td>
+<td><code>full_moon</code></td>
+<td style="text-align:center">:waning_gibbous_moon:</td>
+<td><code>waning_gibbous_moon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:last_quarter_moon:</td>
+<td><code>last_quarter_moon</code></td>
+<td style="text-align:center">:waning_crescent_moon:</td>
+<td><code>waning_crescent_moon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:crescent_moon:</td>
+<td><code>crescent_moon</code></td>
+<td style="text-align:center">:new_moon_with_face:</td>
+<td><code>new_moon_with_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:first_quarter_moon_with_face:</td>
+<td><code>first_quarter_moon_with_face</code></td>
+<td style="text-align:center">:last_quarter_moon_with_face:</td>
+<td><code>last_quarter_moon_with_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:thermometer:</td>
+<td><code>thermometer</code></td>
+<td style="text-align:center">:sunny:</td>
+<td><code>sunny</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:full_moon_with_face:</td>
+<td><code>full_moon_with_face</code></td>
+<td style="text-align:center">:sun_with_face:</td>
+<td><code>sun_with_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:star:</td>
+<td><code>star</code></td>
+<td style="text-align:center">:star2:</td>
+<td><code>star2</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:stars:</td>
+<td><code>stars</code></td>
+<td style="text-align:center">:milky_way:</td>
+<td><code>milky_way</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cloud:</td>
+<td><code>cloud</code></td>
+<td style="text-align:center">:partly_sunny:</td>
+<td><code>partly_sunny</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cloud_with_lightning_and_rain:</td>
+<td><code>cloud_with_lightning_and_rain</code></td>
+<td style="text-align:center">:sun_behind_small_cloud:</td>
+<td><code>sun_behind_small_cloud</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sun_behind_large_cloud:</td>
+<td><code>sun_behind_large_cloud</code></td>
+<td style="text-align:center">:sun_behind_rain_cloud:</td>
+<td><code>sun_behind_rain_cloud</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cloud_with_rain:</td>
+<td><code>cloud_with_rain</code></td>
+<td style="text-align:center">:cloud_with_snow:</td>
+<td><code>cloud_with_snow</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cloud_with_lightning:</td>
+<td><code>cloud_with_lightning</code></td>
+<td style="text-align:center">:tornado:</td>
+<td><code>tornado</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fog:</td>
+<td><code>fog</code></td>
+<td style="text-align:center">:wind_face:</td>
+<td><code>wind_face</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cyclone:</td>
+<td><code>cyclone</code></td>
+<td style="text-align:center">:rainbow:</td>
+<td><code>rainbow</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:closed_umbrella:</td>
+<td><code>closed_umbrella</code></td>
+<td style="text-align:center">:open_umbrella:</td>
+<td><code>open_umbrella</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:umbrella:</td>
+<td><code>umbrella</code></td>
+<td style="text-align:center">:parasol_on_ground:</td>
+<td><code>parasol_on_ground</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:zap:</td>
+<td><code>zap</code></td>
+<td style="text-align:center">:snowflake:</td>
+<td><code>snowflake</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:snowman_with_snow:</td>
+<td><code>snowman_with_snow</code></td>
+<td style="text-align:center">:snowman:</td>
+<td><code>snowman</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:comet:</td>
+<td><code>comet</code></td>
+<td style="text-align:center">:fire:</td>
+<td><code>fire</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:droplet:</td>
+<td><code>droplet</code></td>
+<td style="text-align:center">:ocean:</td>
+<td><code>ocean</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="活动">活动</h2>
+<h3 id="事件">事件</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:jack_o_lantern:</td>
+<td><code>jack_o_lantern</code></td>
+<td style="text-align:center">:christmas_tree:</td>
+<td><code>christmas_tree</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fireworks:</td>
+<td><code>fireworks</code></td>
+<td style="text-align:center">:sparkler:</td>
+<td><code>sparkler</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sparkles:</td>
+<td><code>sparkles</code></td>
+<td style="text-align:center">:balloon:</td>
+<td><code>balloon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tada:</td>
+<td><code>tada</code></td>
+<td style="text-align:center">:confetti_ball:</td>
+<td><code>confetti_ball</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tanabata_tree:</td>
+<td><code>tanabata_tree</code></td>
+<td style="text-align:center">:bamboo:</td>
+<td><code>bamboo</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dolls:</td>
+<td><code>dolls</code></td>
+<td style="text-align:center">:flags:</td>
+<td><code>flags</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wind_chime:</td>
+<td><code>wind_chime</code></td>
+<td style="text-align:center">:rice_scene:</td>
+<td><code>rice_scene</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ribbon:</td>
+<td><code>ribbon</code></td>
+<td style="text-align:center">:gift:</td>
+<td><code>gift</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:reminder_ribbon:</td>
+<td><code>reminder_ribbon</code></td>
+<td style="text-align:center">:tickets:</td>
+<td><code>tickets</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ticket:</td>
+<td><code>ticket</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="奖杯与奖牌">奖杯与奖牌</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:medal_military:</td>
+<td><code>medal_military</code></td>
+<td style="text-align:center">:trophy:</td>
+<td><code>trophy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:medal_sports:</td>
+<td><code>medal_sports</code></td>
+<td style="text-align:center">:1st_place_medal:</td>
+<td><code>1st_place_medal</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:2nd_place_medal:</td>
+<td><code>2nd_place_medal</code></td>
+<td style="text-align:center">:3rd_place_medal:</td>
+<td><code>3rd_place_medal</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="体育运动">体育运动</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:soccer:</td>
+<td><code>soccer</code></td>
+<td style="text-align:center">:baseball:</td>
+<td><code>baseball</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:basketball:</td>
+<td><code>basketball</code></td>
+<td style="text-align:center">:volleyball:</td>
+<td><code>volleyball</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:football:</td>
+<td><code>football</code></td>
+<td style="text-align:center">:rugby_football:</td>
+<td><code>rugby_football</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tennis:</td>
+<td><code>tennis</code></td>
+<td style="text-align:center">:bowling:</td>
+<td><code>bowling</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cricket:</td>
+<td><code>cricket</code></td>
+<td style="text-align:center">:field_hockey:</td>
+<td><code>field_hockey</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ice_hockey:</td>
+<td><code>ice_hockey</code></td>
+<td style="text-align:center">:ping_pong:</td>
+<td><code>ping_pong</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:badminton:</td>
+<td><code>badminton</code></td>
+<td style="text-align:center">:boxing_glove:</td>
+<td><code>boxing_glove</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:martial_arts_uniform:</td>
+<td><code>martial_arts_uniform</code></td>
+<td style="text-align:center">:goal_net:</td>
+<td><code>goal_net</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:golf:</td>
+<td><code>golf</code></td>
+<td style="text-align:center">:ice_skate:</td>
+<td><code>ice_skate</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fishing_pole_and_fish:</td>
+<td><code>fishing_pole_and_fish</code></td>
+<td style="text-align:center">:running_shirt_with_sash:</td>
+<td><code>running_shirt_with_sash</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ski:</td>
+<td><code>ski</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="游戏">游戏</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:dart:</td>
+<td><code>dart</code></td>
+<td style="text-align:center">:8ball:</td>
+<td><code>8ball</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:crystal_ball:</td>
+<td><code>crystal_ball</code></td>
+<td style="text-align:center">:video_game:</td>
+<td><code>video_game</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:joystick:</td>
+<td><code>joystick</code></td>
+<td style="text-align:center">:slot_machine:</td>
+<td><code>slot_machine</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:game_die:</td>
+<td><code>game_die</code></td>
+<td style="text-align:center">:spades:</td>
+<td><code>spades</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hearts:</td>
+<td><code>hearts</code></td>
+<td style="text-align:center">:diamonds:</td>
+<td><code>diamonds</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clubs:</td>
+<td><code>clubs</code></td>
+<td style="text-align:center">:black_joker:</td>
+<td><code>black_joker</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mahjong:</td>
+<td><code>mahjong</code></td>
+<td style="text-align:center">:flower_playing_cards:</td>
+<td><code>flower_playing_cards</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="艺术与工艺">艺术与工艺</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:performing_arts:</td>
+<td><code>performing_arts</code></td>
+<td style="text-align:center">:framed_picture:</td>
+<td><code>framed_picture</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:art:</td>
+<td><code>art</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="物品">物品</h2>
+<h3 id="服装">服装</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:eyeglasses:</td>
+<td><code>eyeglasses</code></td>
+<td style="text-align:center">:dark_sunglasses:</td>
+<td><code>dark_sunglasses</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:necktie:</td>
+<td><code>necktie</code></td>
+<td style="text-align:center">:shirt:</td>
+<td><code>shirt</code> <!-- raw HTML omitted --> <code>tshirt</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:jeans:</td>
+<td><code>jeans</code></td>
+<td style="text-align:center">:dress:</td>
+<td><code>dress</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kimono:</td>
+<td><code>kimono</code></td>
+<td style="text-align:center">:bikini:</td>
+<td><code>bikini</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:womans_clothes:</td>
+<td><code>womans_clothes</code></td>
+<td style="text-align:center">:purse:</td>
+<td><code>purse</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:handbag:</td>
+<td><code>handbag</code></td>
+<td style="text-align:center">:pouch:</td>
+<td><code>pouch</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:shopping:</td>
+<td><code>shopping</code></td>
+<td style="text-align:center">:school_satchel:</td>
+<td><code>school_satchel</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mans_shoe:</td>
+<td><code>mans_shoe</code> <!-- raw HTML omitted --> <code>shoe</code></td>
+<td style="text-align:center">:athletic_shoe:</td>
+<td><code>athletic_shoe</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:high_heel:</td>
+<td><code>high_heel</code></td>
+<td style="text-align:center">:sandal:</td>
+<td><code>sandal</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:boot:</td>
+<td><code>boot</code></td>
+<td style="text-align:center">:crown:</td>
+<td><code>crown</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:womans_hat:</td>
+<td><code>womans_hat</code></td>
+<td style="text-align:center">:tophat:</td>
+<td><code>tophat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mortar_board:</td>
+<td><code>mortar_board</code></td>
+<td style="text-align:center">:rescue_worker_helmet:</td>
+<td><code>rescue_worker_helmet</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:prayer_beads:</td>
+<td><code>prayer_beads</code></td>
+<td style="text-align:center">:lipstick:</td>
+<td><code>lipstick</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ring:</td>
+<td><code>ring</code></td>
+<td style="text-align:center">:gem:</td>
+<td><code>gem</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="声音">声音</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:mute:</td>
+<td><code>mute</code></td>
+<td style="text-align:center">:speaker:</td>
+<td><code>speaker</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sound:</td>
+<td><code>sound</code></td>
+<td style="text-align:center">:loud_sound:</td>
+<td><code>loud_sound</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:loudspeaker:</td>
+<td><code>loudspeaker</code></td>
+<td style="text-align:center">:mega:</td>
+<td><code>mega</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:postal_horn:</td>
+<td><code>postal_horn</code></td>
+<td style="text-align:center">:bell:</td>
+<td><code>bell</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:no_bell:</td>
+<td><code>no_bell</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="音乐">音乐</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:musical_score:</td>
+<td><code>musical_score</code></td>
+<td style="text-align:center">:musical_note:</td>
+<td><code>musical_note</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:notes:</td>
+<td><code>notes</code></td>
+<td style="text-align:center">:studio_microphone:</td>
+<td><code>studio_microphone</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:level_slider:</td>
+<td><code>level_slider</code></td>
+<td style="text-align:center">:control_knobs:</td>
+<td><code>control_knobs</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:microphone:</td>
+<td><code>microphone</code></td>
+<td style="text-align:center">:headphones:</td>
+<td><code>headphones</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:radio:</td>
+<td><code>radio</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="乐器">乐器</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:saxophone:</td>
+<td><code>saxophone</code></td>
+<td style="text-align:center">:guitar:</td>
+<td><code>guitar</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:musical_keyboard:</td>
+<td><code>musical_keyboard</code></td>
+<td style="text-align:center">:trumpet:</td>
+<td><code>trumpet</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:violin:</td>
+<td><code>violin</code></td>
+<td style="text-align:center">:drum:</td>
+<td><code>drum</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="电话">电话</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:iphone:</td>
+<td><code>iphone</code></td>
+<td style="text-align:center">:calling:</td>
+<td><code>calling</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:phone:</td>
+<td><code>phone</code> <!-- raw HTML omitted --> <code>telephone</code></td>
+<td style="text-align:center">:telephone_receiver:</td>
+<td><code>telephone_receiver</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pager:</td>
+<td><code>pager</code></td>
+<td style="text-align:center">:fax:</td>
+<td><code>fax</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="电脑">电脑</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:battery:</td>
+<td><code>battery</code></td>
+<td style="text-align:center">:electric_plug:</td>
+<td><code>electric_plug</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:computer:</td>
+<td><code>computer</code></td>
+<td style="text-align:center">:desktop_computer:</td>
+<td><code>desktop_computer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:printer:</td>
+<td><code>printer</code></td>
+<td style="text-align:center">:keyboard:</td>
+<td><code>keyboard</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:computer_mouse:</td>
+<td><code>computer_mouse</code></td>
+<td style="text-align:center">:trackball:</td>
+<td><code>trackball</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:minidisc:</td>
+<td><code>minidisc</code></td>
+<td style="text-align:center">:floppy_disk:</td>
+<td><code>floppy_disk</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cd:</td>
+<td><code>cd</code></td>
+<td style="text-align:center">:dvd:</td>
+<td><code>dvd</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="灯光与影像">灯光与影像</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:movie_camera:</td>
+<td><code>movie_camera</code></td>
+<td style="text-align:center">:film_strip:</td>
+<td><code>film_strip</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:film_projector:</td>
+<td><code>film_projector</code></td>
+<td style="text-align:center">:clapper:</td>
+<td><code>clapper</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tv:</td>
+<td><code>tv</code></td>
+<td style="text-align:center">:camera:</td>
+<td><code>camera</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:camera_flash:</td>
+<td><code>camera_flash</code></td>
+<td style="text-align:center">:video_camera:</td>
+<td><code>video_camera</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:vhs:</td>
+<td><code>vhs</code></td>
+<td style="text-align:center">:mag:</td>
+<td><code>mag</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mag_right:</td>
+<td><code>mag_right</code></td>
+<td style="text-align:center">:candle:</td>
+<td><code>candle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bulb:</td>
+<td><code>bulb</code></td>
+<td style="text-align:center">:flashlight:</td>
+<td><code>flashlight</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:izakaya_lantern:</td>
+<td><code>izakaya_lantern</code> <!-- raw HTML omitted --> <code>lantern</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="书与纸张">书与纸张</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:notebook_with_decorative_cover:</td>
+<td><code>notebook_with_decorative_cover</code></td>
+<td style="text-align:center">:closed_book:</td>
+<td><code>closed_book</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:book:</td>
+<td><code>book</code> <!-- raw HTML omitted --> <code>open_book</code></td>
+<td style="text-align:center">:green_book:</td>
+<td><code>green_book</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:blue_book:</td>
+<td><code>blue_book</code></td>
+<td style="text-align:center">:orange_book:</td>
+<td><code>orange_book</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:books:</td>
+<td><code>books</code></td>
+<td style="text-align:center">:notebook:</td>
+<td><code>notebook</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ledger:</td>
+<td><code>ledger</code></td>
+<td style="text-align:center">:page_with_curl:</td>
+<td><code>page_with_curl</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:scroll:</td>
+<td><code>scroll</code></td>
+<td style="text-align:center">:page_facing_up:</td>
+<td><code>page_facing_up</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:newspaper:</td>
+<td><code>newspaper</code></td>
+<td style="text-align:center">:newspaper_roll:</td>
+<td><code>newspaper_roll</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bookmark_tabs:</td>
+<td><code>bookmark_tabs</code></td>
+<td style="text-align:center">:bookmark:</td>
+<td><code>bookmark</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:label:</td>
+<td><code>label</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="钱">钱</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:moneybag:</td>
+<td><code>moneybag</code></td>
+<td style="text-align:center">:yen:</td>
+<td><code>yen</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dollar:</td>
+<td><code>dollar</code></td>
+<td style="text-align:center">:euro:</td>
+<td><code>euro</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pound:</td>
+<td><code>pound</code></td>
+<td style="text-align:center">:money_with_wings:</td>
+<td><code>money_with_wings</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:credit_card:</td>
+<td><code>credit_card</code></td>
+<td style="text-align:center">:chart:</td>
+<td><code>chart</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="邮件">邮件</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:email:</td>
+<td><code>email</code> <!-- raw HTML omitted --> <code>envelope</code></td>
+<td style="text-align:center">:e-mail:</td>
+<td><code>:e-mail:</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:incoming_envelope:</td>
+<td><code>incoming_envelope</code></td>
+<td style="text-align:center">:envelope_with_arrow:</td>
+<td><code>envelope_with_arrow</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:outbox_tray:</td>
+<td><code>outbox_tray</code></td>
+<td style="text-align:center">:inbox_tray:</td>
+<td><code>inbox_tray</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:package:</td>
+<td><code>package</code></td>
+<td style="text-align:center">:mailbox:</td>
+<td><code>mailbox</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mailbox_closed:</td>
+<td><code>mailbox_closed</code></td>
+<td style="text-align:center">:mailbox_with_mail:</td>
+<td><code>mailbox_with_mail</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mailbox_with_no_mail:</td>
+<td><code>mailbox_with_no_mail</code></td>
+<td style="text-align:center">:postbox:</td>
+<td><code>postbox</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ballot_box:</td>
+<td><code>ballot_box</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="书写">书写</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:pencil2:</td>
+<td><code>pencil2</code></td>
+<td style="text-align:center">:black_nib:</td>
+<td><code>black_nib</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fountain_pen:</td>
+<td><code>fountain_pen</code></td>
+<td style="text-align:center">:pen:</td>
+<td><code>pen</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:paintbrush:</td>
+<td><code>paintbrush</code></td>
+<td style="text-align:center">:crayon:</td>
+<td><code>crayon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:memo:</td>
+<td><code>memo</code> <!-- raw HTML omitted --> <code>pencil</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="办公">办公</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:briefcase:</td>
+<td><code>briefcase</code></td>
+<td style="text-align:center">:file_folder:</td>
+<td><code>file_folder</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:open_file_folder:</td>
+<td><code>open_file_folder</code></td>
+<td style="text-align:center">:card_index_dividers:</td>
+<td><code>card_index_dividers</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:date:</td>
+<td><code>date</code></td>
+<td style="text-align:center">:calendar:</td>
+<td><code>calendar</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:spiral_notepad:</td>
+<td><code>spiral_notepad</code></td>
+<td style="text-align:center">:spiral_calendar:</td>
+<td><code>spiral_calendar</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:card_index:</td>
+<td><code>card_index</code></td>
+<td style="text-align:center">:chart_with_upwards_trend:</td>
+<td><code>chart_with_upwards_trend</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:chart_with_downwards_trend:</td>
+<td><code>chart_with_downwards_trend</code></td>
+<td style="text-align:center">:bar_chart:</td>
+<td><code>bar_chart</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clipboard:</td>
+<td><code>clipboard</code></td>
+<td style="text-align:center">:pushpin:</td>
+<td><code>pushpin</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:round_pushpin:</td>
+<td><code>round_pushpin</code></td>
+<td style="text-align:center">:paperclip:</td>
+<td><code>paperclip</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:paperclips:</td>
+<td><code>paperclips</code></td>
+<td style="text-align:center">:straight_ruler:</td>
+<td><code>straight_ruler</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:triangular_ruler:</td>
+<td><code>triangular_ruler</code></td>
+<td style="text-align:center">:scissors:</td>
+<td><code>scissors</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:card_file_box:</td>
+<td><code>card_file_box</code></td>
+<td style="text-align:center">:file_cabinet:</td>
+<td><code>file_cabinet</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wastebasket:</td>
+<td><code>wastebasket</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="锁">锁</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:lock:</td>
+<td><code>lock</code></td>
+<td style="text-align:center">:unlock:</td>
+<td><code>unlock</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lock_with_ink_pen:</td>
+<td><code>lock_with_ink_pen</code></td>
+<td style="text-align:center">:closed_lock_with_key:</td>
+<td><code>closed_lock_with_key</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:key:</td>
+<td><code>key</code></td>
+<td style="text-align:center">:old_key:</td>
+<td><code>old_key</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="工具">工具</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:hammer:</td>
+<td><code>hammer</code></td>
+<td style="text-align:center">:pick:</td>
+<td><code>pick</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hammer_and_pick:</td>
+<td><code>hammer_and_pick</code></td>
+<td style="text-align:center">:hammer_and_wrench:</td>
+<td><code>hammer_and_wrench</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dagger:</td>
+<td><code>dagger</code></td>
+<td style="text-align:center">:crossed_swords:</td>
+<td><code>crossed_swords</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:gun:</td>
+<td><code>gun</code></td>
+<td style="text-align:center">:bow_and_arrow:</td>
+<td><code>bow_and_arrow</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:shield:</td>
+<td><code>shield</code></td>
+<td style="text-align:center">:wrench:</td>
+<td><code>wrench</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:nut_and_bolt:</td>
+<td><code>nut_and_bolt</code></td>
+<td style="text-align:center">:gear:</td>
+<td><code>gear</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:clamp:</td>
+<td><code>clamp</code></td>
+<td style="text-align:center">:balance_scale:</td>
+<td><code>balance_scale</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:link:</td>
+<td><code>link</code></td>
+<td style="text-align:center">:chains:</td>
+<td><code>chains</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="科学">科学</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:alembic:</td>
+<td><code>alembic</code></td>
+<td style="text-align:center">:microscope:</td>
+<td><code>microscope</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:telescope:</td>
+<td><code>telescope</code></td>
+<td style="text-align:center">:satellite:</td>
+<td><code>satellite</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="医疗">医疗</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:syringe:</td>
+<td><code>syringe</code></td>
+<td style="text-align:center">:pill:</td>
+<td><code>pill</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="生活用品">生活用品</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:door:</td>
+<td><code>door</code></td>
+<td style="text-align:center">:bed:</td>
+<td><code>bed</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:couch_and_lamp:</td>
+<td><code>couch_and_lamp</code></td>
+<td style="text-align:center">:toilet:</td>
+<td><code>toilet</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:shower:</td>
+<td><code>shower</code></td>
+<td style="text-align:center">:bathtub:</td>
+<td><code>bathtub</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:shopping_cart:</td>
+<td><code>shopping_cart</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它物品">其它物品</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:smoking:</td>
+<td><code>smoking</code></td>
+<td style="text-align:center">:coffin:</td>
+<td><code>coffin</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:funeral_urn:</td>
+<td><code>funeral_urn</code></td>
+<td style="text-align:center">:moyai:</td>
+<td><code>moyai</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="符号">符号</h2>
+<h3 id="交通标识">交通标识</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:atm:</td>
+<td><code>atm</code></td>
+<td style="text-align:center">:put_litter_in_its_place:</td>
+<td><code>put_litter_in_its_place</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:potable_water:</td>
+<td><code>potable_water</code></td>
+<td style="text-align:center">:wheelchair:</td>
+<td><code>wheelchair</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mens:</td>
+<td><code>mens</code></td>
+<td style="text-align:center">:womens:</td>
+<td><code>womens</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:restroom:</td>
+<td><code>restroom</code></td>
+<td style="text-align:center">:baby_symbol:</td>
+<td><code>baby_symbol</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wc:</td>
+<td><code>wc</code></td>
+<td style="text-align:center">:passport_control:</td>
+<td><code>passport_control</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:customs:</td>
+<td><code>customs</code></td>
+<td style="text-align:center">:baggage_claim:</td>
+<td><code>baggage_claim</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:left_luggage:</td>
+<td><code>left_luggage</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="警告">警告</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:warning:</td>
+<td><code>warning</code></td>
+<td style="text-align:center">:children_crossing:</td>
+<td><code>children_crossing</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:no_entry:</td>
+<td><code>no_entry</code></td>
+<td style="text-align:center">:no_entry_sign:</td>
+<td><code>no_entry_sign</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:no_bicycles:</td>
+<td><code>no_bicycles</code></td>
+<td style="text-align:center">:no_smoking:</td>
+<td><code>no_smoking</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:do_not_litter:</td>
+<td><code>do_not_litter</code></td>
+<td style="text-align:center">:non-potable_water:</td>
+<td><code>:non-potable_water:</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:no_pedestrians:</td>
+<td><code>no_pedestrians</code></td>
+<td style="text-align:center">:no_mobile_phones:</td>
+<td><code>no_mobile_phones</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:underage:</td>
+<td><code>underage</code></td>
+<td style="text-align:center">:radioactive:</td>
+<td><code>radioactive</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:biohazard:</td>
+<td><code>biohazard</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="箭头">箭头</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:arrow_up:</td>
+<td><code>arrow_up</code></td>
+<td style="text-align:center">:arrow_upper_right:</td>
+<td><code>arrow_upper_right</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_right:</td>
+<td><code>arrow_right</code></td>
+<td style="text-align:center">:arrow_lower_right:</td>
+<td><code>arrow_lower_right</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_down:</td>
+<td><code>arrow_down</code></td>
+<td style="text-align:center">:arrow_lower_left:</td>
+<td><code>arrow_lower_left</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_left:</td>
+<td><code>arrow_left</code></td>
+<td style="text-align:center">:arrow_upper_left:</td>
+<td><code>arrow_upper_left</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_up_down:</td>
+<td><code>arrow_up_down</code></td>
+<td style="text-align:center">:left_right_arrow:</td>
+<td><code>left_right_arrow</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:leftwards_arrow_with_hook:</td>
+<td><code>leftwards_arrow_with_hook</code></td>
+<td style="text-align:center">:arrow_right_hook:</td>
+<td><code>arrow_right_hook</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_heading_up:</td>
+<td><code>arrow_heading_up</code></td>
+<td style="text-align:center">:arrow_heading_down:</td>
+<td><code>arrow_heading_down</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrows_clockwise:</td>
+<td><code>arrows_clockwise</code></td>
+<td style="text-align:center">:arrows_counterclockwise:</td>
+<td><code>arrows_counterclockwise</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:back:</td>
+<td><code>back</code></td>
+<td style="text-align:center">:end:</td>
+<td><code>end</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:on:</td>
+<td><code>on</code></td>
+<td style="text-align:center">:soon:</td>
+<td><code>soon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:top:</td>
+<td><code>top</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="宗教">宗教</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:place_of_worship:</td>
+<td><code>place_of_worship</code></td>
+<td style="text-align:center">:atom_symbol:</td>
+<td><code>atom_symbol</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:om:</td>
+<td><code>om</code></td>
+<td style="text-align:center">:star_of_david:</td>
+<td><code>star_of_david</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wheel_of_dharma:</td>
+<td><code>wheel_of_dharma</code></td>
+<td style="text-align:center">:yin_yang:</td>
+<td><code>yin_yang</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:latin_cross:</td>
+<td><code>latin_cross</code></td>
+<td style="text-align:center">:orthodox_cross:</td>
+<td><code>orthodox_cross</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:star_and_crescent:</td>
+<td><code>star_and_crescent</code></td>
+<td style="text-align:center">:peace_symbol:</td>
+<td><code>peace_symbol</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:menorah:</td>
+<td><code>menorah</code></td>
+<td style="text-align:center">:six_pointed_star:</td>
+<td><code>six_pointed_star</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="生肖">生肖</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:aries:</td>
+<td><code>aries</code></td>
+<td style="text-align:center">:taurus:</td>
+<td><code>taurus</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:gemini:</td>
+<td><code>gemini</code></td>
+<td style="text-align:center">:cancer:</td>
+<td><code>cancer</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:leo:</td>
+<td><code>leo</code></td>
+<td style="text-align:center">:virgo:</td>
+<td><code>virgo</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:libra:</td>
+<td><code>libra</code></td>
+<td style="text-align:center">:scorpius:</td>
+<td><code>scorpius</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sagittarius:</td>
+<td><code>sagittarius</code></td>
+<td style="text-align:center">:capricorn:</td>
+<td><code>capricorn</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:aquarius:</td>
+<td><code>aquarius</code></td>
+<td style="text-align:center">:pisces:</td>
+<td><code>pisces</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ophiuchus:</td>
+<td><code>ophiuchus</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="影像符号">影像符号</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:twisted_rightwards_arrows:</td>
+<td><code>twisted_rightwards_arrows</code></td>
+<td style="text-align:center">:repeat:</td>
+<td><code>repeat</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:repeat_one:</td>
+<td><code>repeat_one</code></td>
+<td style="text-align:center">:arrow_forward:</td>
+<td><code>arrow_forward</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fast_forward:</td>
+<td><code>fast_forward</code></td>
+<td style="text-align:center">:next_track_button:</td>
+<td><code>next_track_button</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:play_or_pause_button:</td>
+<td><code>play_or_pause_button</code></td>
+<td style="text-align:center">:arrow_backward:</td>
+<td><code>arrow_backward</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rewind:</td>
+<td><code>rewind</code></td>
+<td style="text-align:center">:previous_track_button:</td>
+<td><code>previous_track_button</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_up_small:</td>
+<td><code>arrow_up_small</code></td>
+<td style="text-align:center">:arrow_double_up:</td>
+<td><code>arrow_double_up</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:arrow_down_small:</td>
+<td><code>arrow_down_small</code></td>
+<td style="text-align:center">:arrow_double_down:</td>
+<td><code>arrow_double_down</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pause_button:</td>
+<td><code>pause_button</code></td>
+<td style="text-align:center">:stop_button:</td>
+<td><code>stop_button</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:record_button:</td>
+<td><code>record_button</code></td>
+<td style="text-align:center">:cinema:</td>
+<td><code>cinema</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:low_brightness:</td>
+<td><code>low_brightness</code></td>
+<td style="text-align:center">:high_brightness:</td>
+<td><code>high_brightness</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:signal_strength:</td>
+<td><code>signal_strength</code></td>
+<td style="text-align:center">:vibration_mode:</td>
+<td><code>vibration_mode</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mobile_phone_off:</td>
+<td><code>mobile_phone_off</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="数学">数学</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:heavy_multiplication_x:</td>
+<td><code>heavy_multiplication_x</code></td>
+<td style="text-align:center">:heavy_plus_sign:</td>
+<td><code>heavy_plus_sign</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:heavy_minus_sign:</td>
+<td><code>heavy_minus_sign</code></td>
+<td style="text-align:center">:heavy_division_sign:</td>
+<td><code>heavy_division_sign</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="标点符号">标点符号</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:bangbang:</td>
+<td><code>bangbang</code></td>
+<td style="text-align:center">:interrobang:</td>
+<td><code>interrobang</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:question:</td>
+<td><code>question</code></td>
+<td style="text-align:center">:grey_question:</td>
+<td><code>grey_question</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:grey_exclamation:</td>
+<td><code>grey_exclamation</code></td>
+<td style="text-align:center">:exclamation:</td>
+<td><code>exclamation</code> <!-- raw HTML omitted --> <code>heavy_exclamation_mark</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:wavy_dash:</td>
+<td><code>wavy_dash</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="货币">货币</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:currency_exchange:</td>
+<td><code>currency_exchange</code></td>
+<td style="text-align:center">:heavy_dollar_sign:</td>
+<td><code>heavy_dollar_sign</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="按键符号">按键符号</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:hash:</td>
+<td><code>hash</code></td>
+<td style="text-align:center">:asterisk:</td>
+<td><code>asterisk</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:zero:</td>
+<td><code>zero</code></td>
+<td style="text-align:center">:one:</td>
+<td><code>one</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:two:</td>
+<td><code>two</code></td>
+<td style="text-align:center">:three:</td>
+<td><code>three</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:four:</td>
+<td><code>four</code></td>
+<td style="text-align:center">:five:</td>
+<td><code>five</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:six:</td>
+<td><code>six</code></td>
+<td style="text-align:center">:seven:</td>
+<td><code>seven</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:eight:</td>
+<td><code>eight</code></td>
+<td style="text-align:center">:nine:</td>
+<td><code>nine</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:keycap_ten:</td>
+<td><code>keycap_ten</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="字母符号">字母符号</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:capital_abcd:</td>
+<td><code>capital_abcd</code></td>
+<td style="text-align:center">:abcd:</td>
+<td><code>abcd</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:1234:</td>
+<td><code>1234</code></td>
+<td style="text-align:center">:symbols:</td>
+<td><code>symbols</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:abc:</td>
+<td><code>abc</code></td>
+<td style="text-align:center">:a:</td>
+<td><code>a</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:ab:</td>
+<td><code>ab</code></td>
+<td style="text-align:center">:b:</td>
+<td><code>b</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cl:</td>
+<td><code>cl</code></td>
+<td style="text-align:center">:cool:</td>
+<td><code>cool</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:free:</td>
+<td><code>free</code></td>
+<td style="text-align:center">:information_source:</td>
+<td><code>information_source</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:id:</td>
+<td><code>id</code></td>
+<td style="text-align:center">:m:</td>
+<td><code>m</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:new:</td>
+<td><code>new</code></td>
+<td style="text-align:center">:ng:</td>
+<td><code>ng</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:o2:</td>
+<td><code>o2</code></td>
+<td style="text-align:center">:ok:</td>
+<td><code>ok</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:parking:</td>
+<td><code>parking</code></td>
+<td style="text-align:center">:sos:</td>
+<td><code>sos</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:up:</td>
+<td><code>up</code></td>
+<td style="text-align:center">:vs:</td>
+<td><code>vs</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:koko:</td>
+<td><code>koko</code></td>
+<td style="text-align:center">:sa:</td>
+<td><code>sa</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u6708:</td>
+<td><code>u6708</code></td>
+<td style="text-align:center">:u6709:</td>
+<td><code>u6709</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u6307:</td>
+<td><code>u6307</code></td>
+<td style="text-align:center">:ideograph_advantage:</td>
+<td><code>ideograph_advantage</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u5272:</td>
+<td><code>u5272</code></td>
+<td style="text-align:center">:u7121:</td>
+<td><code>u7121</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u7981:</td>
+<td><code>u7981</code></td>
+<td style="text-align:center">:accept:</td>
+<td><code>accept</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u7533:</td>
+<td><code>u7533</code></td>
+<td style="text-align:center">:u5408:</td>
+<td><code>u5408</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u7a7a:</td>
+<td><code>u7a7a</code></td>
+<td style="text-align:center">:congratulations:</td>
+<td><code>congratulations</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:secret:</td>
+<td><code>secret</code></td>
+<td style="text-align:center">:u55b6:</td>
+<td><code>u55b6</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:u6e80:</td>
+<td><code>u6e80</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="几何符号">几何符号</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:red_circle:</td>
+<td><code>red_circle</code></td>
+<td style="text-align:center">:large_blue_circle:</td>
+<td><code>large_blue_circle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:black_circle:</td>
+<td><code>black_circle</code></td>
+<td style="text-align:center">:white_circle:</td>
+<td><code>white_circle</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:black_large_square:</td>
+<td><code>black_large_square</code></td>
+<td style="text-align:center">:white_large_square:</td>
+<td><code>white_large_square</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:black_medium_square:</td>
+<td><code>black_medium_square</code></td>
+<td style="text-align:center">:white_medium_square:</td>
+<td><code>white_medium_square</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:black_medium_small_square:</td>
+<td><code>black_medium_small_square</code></td>
+<td style="text-align:center">:white_medium_small_square:</td>
+<td><code>white_medium_small_square</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:black_small_square:</td>
+<td><code>black_small_square</code></td>
+<td style="text-align:center">:white_small_square:</td>
+<td><code>white_small_square</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:large_orange_diamond:</td>
+<td><code>large_orange_diamond</code></td>
+<td style="text-align:center">:large_blue_diamond:</td>
+<td><code>large_blue_diamond</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:small_orange_diamond:</td>
+<td><code>small_orange_diamond</code></td>
+<td style="text-align:center">:small_blue_diamond:</td>
+<td><code>small_blue_diamond</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:small_red_triangle:</td>
+<td><code>small_red_triangle</code></td>
+<td style="text-align:center">:small_red_triangle_down:</td>
+<td><code>small_red_triangle_down</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:diamond_shape_with_a_dot_inside:</td>
+<td><code>diamond_shape_with_a_dot_inside</code></td>
+<td style="text-align:center">:radio_button:</td>
+<td><code>radio_button</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:white_square_button:</td>
+<td><code>white_square_button</code></td>
+<td style="text-align:center">:black_square_button:</td>
+<td><code>black_square_button</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="其它符合">其它符合</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:recycle:</td>
+<td><code>recycle</code></td>
+<td style="text-align:center">:fleur_de_lis:</td>
+<td><code>fleur_de_lis</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:trident:</td>
+<td><code>trident</code></td>
+<td style="text-align:center">:name_badge:</td>
+<td><code>name_badge</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:beginner:</td>
+<td><code>beginner</code></td>
+<td style="text-align:center">:o:</td>
+<td><code>o</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:white_check_mark:</td>
+<td><code>white_check_mark</code></td>
+<td style="text-align:center">:ballot_box_with_check:</td>
+<td><code>ballot_box_with_check</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:heavy_check_mark:</td>
+<td><code>heavy_check_mark</code></td>
+<td style="text-align:center">:x:</td>
+<td><code>x</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:negative_squared_cross_mark:</td>
+<td><code>negative_squared_cross_mark</code></td>
+<td style="text-align:center">:curly_loop:</td>
+<td><code>curly_loop</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:loop:</td>
+<td><code>loop</code></td>
+<td style="text-align:center">:part_alternation_mark:</td>
+<td><code>part_alternation_mark</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:eight_spoked_asterisk:</td>
+<td><code>eight_spoked_asterisk</code></td>
+<td style="text-align:center">:eight_pointed_black_star:</td>
+<td><code>eight_pointed_black_star</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sparkle:</td>
+<td><code>sparkle</code></td>
+<td style="text-align:center">:copyright:</td>
+<td><code>copyright</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:registered:</td>
+<td><code>registered</code></td>
+<td style="text-align:center">:tm:</td>
+<td><code>tm</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="旗帜">旗帜</h2>
+<h3 id="常用旗帜">常用旗帜</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:checkered_flag:</td>
+<td><code>checkered_flag</code></td>
+<td style="text-align:center">:triangular_flag_on_post:</td>
+<td><code>triangular_flag_on_post</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:crossed_flags:</td>
+<td><code>crossed_flags</code></td>
+<td style="text-align:center">:black_flag:</td>
+<td><code>black_flag</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:white_flag:</td>
+<td><code>white_flag</code></td>
+<td style="text-align:center">:rainbow_flag:</td>
+<td><code>rainbow_flag</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="国家和地区旗帜">国家和地区旗帜</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+<th style="text-align:center">图标</th>
+<th>代码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">:andorra:</td>
+<td><code>andorra</code></td>
+<td style="text-align:center">:united_arab_emirates:</td>
+<td><code>united_arab_emirates</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:afghanistan:</td>
+<td><code>afghanistan</code></td>
+<td style="text-align:center">:antigua_barbuda:</td>
+<td><code>antigua_barbuda</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:anguilla:</td>
+<td><code>anguilla</code></td>
+<td style="text-align:center">:albania:</td>
+<td><code>albania</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:armenia:</td>
+<td><code>armenia</code></td>
+<td style="text-align:center">:angola:</td>
+<td><code>angola</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:antarctica:</td>
+<td><code>antarctica</code></td>
+<td style="text-align:center">:argentina:</td>
+<td><code>argentina</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:american_samoa:</td>
+<td><code>american_samoa</code></td>
+<td style="text-align:center">:austria:</td>
+<td><code>austria</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:australia:</td>
+<td><code>australia</code></td>
+<td style="text-align:center">:aruba:</td>
+<td><code>aruba</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:aland_islands:</td>
+<td><code>aland_islands</code></td>
+<td style="text-align:center">:azerbaijan:</td>
+<td><code>azerbaijan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bosnia_herzegovina:</td>
+<td><code>bosnia_herzegovina</code></td>
+<td style="text-align:center">:barbados:</td>
+<td><code>barbados</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bangladesh:</td>
+<td><code>bangladesh</code></td>
+<td style="text-align:center">:belgium:</td>
+<td><code>belgium</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:burkina_faso:</td>
+<td><code>burkina_faso</code></td>
+<td style="text-align:center">:bulgaria:</td>
+<td><code>bulgaria</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bahrain:</td>
+<td><code>bahrain</code></td>
+<td style="text-align:center">:burundi:</td>
+<td><code>burundi</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:benin:</td>
+<td><code>benin</code></td>
+<td style="text-align:center">:st_barthelemy:</td>
+<td><code>st_barthelemy</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bermuda:</td>
+<td><code>bermuda</code></td>
+<td style="text-align:center">:brunei:</td>
+<td><code>brunei</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bolivia:</td>
+<td><code>bolivia</code></td>
+<td style="text-align:center">:caribbean_netherlands:</td>
+<td><code>caribbean_netherlands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:brazil:</td>
+<td><code>brazil</code></td>
+<td style="text-align:center">:bahamas:</td>
+<td><code>bahamas</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:bhutan:</td>
+<td><code>bhutan</code></td>
+<td style="text-align:center">:botswana:</td>
+<td><code>botswana</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:belarus:</td>
+<td><code>belarus</code></td>
+<td style="text-align:center">:belize:</td>
+<td><code>belize</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:canada:</td>
+<td><code>canada</code></td>
+<td style="text-align:center">:cocos_islands:</td>
+<td><code>cocos_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:congo_kinshasa:</td>
+<td><code>congo_kinshasa</code></td>
+<td style="text-align:center">:central_african_republic:</td>
+<td><code>central_african_republic</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:congo_brazzaville:</td>
+<td><code>congo_brazzaville</code></td>
+<td style="text-align:center">:switzerland:</td>
+<td><code>switzerland</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cote_divoire:</td>
+<td><code>cote_divoire</code></td>
+<td style="text-align:center">:cook_islands:</td>
+<td><code>cook_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:chile:</td>
+<td><code>chile</code></td>
+<td style="text-align:center">:cameroon:</td>
+<td><code>cameroon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cn:</td>
+<td><code>cn</code></td>
+<td style="text-align:center">:colombia:</td>
+<td><code>colombia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:costa_rica:</td>
+<td><code>costa_rica</code></td>
+<td style="text-align:center">:cuba:</td>
+<td><code>cuba</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cape_verde:</td>
+<td><code>cape_verde</code></td>
+<td style="text-align:center">:curacao:</td>
+<td><code>curacao</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:christmas_island:</td>
+<td><code>christmas_island</code></td>
+<td style="text-align:center">:cyprus:</td>
+<td><code>cyprus</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:czech_republic:</td>
+<td><code>czech_republic</code></td>
+<td style="text-align:center">:de:</td>
+<td><code>de</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:djibouti:</td>
+<td><code>djibouti</code></td>
+<td style="text-align:center">:denmark:</td>
+<td><code>denmark</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:dominica:</td>
+<td><code>dominica</code></td>
+<td style="text-align:center">:dominican_republic:</td>
+<td><code>dominican_republic</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:algeria:</td>
+<td><code>algeria</code></td>
+<td style="text-align:center">:ecuador:</td>
+<td><code>ecuador</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:estonia:</td>
+<td><code>estonia</code></td>
+<td style="text-align:center">:egypt:</td>
+<td><code>egypt</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:western_sahara:</td>
+<td><code>western_sahara</code></td>
+<td style="text-align:center">:eritrea:</td>
+<td><code>eritrea</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:es:</td>
+<td><code>es</code></td>
+<td style="text-align:center">:ethiopia:</td>
+<td><code>ethiopia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:eu:</td>
+<td><code>eu</code> <!-- raw HTML omitted --> <code>european_union</code></td>
+<td style="text-align:center">:finland:</td>
+<td><code>finland</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fiji:</td>
+<td><code>fiji</code></td>
+<td style="text-align:center">:falkland_islands:</td>
+<td><code>falkland_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:micronesia:</td>
+<td><code>micronesia</code></td>
+<td style="text-align:center">:faroe_islands:</td>
+<td><code>faroe_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:fr:</td>
+<td><code>fr</code></td>
+<td style="text-align:center">:gabon:</td>
+<td><code>gabon</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:gb:</td>
+<td><code>gb</code> <!-- raw HTML omitted --> <code>uk</code></td>
+<td style="text-align:center">:grenada:</td>
+<td><code>grenada</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:georgia:</td>
+<td><code>georgia</code></td>
+<td style="text-align:center">:french_guiana:</td>
+<td><code>french_guiana</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:guernsey:</td>
+<td><code>guernsey</code></td>
+<td style="text-align:center">:ghana:</td>
+<td><code>ghana</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:gibraltar:</td>
+<td><code>gibraltar</code></td>
+<td style="text-align:center">:greenland:</td>
+<td><code>greenland</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:gambia:</td>
+<td><code>gambia</code></td>
+<td style="text-align:center">:guinea:</td>
+<td><code>guinea</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:guadeloupe:</td>
+<td><code>guadeloupe</code></td>
+<td style="text-align:center">:equatorial_guinea:</td>
+<td><code>equatorial_guinea</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:greece:</td>
+<td><code>greece</code></td>
+<td style="text-align:center">:south_georgia_south_sandwich_islands:</td>
+<td><code>south_georgia_south_sandwich_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:guatemala:</td>
+<td><code>guatemala</code></td>
+<td style="text-align:center">:guam:</td>
+<td><code>guam</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:guinea_bissau:</td>
+<td><code>guinea_bissau</code></td>
+<td style="text-align:center">:guyana:</td>
+<td><code>guyana</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hong_kong:</td>
+<td><code>hong_kong</code></td>
+<td style="text-align:center">:honduras:</td>
+<td><code>honduras</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:croatia:</td>
+<td><code>croatia</code></td>
+<td style="text-align:center">:haiti:</td>
+<td><code>haiti</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:hungary:</td>
+<td><code>hungary</code></td>
+<td style="text-align:center">:canary_islands:</td>
+<td><code>canary_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:indonesia:</td>
+<td><code>indonesia</code></td>
+<td style="text-align:center">:ireland:</td>
+<td><code>ireland</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:israel:</td>
+<td><code>israel</code></td>
+<td style="text-align:center">:isle_of_man:</td>
+<td><code>isle_of_man</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:india:</td>
+<td><code>india</code></td>
+<td style="text-align:center">:british_indian_ocean_territory:</td>
+<td><code>british_indian_ocean_territory</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:iraq:</td>
+<td><code>iraq</code></td>
+<td style="text-align:center">:iran:</td>
+<td><code>iran</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:iceland:</td>
+<td><code>iceland</code></td>
+<td style="text-align:center">:it:</td>
+<td><code>it</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:jersey:</td>
+<td><code>jersey</code></td>
+<td style="text-align:center">:jamaica:</td>
+<td><code>jamaica</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:jordan:</td>
+<td><code>jordan</code></td>
+<td style="text-align:center">:jp:</td>
+<td><code>jp</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kenya:</td>
+<td><code>kenya</code></td>
+<td style="text-align:center">:kyrgyzstan:</td>
+<td><code>kyrgyzstan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:cambodia:</td>
+<td><code>cambodia</code></td>
+<td style="text-align:center">:kiribati:</td>
+<td><code>kiribati</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:comoros:</td>
+<td><code>comoros</code></td>
+<td style="text-align:center">:st_kitts_nevis:</td>
+<td><code>st_kitts_nevis</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:north_korea:</td>
+<td><code>north_korea</code></td>
+<td style="text-align:center">:kr:</td>
+<td><code>kr</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kuwait:</td>
+<td><code>kuwait</code></td>
+<td style="text-align:center">:cayman_islands:</td>
+<td><code>cayman_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:kazakhstan:</td>
+<td><code>kazakhstan</code></td>
+<td style="text-align:center">:laos:</td>
+<td><code>laos</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lebanon:</td>
+<td><code>lebanon</code></td>
+<td style="text-align:center">:st_lucia:</td>
+<td><code>st_lucia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:liechtenstein:</td>
+<td><code>liechtenstein</code></td>
+<td style="text-align:center">:sri_lanka:</td>
+<td><code>sri_lanka</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:liberia:</td>
+<td><code>liberia</code></td>
+<td style="text-align:center">:lesotho:</td>
+<td><code>lesotho</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:lithuania:</td>
+<td><code>lithuania</code></td>
+<td style="text-align:center">:luxembourg:</td>
+<td><code>luxembourg</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:latvia:</td>
+<td><code>latvia</code></td>
+<td style="text-align:center">:libya:</td>
+<td><code>libya</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:morocco:</td>
+<td><code>morocco</code></td>
+<td style="text-align:center">:monaco:</td>
+<td><code>monaco</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:moldova:</td>
+<td><code>moldova</code></td>
+<td style="text-align:center">:montenegro:</td>
+<td><code>montenegro</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:madagascar:</td>
+<td><code>madagascar</code></td>
+<td style="text-align:center">:marshall_islands:</td>
+<td><code>marshall_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:macedonia:</td>
+<td><code>macedonia</code></td>
+<td style="text-align:center">:mali:</td>
+<td><code>mali</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:myanmar:</td>
+<td><code>myanmar</code></td>
+<td style="text-align:center">:mongolia:</td>
+<td><code>mongolia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:macau:</td>
+<td><code>macau</code></td>
+<td style="text-align:center">:northern_mariana_islands:</td>
+<td><code>northern_mariana_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:martinique:</td>
+<td><code>martinique</code></td>
+<td style="text-align:center">:mauritania:</td>
+<td><code>mauritania</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:montserrat:</td>
+<td><code>montserrat</code></td>
+<td style="text-align:center">:malta:</td>
+<td><code>malta</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:mauritius:</td>
+<td><code>mauritius</code></td>
+<td style="text-align:center">:maldives:</td>
+<td><code>maldives</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:malawi:</td>
+<td><code>malawi</code></td>
+<td style="text-align:center">:mexico:</td>
+<td><code>mexico</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:malaysia:</td>
+<td><code>malaysia</code></td>
+<td style="text-align:center">:mozambique:</td>
+<td><code>mozambique</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:namibia:</td>
+<td><code>namibia</code></td>
+<td style="text-align:center">:new_caledonia:</td>
+<td><code>new_caledonia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:niger:</td>
+<td><code>niger</code></td>
+<td style="text-align:center">:norfolk_island:</td>
+<td><code>norfolk_island</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:nigeria:</td>
+<td><code>nigeria</code></td>
+<td style="text-align:center">:nicaragua:</td>
+<td><code>nicaragua</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:netherlands:</td>
+<td><code>netherlands</code></td>
+<td style="text-align:center">:norway:</td>
+<td><code>norway</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:nepal:</td>
+<td><code>nepal</code></td>
+<td style="text-align:center">:nauru:</td>
+<td><code>nauru</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:niue:</td>
+<td><code>niue</code></td>
+<td style="text-align:center">:new_zealand:</td>
+<td><code>new_zealand</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:oman:</td>
+<td><code>oman</code></td>
+<td style="text-align:center">:panama:</td>
+<td><code>panama</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:peru:</td>
+<td><code>peru</code></td>
+<td style="text-align:center">:french_polynesia:</td>
+<td><code>french_polynesia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:papua_new_guinea:</td>
+<td><code>papua_new_guinea</code></td>
+<td style="text-align:center">:philippines:</td>
+<td><code>philippines</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:pakistan:</td>
+<td><code>pakistan</code></td>
+<td style="text-align:center">:poland:</td>
+<td><code>poland</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:st_pierre_miquelon:</td>
+<td><code>st_pierre_miquelon</code></td>
+<td style="text-align:center">:pitcairn_islands:</td>
+<td><code>pitcairn_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:puerto_rico:</td>
+<td><code>puerto_rico</code></td>
+<td style="text-align:center">:palestinian_territories:</td>
+<td><code>palestinian_territories</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:portugal:</td>
+<td><code>portugal</code></td>
+<td style="text-align:center">:palau:</td>
+<td><code>palau</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:paraguay:</td>
+<td><code>paraguay</code></td>
+<td style="text-align:center">:qatar:</td>
+<td><code>qatar</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:reunion:</td>
+<td><code>reunion</code></td>
+<td style="text-align:center">:romania:</td>
+<td><code>romania</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:serbia:</td>
+<td><code>serbia</code></td>
+<td style="text-align:center">:ru:</td>
+<td><code>ru</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:rwanda:</td>
+<td><code>rwanda</code></td>
+<td style="text-align:center">:saudi_arabia:</td>
+<td><code>saudi_arabia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:solomon_islands:</td>
+<td><code>solomon_islands</code></td>
+<td style="text-align:center">:seychelles:</td>
+<td><code>seychelles</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sudan:</td>
+<td><code>sudan</code></td>
+<td style="text-align:center">:sweden:</td>
+<td><code>sweden</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:singapore:</td>
+<td><code>singapore</code></td>
+<td style="text-align:center">:st_helena:</td>
+<td><code>st_helena</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:slovenia:</td>
+<td><code>slovenia</code></td>
+<td style="text-align:center">:slovakia:</td>
+<td><code>slovakia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sierra_leone:</td>
+<td><code>sierra_leone</code></td>
+<td style="text-align:center">:san_marino:</td>
+<td><code>san_marino</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:senegal:</td>
+<td><code>senegal</code></td>
+<td style="text-align:center">:somalia:</td>
+<td><code>somalia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:suriname:</td>
+<td><code>suriname</code></td>
+<td style="text-align:center">:south_sudan:</td>
+<td><code>south_sudan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sao_tome_principe:</td>
+<td><code>sao_tome_principe</code></td>
+<td style="text-align:center">:el_salvador:</td>
+<td><code>el_salvador</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:sint_maarten:</td>
+<td><code>sint_maarten</code></td>
+<td style="text-align:center">:syria:</td>
+<td><code>syria</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:swaziland:</td>
+<td><code>swaziland</code></td>
+<td style="text-align:center">:turks_caicos_islands:</td>
+<td><code>turks_caicos_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:chad:</td>
+<td><code>chad</code></td>
+<td style="text-align:center">:french_southern_territories:</td>
+<td><code>french_southern_territories</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:togo:</td>
+<td><code>togo</code></td>
+<td style="text-align:center">:thailand:</td>
+<td><code>thailand</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tajikistan:</td>
+<td><code>tajikistan</code></td>
+<td style="text-align:center">:tokelau:</td>
+<td><code>tokelau</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:timor_leste:</td>
+<td><code>timor_leste</code></td>
+<td style="text-align:center">:turkmenistan:</td>
+<td><code>turkmenistan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tunisia:</td>
+<td><code>tunisia</code></td>
+<td style="text-align:center">:tonga:</td>
+<td><code>tonga</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tr:</td>
+<td><code>tr</code></td>
+<td style="text-align:center">:trinidad_tobago:</td>
+<td><code>trinidad_tobago</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tuvalu:</td>
+<td><code>tuvalu</code></td>
+<td style="text-align:center">:taiwan:</td>
+<td><code>taiwan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:tanzania:</td>
+<td><code>tanzania</code></td>
+<td style="text-align:center">:ukraine:</td>
+<td><code>ukraine</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:uganda:</td>
+<td><code>uganda</code></td>
+<td style="text-align:center">:us:</td>
+<td><code>us</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:uruguay:</td>
+<td><code>uruguay</code></td>
+<td style="text-align:center">:uzbekistan:</td>
+<td><code>uzbekistan</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:vatican_city:</td>
+<td><code>vatican_city</code></td>
+<td style="text-align:center">:st_vincent_grenadines:</td>
+<td><code>st_vincent_grenadines</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:venezuela:</td>
+<td><code>venezuela</code></td>
+<td style="text-align:center">:british_virgin_islands:</td>
+<td><code>british_virgin_islands</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:us_virgin_islands:</td>
+<td><code>us_virgin_islands</code></td>
+<td style="text-align:center">:vietnam:</td>
+<td><code>vietnam</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:vanuatu:</td>
+<td><code>vanuatu</code></td>
+<td style="text-align:center">:wallis_futuna:</td>
+<td><code>wallis_futuna</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:samoa:</td>
+<td><code>samoa</code></td>
+<td style="text-align:center">:kosovo:</td>
+<td><code>kosovo</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:yemen:</td>
+<td><code>yemen</code></td>
+<td style="text-align:center">:mayotte:</td>
+<td><code>mayotte</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:south_africa:</td>
+<td><code>south_africa</code></td>
+<td style="text-align:center">:zambia:</td>
+<td><code>zambia</code></td>
+</tr>
+<tr>
+<td style="text-align:center">:zimbabwe:</td>
+<td><code>zimbabwe</code></td>
+<td style="text-align:center"></td>
+<td></td>
+</tr>
+</tbody>
+</table></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2019-10-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/emoji-support/" data-title="Emoji 支持" data-via="https://twitter.com/LeoAphro" data-hashtags="emoji"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/emoji-support/" data-hashtag="emoji"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/emoji-support/" data-title="Emoji 支持"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/emoji-support/" data-title="Emoji 支持"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/emoji-support/" data-title="Emoji 支持"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/emoji/">emoji</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/theme-documentation-echarts-shortcode/" class="prev" rel="prev" title="主题文档 - echarts Shortcode"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>主题文档 - echarts Shortcode</a>
+            <a href="/posts/theme-documentation-mermaid-shortcode/" class="next" rel="next" title="主题文档 - mermaid Shortcode">主题文档 - mermaid Shortcode<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>

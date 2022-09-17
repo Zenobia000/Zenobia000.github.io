@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Java 陣列 - </title><meta name="Description" content="介紹陣列Array在Java中的生成機制."><meta property="og:title" content="Java 陣列" />
+<meta property="og:description" content="介紹陣列Array在Java中的生成機制." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/code/java/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E/" /><meta property="article:section" content="code" />
+<meta property="article:published_time" content="2022-09-17T16:29:59+08:00" />
+<meta property="article:modified_time" content="2022-09-17T16:29:59+08:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Java 陣列"/>
+<meta name="twitter:description" content="介紹陣列Array在Java中的生成機制."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/code/java/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E/" /><link rel="prev" href="/code/java/java_stringpool_%E5%9F%BA%E7%A4%8E/java_stringpool_%E5%9F%BA%E7%A4%8E/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Java 陣列",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/code\/java\/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E\/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E\/"
+        },"image": ["\/images\/Apple-Devices-Preview.png"],"genre": "code","keywords": "陣列, 基礎","wordcount":  134 ,
+        "url": "\/code\/java\/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E\/java_%E9%99%A3%E5%88%97_%E5%9F%BA%E7%A4%8E\/","datePublished": "2022-09-17T16:29:59+08:00","dateModified": "2022-09-17T16:29:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Sunny"
+            },"description": "介紹陣列Array在Java中的生成機制."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animate__animated animate__pulse animate__faster">Java 陣列</h1><div class="content" id="content"><p>介紹 <strong>陣列Array</strong> 在Java中的生成機制.</p>
+<h1 id="java中的陣列">Java中的陣列</h1>
+<p>陣列是一種具有<strong>相同型態</strong>的元素集合，且是一段<strong>連續</strong>的記憶體空間，而這些元素本身通過 <strong>索引(index)</strong> 來作為存取的依據，而在陣列中的索引都是從 <strong>0</strong> 開始直到 <strong>長度-1</strong> 的位置。</p>
+<p>在Java中，陣列事實上是一種<strong>特殊的物件</strong>，也因此在Java中，陣列不只能存放資料，還有著<strong>length</strong>的變數紀錄陣列的長度。同時因為陣列一旦宣告就不能再改變其長度，要調整陣列大小只能重新創建。</p>
+<pre tabindex="0"><code>// 陣列的宣告方式
+int[] arr = new int[3];// 創建**長度為3**且**型態為int**的一段空間，並將空間的位置存入arr變數中
+float[] fArr = new float[5];// 創建**長度為5**且**型態為float**的一段空間，並將空間的位置存入fArr變數中
+// 註: 陣列是一段連續的記憶體空間，存入arr的空間位置即陣列的空間的首地址
+//     在這個範例中僅會創建出一定長度的空間，並不會給予每個空間數值
+// 賦值
+arr[0] = 1;// 指定位置賦值
+//也可以利用迴圈進行
+for(int i = 0; i &lt; 3; i++) {
+    arr[i] = i + 1;// 從0至長度-1依序給予1 2 3的數值
+}
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 陣列創建同時初始化的方式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> arr <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>1<span style="color:#f92672">,</span> 2<span style="color:#f92672">,</span> 3<span style="color:#f92672">};</span><span style="color:#75715e">// 創建的同時給予每一個空間數值
+</span></span></span></code></pre></div><h3 id="一維陣列的記憶體配置">一維陣列的記憶體配置</h3>
+<p><figure><a class="lightgallery" href="code/../%e4%b8%80%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png" title="一維陣列的記憶體配置" data-thumbnail="code/../一維陣列的記憶體配置.png" data-sub-html="<h2>一維陣列的記憶體配置</h2><p>一維陣列的記憶體配置</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="code/../%e4%b8%80%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png"
+            data-srcset="code/../%e4%b8%80%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png, code/../%e4%b8%80%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png 1.5x, code/../%e4%b8%80%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png 2x"
+            data-sizes="auto"
+            alt="code/../一維陣列的記憶體配置.png" />
+    </a><figcaption class="image-caption">一維陣列的記憶體配置</figcaption>
+    </figure></p>
+<h2 id="二維陣列">二維陣列</h2>
+<p>二維陣列顧名思義，也就是能有 <strong>x 個y 長度的元素集合</strong> 的集合；可以理解為像是表格或是一個平面，有x行，同時每一行又有y個內容。</p>
+<p>在Java之中，二維陣列事實上都是陣列的再引用；<strong>也就是說二維陣列事實上就是存放著『一維陣列』型態的一維陣列</strong>；也因為這種特性，<strong>使得Java的二維陣列中每一個一維陣列的長度是可以不固定的</strong>；也就是說 第一行可能只有三列，第二行卻有四列。</p>
+<p>💡 二維陣列是一維陣列的擴展</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 二維陣列的宣告方式
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 創建長度為3且存放一維陣列型態的陣列(arr)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// arr中的每一格再創建為 長度為2且存放型態為int的一段空間 (類似於一維陣列)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 最後將二維陣列空間的位置存回arr變數中
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> arr <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>3<span style="color:#f92672">][</span>2<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// --------
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 創建長度為3 且存放一維陣列型態的陣列(iArr)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// 有趣的是 每一格位置此時並沒有創建任何空間
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> iArr <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>3<span style="color:#f92672">][];</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 我們可以為不同位置創建不同的長度
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>iArr<span style="color:#f92672">[</span>0<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>4<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>iArr<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>2<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>iArr<span style="color:#f92672">[</span>2<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>3<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 註: 從程式碼中可以看出，事實上二維陣列中的每一格都是存放著一維陣列，因此也可以直接將其位置指向一維陣列，如下所示
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> testArr <span style="color:#f92672">=</span> iArr<span style="color:#f92672">[</span>0<span style="color:#f92672">];</span>
+</span></span></code></pre></div><p>💡 C 語言之中的二維陣列仍是一段連續的記憶體，並通過計算來分割第一維與第二維；因此在記憶體上的表現也不盡相同</p>
+<h3 id="二維陣列的記憶體配置">二維陣列的記憶體配置</h3>
+<p><figure><a class="lightgallery" href="code/../%e4%ba%8c%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png" title="二維陣列的記憶體配置" data-thumbnail="code/../二維陣列的記憶體配置.png" data-sub-html="<h2>二維陣列的記憶體配置</h2><p>二維陣列的記憶體配置</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="code/../%e4%ba%8c%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png"
+            data-srcset="code/../%e4%ba%8c%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png, code/../%e4%ba%8c%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png 1.5x, code/../%e4%ba%8c%e7%b6%ad%e9%99%a3%e5%88%97%e7%9a%84%e8%a8%98%e6%86%b6%e9%ab%94%e9%85%8d%e7%bd%ae.png 2x"
+            data-sizes="auto"
+            alt="code/../二維陣列的記憶體配置.png" />
+    </a><figcaption class="image-caption">二維陣列的記憶體配置</figcaption>
+    </figure></p>
+<p>Java中的二維陣列形式讓我們可以簡單創建<strong>一維長度不同的二維陣列</strong>，同時也能更靈活的調整大小；但在訪問速度以及記憶體的利用效率上，仍然是C語言的連續記憶體形式會更好。</p>
+<p>💡 更多維度的陣列依然可以用相同的概念與語法去創建，但通常我們較少使用到此處便不做示範。</p></div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>

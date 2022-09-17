@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>主题文档 - 基本概念 - </title><meta name="Description" content="探索 Hugo - LoveIt 主题的全部内容和背后的核心概念."><meta property="og:title" content="主题文档 - 基本概念" />
+<meta property="og:description" content="探索 Hugo - LoveIt 主题的全部内容和背后的核心概念." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/theme-documentation-basics/" /><meta property="og:image" content="/posts/theme-documentation-basics/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-06T21:40:32+08:00" />
+<meta property="article:modified_time" content="2020-03-06T21:40:32+08:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/theme-documentation-basics/featured-image.jpg"/>
+<meta name="twitter:title" content="主题文档 - 基本概念"/>
+<meta name="twitter:description" content="探索 Hugo - LoveIt 主题的全部内容和背后的核心概念."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/theme-documentation-basics/" /><link rel="prev" href="/posts/theme-documentation-content/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "主题文档 - 基本概念",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/theme-documentation-basics\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/posts\/theme-documentation-basics\/featured-image.jpg",
+                            "width":  1600 ,
+                            "height":  840 
+                        }],"genre": "posts","keywords": "installation, configuration","wordcount":  2972 ,
+        "url": "\/posts\/theme-documentation-basics\/","datePublished": "2020-03-06T21:40:32+08:00","dateModified": "2020-03-06T21:40:32+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Dillon"
+            },"description": "探索 Hugo - LoveIt 主题的全部内容和背后的核心概念."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">主题文档 - 基本概念</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/documentation/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Documentation</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-03-06">2020-03-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;2972 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;14 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/theme-documentation-basics/featured-image.jpg"
+        data-srcset="/posts/theme-documentation-basics/featured-image.jpg, /posts/theme-documentation-basics/featured-image.jpg 1.5x, /posts/theme-documentation-basics/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/theme-documentation-basics/featured-image.jpg"
+        title="探索 Hugo - LoveIt 主题的全部内容和背后的核心概念." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-准备">1 准备</a></li>
+    <li><a href="#2-安装">2 安装</a>
+      <ul>
+        <li><a href="#21-创建你的项目">2.1 创建你的项目</a></li>
+        <li><a href="#22-安装主题">2.2 安装主题</a></li>
+        <li><a href="#basic-configuration">2.3 基础配置</a></li>
+        <li><a href="#24-创建你的第一篇文章">2.4 创建你的第一篇文章</a></li>
+        <li><a href="#25-在本地启动网站">2.5 在本地启动网站</a></li>
+        <li><a href="#26-构建网站">2.6 构建网站</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-配置">3 配置</a>
+      <ul>
+        <li><a href="#site-configuration">3.1 网站配置</a></li>
+        <li><a href="#32-网站图标-浏览器配置-网站清单">3.2 网站图标, 浏览器配置, 网站清单</a></li>
+        <li><a href="#33-自定义样式">3.3 自定义样式</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-多语言和-i18n">4 多语言和 i18n</a>
+      <ul>
+        <li><a href="#language-compatibility">4.1 兼容性</a></li>
+        <li><a href="#42-基本配置">4.2 基本配置</a></li>
+        <li><a href="#43-修改默认的翻译字符串">4.3 修改默认的翻译字符串</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-搜索">5 搜索</a>
+      <ul>
+        <li><a href="#51-输出配置">5.1 输出配置</a></li>
+        <li><a href="#52-搜索配置">5.2 搜索配置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>探索 Hugo - <strong>LoveIt</strong> 主题的全部内容和背后的核心概念.</p>
+<h2 id="1-准备">1 准备</h2>
+<p>由于 Hugo 提供的便利性, <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer ">Hugo</a> 本身是这个主题唯一的依赖.</p>
+<p>直接安装满足你操作系统 (<strong>Windows</strong>, <strong>Linux</strong>, <strong>macOS</strong>) 的最新版本 <a href="https://gohugo.io/getting-started/installing/" target="_blank" rel="noopener noreffer "><i class="far fa-file-archive fa-fw" aria-hidden="true"></i>&nbsp;Hugo (&gt; 0.62.0)</a>.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>为什么不支持早期版本的 Hugo?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">由于 <a href="https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks" target="_blank" rel="noopener noreffer ">Markdown 渲染钩子函数</a> 在 <a href="https://gohugo.io/news/0.62.0-relnotes/" target="_blank" rel="noopener noreffer ">Hugo 圣诞节版本</a> 中被引入, 本主题只支持高于 <strong>0.62.0</strong> 的 Hugo 版本.</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>推荐使用 Hugo extended 版本<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">由于这个主题的一些特性需要将 <i class="fab fa-sass fa-fw" aria-hidden="true"></i>&nbsp;SCSS 转换为 <i class="fab fa-css3 fa-fw" aria-hidden="true"></i>&nbsp;CSS, 推荐使用 Hugo <strong>extended</strong> 版本来获得更好的使用体验.</div>
+        </div>
+    </div>
+<h2 id="2-安装">2 安装</h2>
+<p>以下步骤可帮助你初始化新网站. 如果你根本不了解 Hugo, 我们强烈建议你按照此 <a href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener noreffer ">快速入门文档</a> 进一步了解它.</p>
+<h3 id="21-创建你的项目">2.1 创建你的项目</h3>
+<p>Hugo 提供了一个 <code>new</code> 命令来创建一个新的网站:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site my_website
+</span></span><span style="display:flex;"><span>cd my_website
+</span></span></code></pre></div><h3 id="22-安装主题">2.2 安装主题</h3>
+<p><strong>LoveIt</strong> 主题的仓库是: <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer ">https://github.com/dillonzq/LoveIt</a>.</p>
+<p>你可以下载主题的 <a href="https://github.com/dillonzq/LoveIt/releases" target="_blank" rel="noopener noreffer ">最新版本 <i class="far fa-file-archive fa-fw" aria-hidden="true"></i>&nbsp;.zip 文件</a> 并且解压放到 <code>themes</code> 目录.</p>
+<p>另外, 也可以直接把这个主题克隆到 <code>themes</code> 目录:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</span></span></code></pre></div><p>或者, 初始化你的项目目录为 git 仓库, 并且把主题仓库作为你的网站目录的子模块:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+</span></span></code></pre></div><h3 id="basic-configuration">2.3 基础配置</h3>
+<p>以下是 LoveIt 主题的基本配置:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更改使用 Hugo 构建网站时使用的默认主题</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;LoveIt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 网站标题</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;我的全新 Hugo 网站&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 网站语言, 仅在这里 CN 大写 [&#34;en&#34;, &#34;zh-CN&#34;, &#34;fr&#34;, &#34;pl&#34;, ...]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-CN&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 语言名称 [&#34;English&#34;, &#34;简体中文&#34;, &#34;Français&#34;, &#34;Polski&#34;, ...]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;简体中文&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 是否包括中日韩文字</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 作者配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">author</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">link</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 菜单配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">menu</span>]
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 当你将鼠标悬停在此菜单链接上时, 将显示的标题</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;标签&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;分类&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hugo 解析文档的配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">highlight</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">noClasses</span> = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">在构建网站时, 你可以使用 <code>--theme</code> 选项设置主题. 但是, 我建议你修改配置文件 (<strong>config.toml</strong>) 将本主题设置为默认主题.</div>
+        </div>
+    </div>
+<h3 id="24-创建你的第一篇文章">2.4 创建你的第一篇文章</h3>
+<p>以下是创建第一篇文章的方法:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new posts/first_post.md
+</span></span></code></pre></div><p>通过添加一些示例内容并替换文件开头的标题, 你可以随意编辑文章.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">默认情况下, 所有文章和页面均作为草稿创建. 如果想要渲染这些页面, 请从元数据中删除属性 <code>draft: true</code>, 设置属性 <code>draft: false</code> 或者为 <code>hugo</code> 命令添加 <code>-D</code>/<code>--buildDrafts</code> 参数.</div>
+        </div>
+    </div>
+<h3 id="25-在本地启动网站">2.5 在本地启动网站</h3>
+<p>使用以下命令启动网站:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo serve
+</span></span></code></pre></div><p>去查看 <code>http://localhost:1313</code>.</p>
+<p><figure><a class="lightgallery" href="/posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png" title="基本配置下的预览" data-thumbnail="/posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png" data-sub-html="<h2>基本配置下的预览</h2><p>基本配置下的预览</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png"
+            data-srcset="/posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png, /posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png 1.5x, /posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png 2x"
+            data-sizes="auto"
+            alt="/posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png" width="2450" height="1562" />
+    </a><figcaption class="image-caption">基本配置下的预览</figcaption>
+    </figure></p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">当你运行 <code>hugo serve</code> 时, 当文件内容更改时, 页面会随着更改自动刷新.</div>
+        </div>
+    </div>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>由于本主题使用了 Hugo 中的 <code>.Scratch</code> 来实现一些特性,
+非常建议你为 <code>hugo server</code> 命令添加 <code>--disableFastRender</code> 参数来实时预览你正在编辑的文章页面.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo serve --disableFastRender
+</span></span></code></pre></div></div>
+        </div>
+    </div>
+<h3 id="26-构建网站">2.6 构建网站</h3>
+<p>当你准备好部署你的网站时, 运行以下命令:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>会生成一个 <code>public</code> 目录, 其中包含你网站的所有静态内容和资源. 现在可以将其部署在任何 Web 服务器上.</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">网站内容可以通过 <a href="https://www.netlify.com/" target="_blank" rel="noopener noreffer ">Netlify</a> 自动发布和托管 (了解有关<a href="https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/" target="_blank" rel="noopener noreffer ">通过 Netlify 进行 HUGO 自动化部署</a> 的更多信息).
+或者, 您可以使用 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/" target="_blank" rel="noopener noreffer ">AWS Amplify</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/" target="_blank" rel="noopener noreffer ">Github pages</a>, <a href="https://gohugo.io/hosting-and-deployment/hosting-on-render/" target="_blank" rel="noopener noreffer ">Render</a> 以及更多&hellip;</div>
+        </div>
+    </div>
+<h2 id="3-配置">3 配置</h2>
+<h3 id="site-configuration">3.1 网站配置</h3>
+<p>除了 <a href="https://gohugo.io/overview/configuration/" target="_blank" rel="noopener noreffer ">Hugo 全局配置</a> 和 <a href="#basic-configuration" rel="">菜单配置</a> 之外, <strong>LoveIt</strong> 主题还允许您在网站配置中定义以下参数 (这是一个示例 <code>config.toml</code>, 其内容为默认值).</p>
+<p>请打开下面的代码块查看完整的示例配置 <i class="far fa-hand-point-down fa-fw" aria-hidden="true"></i>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 更改使用 Hugo 构建网站时使用的默认主题</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;LoveIt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 网站标题</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;我的全新 Hugo 网站&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 网站语言, 仅在这里 CN 大写 [&#34;en&#34;, &#34;zh-CN&#34;, &#34;fr&#34;, &#34;pl&#34;, ...]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-CN&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 语言名称 [&#34;English&#34;, &#34;简体中文&#34;, &#34;Français&#34;, &#34;Polski&#34;, ...]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;简体中文&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 是否包括中日韩文字</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 默认每页列表显示的文章数目</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 谷歌分析代号 [UA-XXXXXXXX-X]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">googleAnalytics</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 版权描述，仅仅用于 SEO</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">copyright</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 是否使用 robots.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableRobotsTXT</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 是否使用 git 信息</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableGitInfo</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 是否使用 emoji 代码</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">enableEmoji</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 忽略一些构建错误</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">ignoreErrors</span> = [<span style="color:#e6db74">&#34;error-remote-getjson&#34;</span>, <span style="color:#e6db74">&#34;error-missing-instagram-accesstoken&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 作者配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">author</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">link</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 菜单配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">menu</span>]
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 当你将鼠标悬停在此菜单链接上时, 将显示的标题</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;标签&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;分类&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 网站默认主题样式 [&#34;auto&#34;, &#34;light&#34;, &#34;dark&#34;]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">defaultTheme</span> = <span style="color:#e6db74">&#34;auto&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">gitRepo</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.1.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.1.1-new.min.svg"
+        data-srcset="/svg/version/0.1.1-new.min.svg, /svg/version/0.1.1-new.min.svg 1.5x, /svg/version/0.1.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.1.1"
+        title="LoveIt NEW | 0.1.1" /></a> 哪种哈希函数用来 SRI, 为空时表示不使用 SRI</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># [&#34;sha256&#34;, &#34;sha384&#34;, &#34;sha512&#34;, &#34;md5&#34;]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">fingerprint</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 日期格式</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">dateFormat</span> = <span style="color:#e6db74">&#34;2006-01-02&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 网站标题, 用于 Open Graph 和 Twitter Cards</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;我的网站&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 网站描述, 用于 RSS, SEO, Open Graph 和 Twitter Cards</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;这是我的全新 Hugo 网站&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 网站图片, 用于 Open Graph 和 Twitter Cards</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">images</span> = [<span style="color:#e6db74">&#34;/logo.png&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 页面头部导航栏配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">header</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 桌面端导航栏模式 [&#34;fixed&#34;, &#34;normal&#34;, &#34;auto&#34;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">desktopMode</span> = <span style="color:#e6db74">&#34;fixed&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 移动端导航栏模式 [&#34;fixed&#34;, &#34;normal&#34;, &#34;auto&#34;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mobileMode</span> = <span style="color:#e6db74">&#34;auto&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 页面头部导航栏标题配置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">header</span>.<span style="color:#a6e22e">title</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># LOGO 的 URL</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">logo</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 标题名称</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.5" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.5-new.min.svg"
+        data-srcset="/svg/version/0.2.5-new.min.svg, /svg/version/0.2.5-new.min.svg 1.5x, /svg/version/0.2.5-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.5"
+        title="LoveIt NEW | 0.2.5" /></a> 是否为标题显示打字机动画</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">typeit</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 页面底部信息配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">footer</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 自定义内容 (支持 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">custom</span> = <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否显示 Hugo 和主题信息</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hugo</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否显示版权信息</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">copyright</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否显示作者</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">author</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 网站创立年份</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">since</span> = <span style="color:#ae81ff">2019</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ICP 备案信息，仅在中国使用 (支持 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">icp</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 许可协议信息 (支持 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">license</span> = <span style="color:#e6db74">&#39;&lt;a rel=&#34;license external nofollow noopener noreffer&#34; href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34;&gt;CC BY-NC 4.0&lt;/a&gt;&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> Section (所有文章) 页面配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">section</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># section 页面每页显示文章数量</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 日期格式 (月和日)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dateFormat</span> = <span style="color:#e6db74">&#34;01-02&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># RSS 文章数目</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> List (目录或标签) 页面配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">list</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># list 页面每页显示文章数量</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 日期格式 (月和日)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">dateFormat</span> = <span style="color:#e6db74">&#34;01-02&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># RSS 文章数目</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 应用图标配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">app</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;我的网站&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 是否隐藏网站图标资源链接</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">noFavicon</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">svgFavicon</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Android 浏览器主题色</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">themeColor</span> = <span style="color:#e6db74">&#34;#ffffff&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Safari 图标颜色</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">iconColor</span> = <span style="color:#e6db74">&#34;#5bbad5&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Windows v8-10磁贴颜色</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">tileColor</span> = <span style="color:#e6db74">&#34;#da532c&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 搜索配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 搜索引擎的类型 [&#34;lunr&#34;, &#34;algolia&#34;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">type</span> = <span style="color:#e6db74">&#34;lunr&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 文章内容最长索引长度</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">contentLength</span> = <span style="color:#ae81ff">4000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 搜索框的占位提示语</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">placeholder</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.1-new.min.svg"
+        data-srcset="/svg/version/0.2.1-new.min.svg, /svg/version/0.2.1-new.min.svg 1.5x, /svg/version/0.2.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.1"
+        title="LoveIt NEW | 0.2.1" /></a> 最大结果数目</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">maxResultLength</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.3" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.3-new.min.svg"
+        data-srcset="/svg/version/0.2.3-new.min.svg, /svg/version/0.2.3-new.min.svg 1.5x, /svg/version/0.2.3-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.3"
+        title="LoveIt NEW | 0.2.3" /></a> 结果内容片段长度</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">snippetLength</span> = <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.1-new.min.svg"
+        data-srcset="/svg/version/0.2.1-new.min.svg, /svg/version/0.2.1-new.min.svg 1.5x, /svg/version/0.2.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.1"
+        title="LoveIt NEW | 0.2.1" /></a> 搜索结果中高亮部分的 HTML 标签</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">highlightTag</span> = <span style="color:#e6db74">&#34;em&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.4" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.4-new.min.svg"
+        data-srcset="/svg/version/0.2.4-new.min.svg, /svg/version/0.2.4-new.min.svg 1.5x, /svg/version/0.2.4-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.4"
+        title="LoveIt NEW | 0.2.4" /></a> 是否在搜索索引中使用基于 baseURL 的绝对路径</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">absoluteURL</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>.<span style="color:#a6e22e">algolia</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">index</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">appID</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">searchKey</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 主页配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">home</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> RSS 文章数目</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rss</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 主页个人信息</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">home</span>.<span style="color:#a6e22e">profile</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Gravatar 邮箱，用于优先在主页显示的头像</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">gravatarEmail</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 主页显示头像的 URL</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">avatarURL</span> = <span style="color:#e6db74">&#34;/images/avatar.png&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.7" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.7-changed.min.svg"
+        data-srcset="/svg/version/0.2.7-changed.min.svg, /svg/version/0.2.7-changed.min.svg 1.5x, /svg/version/0.2.7-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.7"
+        title="LoveIt CHANGED | 0.2.7" /></a> 主页显示的网站标题 (支持 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 主页显示的网站副标题 (允许 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">subtitle</span> = <span style="color:#e6db74">&#34;这是我的全新 Hugo 网站&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否为副标题显示打字机动画</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">typeit</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否显示社交账号</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">social</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 免责声明 (支持 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">disclaimer</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 主页文章列表</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">home</span>.<span style="color:#a6e22e">posts</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 主页每页显示文章数量</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">paginate</span> = <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-deleted.min.svg"
+        data-srcset="/svg/version/0.2.0-deleted.min.svg, /svg/version/0.2.0-deleted.min.svg 1.5x, /svg/version/0.2.0-deleted.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt DELETED | 0.2.0"
+        title="LoveIt DELETED | 0.2.0" /></a> 被 params.page 中的 hiddenFromHomePage 替代</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 当你没有在文章前置参数中设置 &#34;hiddenFromHomePage&#34; 时的默认行为</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">defaultHiddenFromHomePage</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 作者的社交信息设置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">GitHub</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Linkedin</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Twitter</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Instagram</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Facebook</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Telegram</span> = <span style="color:#e6db74">&#34;xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Medium</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Gitlab</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Youtubelegacy</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Youtubecustom</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Youtubechannel</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Tumblr</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Quora</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Keybase</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Pinterest</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Reddit</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Codepen</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">FreeCodeCamp</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Bitbucket</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Stackoverflow</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Weibo</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Odnoklassniki</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">VK</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Flickr</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Xing</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Snapchat</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Soundcloud</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Spotify</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Bandcamp</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Paypal</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Fivehundredpx</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Mix</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Goodreads</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Lastfm</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Foursquare</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Hackernews</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Kickstarter</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Patreon</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Steam</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Twitch</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Strava</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Skype</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Whatsapp</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Zhihu</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Douban</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Angellist</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Slidershare</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Jsfiddle</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Deviantart</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Behance</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Dribbble</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Wordpress</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Vine</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Googlescholar</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Researchgate</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Mastodon</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Thingiverse</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Devto</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Gitea</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">XMPP</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Matrix</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Bilibili</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Discord</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">DiscordInvite</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Lichess</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ORCID</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Pleroma</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Kaggle</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">MediaWiki</span>= <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Plume</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">HackTheBox</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">RootMe</span>= <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Phone</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">Email</span> = <span style="color:#e6db74">&#34;xxxx@xxxx.com&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">RSS</span> = <span style="color:#66d9ef">true</span> <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a></span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a> 文章页面全局配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否在主页隐藏一篇文章</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hiddenFromHomePage</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否在搜索结果中隐藏一篇文章</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hiddenFromSearch</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否使用 twemoji</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">twemoji</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 是否使用 lightgallery</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lightgallery</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否使用 ruby 扩展语法</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ruby</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否使用 fraction 扩展语法</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fraction</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 是否使用 fontawesome 扩展语法</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fontawesome</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 是否在文章页面显示原始 Markdown 文档链接</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">linkToMarkdown</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.4" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.4-new.min.svg"
+        data-srcset="/svg/version/0.2.4-new.min.svg, /svg/version/0.2.4-new.min.svg 1.5x, /svg/version/0.2.4-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.4"
+        title="LoveIt NEW | 0.2.4" /></a> 是否在 RSS 中显示全文内容</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">rssFullText</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 目录配置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">toc</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否使用目录</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.9" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.9-new.min.svg"
+        data-srcset="/svg/version/0.2.9-new.min.svg, /svg/version/0.2.9-new.min.svg 1.5x, /svg/version/0.2.9-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.9"
+        title="LoveIt NEW | 0.2.9" /></a> 是否保持使用文章前面的静态目录</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">keepStatic</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否使侧边目录自动折叠展开</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">auto</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 代码配置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">code</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否显示代码块的复制按钮</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">copy</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 默认展开显示的代码行数</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">maxShownLines</span> = <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a> <a href="https://katex.org/" target="_blank" rel="noopener noreffer ">KaTeX</a> 数学公式</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">math</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.11-changed.min.svg"
+        data-srcset="/svg/version/0.2.11-changed.min.svg, /svg/version/0.2.11-changed.min.svg 1.5x, /svg/version/0.2.11-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.11"
+        title="LoveIt CHANGED | 0.2.11" /></a> 默认行内定界符是 $ ... $ 和 \( ... \)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">inlineLeftDelimiter</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">inlineRightDelimiter</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.11-changed.min.svg"
+        data-srcset="/svg/version/0.2.11-changed.min.svg, /svg/version/0.2.11-changed.min.svg 1.5x, /svg/version/0.2.11-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.11"
+        title="LoveIt CHANGED | 0.2.11" /></a> 默认块定界符是 $$ ... $$, \[ ... \],  \begin{equation} ... \end{equation} 和一些其它的函数</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">blockLeftDelimiter</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">blockRightDelimiter</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># KaTeX 插件 copy_tex</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">copyTex</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># KaTeX 插件 mhchem</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">mhchem</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> <a href="https://docs.mapbox.com/mapbox-gl-js" target="_blank" rel="noopener noreffer ">Mapbox GL JS</a> 配置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">mapbox</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># Mapbox GL JS 的 access token</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">accessToken</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 浅色主题的地图样式</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">lightStyle</span> = <span style="color:#e6db74">&#34;mapbox://styles/mapbox/light-v10?optimize=true&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 深色主题的地图样式</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">darkStyle</span> = <span style="color:#e6db74">&#34;mapbox://styles/mapbox/dark-v10?optimize=true&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否添加 <a href="https://docs.mapbox.com/mapbox-gl-js/api#navigationcontrol" target="_blank" rel="noopener noreffer ">NavigationControl</a></span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">navigation</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否添加 <a href="https://docs.mapbox.com/mapbox-gl-js/api#geolocatecontrol" target="_blank" rel="noopener noreffer ">GeolocateControl</a></span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">geolocate</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否添加 <a href="https://docs.mapbox.com/mapbox-gl-js/api#scalecontrol" target="_blank" rel="noopener noreffer ">ScaleControl</a></span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">scale</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否添加 <a href="https://docs.mapbox.com/mapbox-gl-js/api#fullscreencontrol" target="_blank" rel="noopener noreffer ">FullscreenControl</a></span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">fullscreen</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a> 文章页面的分享信息设置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">share</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Twitter</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Facebook</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Linkedin</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Whatsapp</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Pinterest</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Tumblr</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">HackerNews</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Reddit</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">VK</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Buffer</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Xing</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Line</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Instapaper</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Pocket</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Flipboard</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Weibo</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Blogger</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Baidu</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Odnoklassniki</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Evernote</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Skype</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Trello</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">Mix</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://disqus.com/" target="_blank" rel="noopener noreffer ">Disqus</a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">disqus</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.1.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.1.1-new.min.svg"
+        data-srcset="/svg/version/0.1.1-new.min.svg, /svg/version/0.1.1-new.min.svg 1.5x, /svg/version/0.1.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.1.1"
+        title="LoveIt NEW | 0.1.1" /></a></span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Disqus 的 shortname，用来在文章中启用 Disqus 评论系统</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">shortname</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/gitalk/gitalk" target="_blank" rel="noopener noreffer ">Gitalk</a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">gitalk</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.1.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.1.1-new.min.svg"
+        data-srcset="/svg/version/0.1.1-new.min.svg, /svg/version/0.1.1-new.min.svg 1.5x, /svg/version/0.1.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.1.1"
+        title="LoveIt NEW | 0.1.1" /></a></span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">owner</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">clientId</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">clientSecret</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/xCss/Valine" target="_blank" rel="noopener noreffer ">Valine</a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">valine</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">appId</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">appKey</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">placeholder</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">avatar</span> = <span style="color:#e6db74">&#34;mp&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">meta</span>= <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">pageSize</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 为空时自动适配当前主题 i18n 配置</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">lang</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">visitor</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">recordIP</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">highlight</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enableQQ</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">serverURLs</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.6" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.6-new.min.svg"
+        data-srcset="/svg/version/0.2.6-new.min.svg, /svg/version/0.2.6-new.min.svg 1.5x, /svg/version/0.2.6-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.6"
+        title="LoveIt NEW | 0.2.6" /></a> emoji 数据文件名称, 默认是 &#34;google.yml&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># [&#34;apple.yml&#34;, &#34;google.yml&#34;, &#34;facebook.yml&#34;, &#34;twitter.yml&#34;]</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 位于 &#34;themes/LoveIt/assets/lib/valine/emoji/&#34; 目录</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 可以在你的项目下相同路径存放你自己的数据文件:</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># &#34;assets/lib/valine/emoji/&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">emoji</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://developers.facebook.com/docs/plugins/comments" target="_blank" rel="noopener noreffer ">Facebook 评论系统</a>设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">facebook</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">width</span> = <span style="color:#e6db74">&#34;100%&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">numPosts</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">appId</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 为空时自动适配当前主题 i18n 配置</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh_CN&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> <a href="https://comments.app/" target="_blank" rel="noopener noreffer ">Telegram Comments</a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">telegram</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">siteID</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">limit</span> = <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">height</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">color</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">colorful</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">dislikes</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">outlined</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> <a href="https://commento.io/" target="_blank" rel="noopener noreffer ">Commento</a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">commento</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.5" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.5-new.min.svg"
+        data-srcset="/svg/version/0.2.5-new.min.svg, /svg/version/0.2.5-new.min.svg 1.5x, /svg/version/0.2.5-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.5"
+        title="LoveIt NEW | 0.2.5" /></a> <a href="https://utteranc.es/" target="_blank" rel="noopener noreffer ">utterances</a> 评论系统设置</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">utterances</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># owner/repo</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">issueTerm</span> = <span style="color:#e6db74">&#34;pathname&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">label</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">lightTheme</span> = <span style="color:#e6db74">&#34;github-light&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">darkTheme</span> = <span style="color:#e6db74">&#34;github-dark&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># giscus comment 评论系统设置 (https://giscus.app/zh-CN)</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">comment</span>.<span style="color:#a6e22e">giscus</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 你可以参考官方文档来使用下列配置</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">repoId</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">category</span> = <span style="color:#e6db74">&#34;Announcements&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">categoryId</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 为空时自动适配当前主题 i18n 配置</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">lang</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mapping</span> = <span style="color:#e6db74">&#34;pathname&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">reactionsEnabled</span> = <span style="color:#e6db74">&#34;1&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">emitMetadata</span> = <span style="color:#e6db74">&#34;0&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">inputPosition</span> = <span style="color:#e6db74">&#34;bottom&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">lazyLoading</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">lightTheme</span> = <span style="color:#e6db74">&#34;light&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">darkTheme</span> = <span style="color:#e6db74">&#34;dark&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.7" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.7-new.min.svg"
+        data-srcset="/svg/version/0.2.7-new.min.svg, /svg/version/0.2.7-new.min.svg 1.5x, /svg/version/0.2.7-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.7"
+        title="LoveIt NEW | 0.2.7" /></a> 第三方库配置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">library</span>]
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">library</span>.<span style="color:#a6e22e">css</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># someCSS = &#34;some.css&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 位于 &#34;assets/&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 或者</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># someCSS = &#34;https://cdn.example.com/some.css&#34;</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">library</span>.<span style="color:#a6e22e">js</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># someJavascript = &#34;some.js&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 位于 &#34;assets/&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 或者</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># someJavascript = &#34;https://cdn.example.com/some.js&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.10" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.10-changed.min.svg"
+        data-srcset="/svg/version/0.2.10-changed.min.svg, /svg/version/0.2.10-changed.min.svg 1.5x, /svg/version/0.2.10-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.10"
+        title="LoveIt CHANGED | 0.2.10" /></a> 页面 SEO 配置</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">seo</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 图片 URL</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">images</span> = []
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 出版者信息</span>
+</span></span><span style="display:flex;"><span>      [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">seo</span>.<span style="color:#a6e22e">publisher</span>]
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">logoUrl</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.5" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.5-new.min.svg"
+        data-srcset="/svg/version/0.2.5-new.min.svg, /svg/version/0.2.5-new.min.svg 1.5x, /svg/version/0.2.5-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.5"
+        title="LoveIt NEW | 0.2.5" /></a> TypeIt 配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">typeit</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 每一步的打字速度 (单位是毫秒)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">speed</span> = <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 光标的闪烁速度 (单位是毫秒)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cursorSpeed</span> = <span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 光标的字符 (支持 HTML 格式)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">cursorChar</span> = <span style="color:#e6db74">&#34;|&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 打字结束之后光标的持续时间 (单位是毫秒, &#34;-1&#34; 代表无限大)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">duration</span> = <span style="color:#ae81ff">-1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 网站验证代码，用于 Google/Bing/Yandex/Pinterest/Baidu</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">verification</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">google</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">bing</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">yandex</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pinterest</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">baidu</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.10" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.10-new.min.svg"
+        data-srcset="/svg/version/0.2.10-new.min.svg, /svg/version/0.2.10-new.min.svg 1.5x, /svg/version/0.2.10-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.10"
+        title="LoveIt NEW | 0.2.10" /></a> 网站 SEO 配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">seo</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 图片 URL</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">image</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 缩略图 URL</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">thumbnailUrl</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a> 网站分析配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">analytics</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Google Analytics</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">analytics</span>.<span style="color:#a6e22e">google</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">id</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否匿名化用户 IP</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">anonymizeIP</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Fathom Analytics</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">analytics</span>.<span style="color:#a6e22e">fathom</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">id</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 自行托管追踪器时的主机路径</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">server</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Plausible Analytics</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">analytics</span>.<span style="color:#a6e22e">plausible</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dataDomain</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Yandex Metrica</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">analytics</span>.<span style="color:#a6e22e">yandexMetrica</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">id</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.7" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.7-new.min.svg"
+        data-srcset="/svg/version/0.2.7-new.min.svg, /svg/version/0.2.7-new.min.svg 1.5x, /svg/version/0.2.7-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.7"
+        title="LoveIt NEW | 0.2.7" /></a> Cookie 许可配置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">cookieconsent</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 用于 Cookie 许可横幅的文本字符串</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">cookieconsent</span>.<span style="color:#a6e22e">content</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">message</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dismiss</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">link</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.7" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.7-changed.min.svg"
+        data-srcset="/svg/version/0.2.7-changed.min.svg, /svg/version/0.2.7-changed.min.svg 1.5x, /svg/version/0.2.7-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.7"
+        title="LoveIt CHANGED | 0.2.7" /></a> 第三方库文件的 CDN 设置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">cdn</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># CDN 数据文件名称, 默认不启用</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># [&#34;jsdelivr.yml&#34;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 位于 &#34;themes/LoveIt/assets/data/cdn/&#34; 目录</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 可以在你的项目下相同路径存放你自己的数据文件:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># &#34;assets/data/cdn/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">data</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.8" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.8-new.min.svg"
+        data-srcset="/svg/version/0.2.8-new.min.svg, /svg/version/0.2.8-new.min.svg 1.5x, /svg/version/0.2.8-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.8"
+        title="LoveIt NEW | 0.2.8" /></a> 兼容性设置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">compatibility</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 是否使用 Polyfill.io 来兼容旧式浏览器</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">polyfill</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 是否使用 object-fit-images 来兼容旧式浏览器</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">objectFit</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hugo 解析文档的配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">markup</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://gohugo.io/content-management/syntax-highlighting" target="_blank" rel="noopener noreffer ">语法高亮设置</a></span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">highlight</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">codeFences</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">guessSyntax</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lineNos</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">lineNumbersInTable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># false 是必要的设置</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># (<a href="https://github.com/dillonzq/LoveIt/issues/158" target="_blank" rel="noopener noreffer ">https://github.com/dillonzq/LoveIt/issues/158</a>)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">noClasses</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>]
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">extensions</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">definitionList</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">footnote</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">linkify</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">strikethrough</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">table</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">taskList</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">typographer</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">goldmark</span>.<span style="color:#a6e22e">renderer</span>]
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e"># 是否在文档中直接使用 HTML 标签</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">unsafe</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 目录设置</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">markup</span>.<span style="color:#a6e22e">tableOfContents</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">startLevel</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">endLevel</span> = <span style="color:#ae81ff">6</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 网站地图配置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">sitemap</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">changefreq</span> = <span style="color:#e6db74">&#34;weekly&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">filename</span> = <span style="color:#e6db74">&#34;sitemap.xml&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">priority</span> = <span style="color:#ae81ff">0.5</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># <a href="https://gohugo.io/content-management/urls#permalinks" target="_blank" rel="noopener noreffer ">Permalinks 配置</a></span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">Permalinks</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># posts = &#34;:year/:month/:filename&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">posts</span> = <span style="color:#e6db74">&#34;:filename&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># <a href="https://gohugo.io/about/hugo-and-gdpr/" target="_blank" rel="noopener noreffer ">隐私信息配置</a></span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">privacy</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-deleted.min.svg"
+        data-srcset="/svg/version/0.2.0-deleted.min.svg, /svg/version/0.2.0-deleted.min.svg 1.5x, /svg/version/0.2.0-deleted.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt DELETED | 0.2.0"
+        title="LoveIt DELETED | 0.2.0" /></a> Google Analytics 相关隐私 (被 params.analytics.google 替代)</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">privacy</span>.<span style="color:#a6e22e">googleAnalytics</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># ...</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">privacy</span>.<span style="color:#a6e22e">twitter</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">enableDNT</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">privacy</span>.<span style="color:#a6e22e">youtube</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">privacyEnhanced</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 用于输出 Markdown 格式文档的设置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">mediaTypes</span>]
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">mediaTypes</span>.<span style="color:#e6db74">&#34;text/plain&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">suffixes</span> = [<span style="color:#e6db74">&#34;md&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 用于输出 Markdown 格式文档的设置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">outputFormats</span>.<span style="color:#a6e22e">MarkDown</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mediaType</span> = <span style="color:#e6db74">&#34;text/plain&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">isPlainText</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">isHTML</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 用于 Hugo 输出文档的设置</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">outputs</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">home</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">page</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;MarkDown&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">section</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">taxonomy</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">taxonomyTerm</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>]
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">请注意, 本文档其他部分将详细解释其中一些参数.</div>
+        </div>
+    </div>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Hugo 的运行环境<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><code>hugo serve</code> 的默认运行环境是 <code>development</code>,
+而 <code>hugo</code> 的默认运行环境是 <code>production</code>.</p>
+<p>由于本地 <code>development</code> 环境的限制,
+<strong>评论系统</strong>, <strong>CDN</strong> 和 <strong>fingerprint</strong> 不会在 <code>development</code> 环境下启用.</p>
+<p>你可以使用 <code>hugo serve -e production</code> 命令来开启这些特性.</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>关于 CDN 配置的技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">cdn</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># CDN 数据文件名称, 默认不启用</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># [&#34;jsdelivr.yml&#34;]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">data</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span></code></pre></div><p>默认的 CDN 数据文件位于 <code>themes/LoveIt/assets/data/cdn/</code> 目录.
+可以在你的项目下相同路径存放你自己的数据文件: <code>assets/data/cdn/</code>.</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>关于社交链接配置的技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<p>你可以直接配置你的社交 ID 来生成一个默认社交链接和图标:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">Mastodon</span> = <span style="color:#e6db74">&#34;@xxxx&#34;</span>
+</span></span></code></pre></div><p>生成的社交链接是 <code>https://mastodon.technology/@xxxx</code>.</p>
+<p>或者你可以通过一个字典来设置更多的选项:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>.<span style="color:#a6e22e">Mastodon</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 排列图标时的权重 (权重越大, 图标的位置越靠后)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 你的社交 ID</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">id</span> = <span style="color:#e6db74">&#34;@xxxx&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 你的社交链接的前缀</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">prefix</span> = <span style="color:#e6db74">&#34;https://mastodon.social/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 当鼠标停留在图标上时的提示内容</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Mastodon&#34;</span>
+</span></span></code></pre></div><p>所有支持的社交链接的默认数据位于 <code>themes/LoveIt/assets/data/social.yaml</code>.
+你可以参考它来配置你的社交链接.</p>
+</div>
+        </div>
+    </div>
+<p><figure><a class="lightgallery" href="/posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png" title="完整配置下的预览" data-thumbnail="/posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png" data-sub-html="<h2>完整配置下的预览</h2><p>完整配置下的预览</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png"
+            data-srcset="/posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png, /posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png 1.5x, /posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png 2x"
+            data-sizes="auto"
+            alt="/posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png" width="2450" height="1562" />
+    </a><figcaption class="image-caption">完整配置下的预览</figcaption>
+    </figure></p>
+<h3 id="32-网站图标-浏览器配置-网站清单">3.2 网站图标, 浏览器配置, 网站清单</h3>
+<p>强烈建议你把:</p>
+<ul>
+<li>apple-touch-icon.png (180x180)</li>
+<li>favicon-32x32.png (32x32)</li>
+<li>favicon-16x16.png (16x16)</li>
+<li>mstile-150x150.png (150x150)</li>
+<li>android-chrome-192x192.png (192x192)</li>
+<li>android-chrome-512x512.png (512x512)</li>
+</ul>
+<p>放在 <code>/static</code> 目录. 利用 <a href="https://realfavicongenerator.net/" target="_blank" rel="noopener noreffer ">https://realfavicongenerator.net/</a> 可以很容易地生成这些文件.</p>
+<p>可以自定义 <code>browserconfig.xml</code> 和 <code>site.webmanifest</code> 文件来设置 theme-color 和 background-color.</p>
+<h3 id="33-自定义样式">3.3 自定义样式</h3>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.8" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.8-changed.min.svg"
+        data-srcset="/svg/version/0.2.8-changed.min.svg, /svg/version/0.2.8-changed.min.svg 1.5x, /svg/version/0.2.8-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.8"
+        title="LoveIt CHANGED | 0.2.8" /></a>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Hugo <strong>extended</strong> 版本对于自定义样式是必需的.</div>
+        </div>
+    </div>
+<p>通过定义自定义 <code>.scss</code> 样式文件, <strong>LoveIt</strong> 主题支持可配置的样式.</p>
+<p>包含自定义 <code>.scss</code> 样式文件的目录相对于 <strong>你的项目根目录</strong> 的路径为 <code>assets/css</code>.</p>
+<p>在 <code>assets/css/_override.scss</code> 中, 你可以覆盖 <code>themes/LoveIt/assets/css/_variables.scss</code> 中的变量以自定义样式.</p>
+<p>这是一个例子:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scss" data-lang="scss"><span style="display:flex;"><span><span style="color:#66d9ef">@import</span> <span style="color:#e6db74">url(&#39;https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;display=swap&amp;subset=latin-ext&#39;)</span>;
+</span></span><span style="display:flex;"><span>$code-font-family<span style="color:#f92672">:</span> Fira Mono<span style="color:#f92672">,</span> Source Code Pro<span style="color:#f92672">,</span> Menlo<span style="color:#f92672">,</span> Consolas<span style="color:#f92672">,</span> Monaco<span style="color:#f92672">,</span> monospace;
+</span></span></code></pre></div><p>在 <code>assets/css/_custom.scss</code> 中, 你可以添加一些 CSS 样式代码以自定义样式.</p>
+<h2 id="4-多语言和-i18n">4 多语言和 i18n</h2>
+<p><strong>LoveIt</strong> 主题完全兼容 Hugo 的多语言模式, 并且支持在网页上切换语言.</p>
+<p><figure><a class="lightgallery" href="/posts/theme-documentation-basics/language-switch.gif" title="语言切换" data-thumbnail="/posts/theme-documentation-basics/language-switch.gif" data-sub-html="<h2>语言切换</h2><p>语言切换</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/posts/theme-documentation-basics/language-switch.gif"
+            data-srcset="/posts/theme-documentation-basics/language-switch.gif, /posts/theme-documentation-basics/language-switch.gif 1.5x, /posts/theme-documentation-basics/language-switch.gif 2x"
+            data-sizes="auto"
+            alt="/posts/theme-documentation-basics/language-switch.gif" width="770" height="226" />
+    </a><figcaption class="image-caption">语言切换</figcaption>
+    </figure></p>
+<h3 id="language-compatibility">4.1 兼容性</h3>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.10" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.10-changed.min.svg"
+        data-srcset="/svg/version/0.2.10-changed.min.svg, /svg/version/0.2.10-changed.min.svg 1.5x, /svg/version/0.2.10-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.10"
+        title="LoveIt CHANGED | 0.2.10" /></a>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">语言</th>
+<th style="text-align:center">Hugo 代码</th>
+<th style="text-align:center">HTML <code>lang</code> 属性</th>
+<th style="text-align:center">主题文档</th>
+<th style="text-align:center">Lunr.js 支持</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">英语</td>
+<td style="text-align:center"><code>en</code></td>
+<td style="text-align:center"><code>en</code></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">简体中文</td>
+<td style="text-align:center"><code>zh-cn</code></td>
+<td style="text-align:center"><code>zh-CN</code></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">繁體中文</td>
+<td style="text-align:center"><code>zh-tw</code></td>
+<td style="text-align:center"><code>zh-TW</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">法语</td>
+<td style="text-align:center"><code>fr</code></td>
+<td style="text-align:center"><code>fr</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">波兰语</td>
+<td style="text-align:center"><code>pl</code></td>
+<td style="text-align:center"><code>pl</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">巴西葡萄牙语</td>
+<td style="text-align:center"><code>pt-br</code></td>
+<td style="text-align:center"><code>pt-BR</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">意大利语</td>
+<td style="text-align:center"><code>it</code></td>
+<td style="text-align:center"><code>it</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">西班牙语</td>
+<td style="text-align:center"><code>es</code></td>
+<td style="text-align:center"><code>es</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">德语</td>
+<td style="text-align:center"><code>de</code></td>
+<td style="text-align:center"><code>de</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">塞尔维亚语</td>
+<td style="text-align:center"><code>pl</code></td>
+<td style="text-align:center"><code>pl</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">俄语</td>
+<td style="text-align:center"><code>ru</code></td>
+<td style="text-align:center"><code>ru</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">罗马尼亚语</td>
+<td style="text-align:center"><code>ro</code></td>
+<td style="text-align:center"><code>ro</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">越南语</td>
+<td style="text-align:center"><code>vi</code></td>
+<td style="text-align:center"><code>vi</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">阿拉伯语</td>
+<td style="text-align:center"><code>ar</code></td>
+<td style="text-align:center"><code>ar</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">加泰罗尼亚语</td>
+<td style="text-align:center"><code>ca</code></td>
+<td style="text-align:center"><code>ca</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">泰语</td>
+<td style="text-align:center"><code>th</code></td>
+<td style="text-align:center"><code>th</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">泰卢固语</td>
+<td style="text-align:center"><code>te</code></td>
+<td style="text-align:center"><code>te</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">印尼语</td>
+<td style="text-align:center"><code>id</code></td>
+<td style="text-align:center"><code>id</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">土耳其语</td>
+<td style="text-align:center"><code>tr</code></td>
+<td style="text-align:center"><code>tr</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-check-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">韩语</td>
+<td style="text-align:center"><code>ko</code></td>
+<td style="text-align:center"><code>ko</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+<tr>
+<td style="text-align:left">印地语</td>
+<td style="text-align:center"><code>hi</code></td>
+<td style="text-align:center"><code>hi</code></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+<td style="text-align:center"><i class="far fa-square fa-fw" aria-hidden="true"></i></td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-基本配置">4.2 基本配置</h3>
+<p>学习了 <a href="https://gohugo.io/content-management/multilingual" target="_blank" rel="noopener noreffer ">Hugo如何处理多语言网站</a> 之后, 请在 <a href="#site-configuration" rel="">站点配置</a> 中定义你的网站语言.</p>
+<p>例如, 一个支持英语, 中文和法语的网站配置:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#75715e"># 设置默认的语言 [&#34;en&#34;, &#34;zh-cn&#34;, &#34;fr&#34;, &#34;pl&#34;, ...]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">defaultContentLanguage</span> = <span style="color:#e6db74">&#34;zh-cn&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">languages</span>]
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;en&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Posts&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Tags&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">en</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Categories&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">zh-cn</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;我的全新 Hugo 网站&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;zh-CN&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;简体中文&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hasCJKLanguage</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">zh-cn</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;文章&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">zh-cn</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;标签&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">zh-cn</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;分类&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Mon nouveau site Hugo&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">languageCode</span> = <span style="color:#e6db74">&#34;fr&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">languageName</span> = <span style="color:#e6db74">&#34;Français&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;posts&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Postes&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/posts/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Balises&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/tags/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    [[<span style="color:#a6e22e">languages</span>.<span style="color:#a6e22e">fr</span>.<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">identifier</span> = <span style="color:#e6db74">&#34;categories&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">pre</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">post</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Catégories&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/categories/&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span></code></pre></div><p>然后, 对于每个新页面, 将语言代码附加到文件名中.</p>
+<p>单个文件 <code>my-page.md</code> 需要分为三个文件:</p>
+<ul>
+<li>英语: <code>my-page.en.md</code></li>
+<li>中文: <code>my-page.zh-cn.md</code></li>
+<li>法语: <code>my-page.fr.md</code></li>
+</ul>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">请注意, 菜单中仅显示翻译的页面. 它不会替换为默认语言内容.</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">也可以使用 <a href="https://gohugo.io/content-management/multilingual#translate-your-content" target="_blank" rel="noopener noreffer ">文章前置参数</a> 来翻译网址.</div>
+        </div>
+    </div>
+<h3 id="43-修改默认的翻译字符串">4.3 修改默认的翻译字符串</h3>
+<p>翻译字符串用于在主题中使用的常见默认值.
+目前提供<a href="#language-compatibility" rel="">一些语言</a>的翻译, 但你可能自定义其他语言或覆盖默认值.</p>
+<p>要覆盖默认值, 请在你项目的 i18n 目录 <code>i18n/&lt;languageCode&gt;.toml</code> 中创建一个新文件，并从 <code>themes/LoveIt/i18n/en.toml</code> 中获得提示.</p>
+<p>另外, 由于你的翻译可能会帮助到其他人, 请花点时间通过 <a href="https://github.com/dillonzq/LoveIt/pulls" target="_blank" rel="noopener noreffer "><i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>&nbsp;创建一个 PR</a> 来贡献主题翻译, 谢谢!</p>
+<h2 id="5-搜索">5 搜索</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a>
+<p>基于 <a href="https://lunrjs.com/" target="_blank" rel="noopener noreffer ">Lunr.js</a> 或 <a href="https://www.algolia.com/" target="_blank" rel="noopener noreffer ">algolia</a>, <strong>LoveIt</strong> 主题支持搜索功能.</p>
+<h3 id="51-输出配置">5.1 输出配置</h3>
+<p>为了生成搜索功能所需要的 <code>index.json</code>, 请在你的 <a href="#site-configuration" rel="">网站配置</a> 中添加 <code>JSON</code> 输出文件类型到 <code>outputs</code> 部分的 <code>home</code> 字段中.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">outputs</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">home</span> = [<span style="color:#e6db74">&#34;HTML&#34;</span>, <span style="color:#e6db74">&#34;RSS&#34;</span>, <span style="color:#e6db74">&#34;JSON&#34;</span>]
+</span></span></code></pre></div><h3 id="52-搜索配置">5.2 搜索配置</h3>
+<p>基于 Hugo 生成的 <code>index.json</code> 文件, 你可以激活搜索功能.</p>
+<p>这是你的 <a href="#site-configuration" rel="">网站配置</a> 中的搜索部分:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 搜索引擎的类型 [&#34;lunr&#34;, &#34;algolia&#34;]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">type</span> = <span style="color:#e6db74">&#34;lunr&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 文章内容最长索引长度</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">contentLength</span> = <span style="color:#ae81ff">4000</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># 搜索框的占位提示语</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">placeholder</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.1-new.min.svg"
+        data-srcset="/svg/version/0.2.1-new.min.svg, /svg/version/0.2.1-new.min.svg 1.5x, /svg/version/0.2.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.1"
+        title="LoveIt NEW | 0.2.1" /></a> 最大结果数目</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">maxResultLength</span> = <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.3" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.3-new.min.svg"
+        data-srcset="/svg/version/0.2.3-new.min.svg, /svg/version/0.2.3-new.min.svg 1.5x, /svg/version/0.2.3-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.3"
+        title="LoveIt NEW | 0.2.3" /></a> 结果内容片段长度</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">snippetLength</span> = <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.1" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.1-new.min.svg"
+        data-srcset="/svg/version/0.2.1-new.min.svg, /svg/version/0.2.1-new.min.svg 1.5x, /svg/version/0.2.1-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.1"
+        title="LoveIt NEW | 0.2.1" /></a> 搜索结果中高亮部分的 HTML 标签</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">highlightTag</span> = <span style="color:#e6db74">&#34;em&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.4" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.4-new.min.svg"
+        data-srcset="/svg/version/0.2.4-new.min.svg, /svg/version/0.2.4-new.min.svg 1.5x, /svg/version/0.2.4-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.4"
+        title="LoveIt NEW | 0.2.4" /></a> 是否在搜索索引中使用基于 baseURL 的绝对路径</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">absoluteURL</span> = <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  [<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>.<span style="color:#a6e22e">algolia</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">index</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">appID</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">searchKey</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>怎样选择搜索引擎?<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>以下是两种搜索引擎的对比:</p>
+<ul>
+<li><code>lunr</code>: 简单, 无需同步 <code>index.json</code>, 没有 <code>contentLength</code> 的限制, 但占用带宽大且性能低 (特别是中文需要一个较大的分词依赖库)</li>
+<li><code>algolia</code>: 高性能并且占用带宽低, 但需要同步 <code>index.json</code> 且有 <code>contentLength</code> 的限制</li>
+</ul>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --> 文章内容被 <code>h2</code> 和 <code>h3</code> HTML 标签切分来提高查询效果并且基本实现全文搜索.
+<code>contentLength</code> 用来限制 <code>h2</code> 和 <code>h3</code> HTML 标签开头的内容部分的最大长度.</p>
+</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>关于 algolia 的使用技巧<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">你需要上传 <code>index.json</code> 到 algolia 来激活搜索功能. 你可以使用浏览器来上传 <code>index.json</code> 文件但是一个自动化的脚本可能效果更好.
+官方提供的 <a href="https://github.com/algolia/algolia-cli" target="_blank" rel="noopener noreffer ">Algolia CLI</a> 是一个不错的选择.
+为了兼容 Hugo 的多语言模式, 你需要上传不同语言的 <code>index.json</code> 文件到对应的 algolia index, 例如 <code>zh-cn/index.json</code> 或 <code>fr/index.json</code>&hellip;</div>
+        </div>
+    </div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-03-06</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/theme-documentation-basics/" data-title="主题文档 - 基本概念" data-via="https://twitter.com/LeoAphro" data-hashtags="installation,configuration"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/theme-documentation-basics/" data-hashtag="installation"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/theme-documentation-basics/" data-title="主题文档 - 基本概念"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/theme-documentation-basics/" data-title="主题文档 - 基本概念"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/theme-documentation-basics/" data-title="主题文档 - 基本概念"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/installation/">安装</a>,&nbsp;<a href="/tags/configuration/">配置</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/theme-documentation-content/" class="prev" rel="prev" title="主题文档 - 内容"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>主题文档 - 内容</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>

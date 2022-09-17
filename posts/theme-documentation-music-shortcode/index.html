@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>主题文档 - music Shortcode - </title><meta name="Description" content="music shortcode 基于 APlayer 和 MetingJS 库提供了一个内嵌的响应式音乐播放器."><meta property="og:title" content="主题文档 - music Shortcode" />
+<meta property="og:description" content="music shortcode 基于 APlayer 和 MetingJS 库提供了一个内嵌的响应式音乐播放器." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/theme-documentation-music-shortcode/" /><meta property="og:image" content="/posts/theme-documentation-music-shortcode/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-03T12:29:59+08:00" />
+<meta property="article:modified_time" content="2020-03-03T12:29:59+08:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/theme-documentation-music-shortcode/featured-image.png"/>
+<meta name="twitter:title" content="主题文档 - music Shortcode"/>
+<meta name="twitter:description" content="music shortcode 基于 APlayer 和 MetingJS 库提供了一个内嵌的响应式音乐播放器."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/theme-documentation-music-shortcode/" /><link rel="prev" href="/posts/theme-documentation-bilibili-shortcode/" /><link rel="next" href="/posts/theme-documentation-mapbox-shortcode/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "主题文档 - music Shortcode",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/theme-documentation-music-shortcode\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/posts\/theme-documentation-music-shortcode\/featured-image.png",
+                            "width":  1800 ,
+                            "height":  500 
+                        }],"genre": "posts","keywords": "shortcodes","wordcount":  196 ,
+        "url": "\/posts\/theme-documentation-music-shortcode\/","datePublished": "2020-03-03T12:29:59+08:00","dateModified": "2020-03-03T12:29:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Dillon"
+            },"description": "music shortcode 基于 APlayer 和 MetingJS 库提供了一个内嵌的响应式音乐播放器."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">主题文档 - music Shortcode</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/documentation/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Documentation</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-03-03">2020-03-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;196 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;One minute&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/theme-documentation-music-shortcode/featured-image.png"
+        data-srcset="/posts/theme-documentation-music-shortcode/featured-image.png, /posts/theme-documentation-music-shortcode/featured-image.png 1.5x, /posts/theme-documentation-music-shortcode/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/theme-documentation-music-shortcode/featured-image.png"
+        title="music shortcode 基于 APlayer 和 MetingJS 库提供了一个内嵌的响应式音乐播放器." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#custom-music-url">1 自定义音乐 URL</a></li>
+    <li><a href="#automatic-identification">2 音乐平台 URL 的自动识别</a></li>
+    <li><a href="#custom-server">3 自定义音乐平台, 类型和 ID</a></li>
+    <li><a href="#other-parameters">4 其它参数</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><code>music</code> shortcode 基于 <a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener noreffer ">APlayer</a> 和 <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreffer ">MetingJS</a> 库提供了一个内嵌的响应式音乐播放器.</p>
+<p>有三种方式使用 <code>music</code> shortcode.</p>
+<h2 id="custom-music-url">1 自定义音乐 URL</h2>
+<p><a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.10" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.10-new.min.svg"
+        data-srcset="/svg/version/0.2.10-new.min.svg, /svg/version/0.2.10-new.min.svg 1.5x, /svg/version/0.2.10-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.10"
+        title="LoveIt NEW | 0.2.10" /></a> 支持<a href="../theme-documentation-content#contents-organization" rel="">本地资源引用</a>的完整用法.</p>
+<p><code>music</code> shortcode 有以下命名参数来使用自定义音乐 URL:</p>
+<ul>
+<li>
+<p><strong>server</strong> <em>[必需]</em></p>
+<p>音乐的链接.</p>
+</li>
+<li>
+<p><strong>type</strong> <em>[可选]</em></p>
+<p>音乐的名称.</p>
+</li>
+<li>
+<p><strong>artist</strong> <em>[可选]</em></p>
+<p>音乐的创作者.</p>
+</li>
+<li>
+<p><strong>cover</strong> <em>[可选]</em></p>
+<p>音乐的封面链接.</p>
+</li>
+</ul>
+<p>一个使用自定义音乐 URL 的 <code>music</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">music</span> <span style="color:#a6e22e">url</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/music/Wavelength.mp3&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">Wavelength</span> <span style="color:#a6e22e">artist</span><span style="color:#f92672">=</span><span style="color:#e6db74">oldmanyoung</span> <span style="color:#a6e22e">cover</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/Wavelength.jpg&#34;</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<meting-js url="/music/Wavelength.mp3" name="Wavelength" artist="oldmanyoung" cover="/images/Wavelength.jpg" theme="#448aff"></meting-js>
+<h2 id="automatic-identification">2 音乐平台 URL 的自动识别</h2>
+<p><code>music</code> shortcode 有一个命名参数来使用音乐平台 URL 的自动识别:</p>
+<ul>
+<li>
+<p><strong>auto</strong> <em>[必需]]</em> (<strong>第一个</strong>位置参数)</p>
+<p>用来自动识别的音乐平台 URL, 支持 <code>netease</code>, <code>tencent</code> 和 <code>xiami</code> 平台.</p>
+</li>
+</ul>
+<p>一个使用音乐平台 URL 的自动识别的 <code>music</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">music</span> <span style="color:#a6e22e">auto</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://music.163.com/#/playlist?id=60198&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">music</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">music</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">163</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span><span style="color:#960050;background-color:#1e0010">/#/</span><span style="color:#a6e22e">playlist</span><span style="color:#960050;background-color:#1e0010">?</span><span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">60198&#34;</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<meting-js auto="https://music.163.com/#/playlist?id=60198" theme="#448aff"></meting-js>
+<h2 id="custom-server">3 自定义音乐平台, 类型和 ID</h2>
+<p><code>music</code> shortcode 有以下命名参数来使用自定义音乐平台:</p>
+<ul>
+<li>
+<p><strong>server</strong> <em>[必需]</em> (<strong>第一个</strong>位置参数)</p>
+<p>[<code>netease</code>, <code>tencent</code>, <code>kugou</code>, <code>xiami</code>, <code>baidu</code>]</p>
+<p>音乐平台.</p>
+</li>
+<li>
+<p><strong>type</strong> <em>[必需]</em> (<strong>第二个</strong>位置参数)</p>
+<p>[<code>song</code>, <code>playlist</code>, <code>album</code>, <code>search</code>, <code>artist</code>]</p>
+<p>音乐类型.</p>
+</li>
+<li>
+<p><strong>id</strong> <em>[必需]</em> (<strong>第三个</strong>位置参数)</p>
+<p>歌曲 ID, 或者播放列表 ID, 或者专辑 ID, 或者搜索关键词, 或者创作者 ID.</p>
+</li>
+</ul>
+<p>一个使用自定义音乐平台的 <code>music</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">music</span> <span style="color:#a6e22e">server</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;netease&#34;</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;song&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1868553&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">music</span> <span style="color:#a6e22e">netease</span> <span style="color:#a6e22e">song</span> <span style="color:#a6e22e">1868553</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<meting-js server="netease" type="song" id="1868553" theme="#448aff"></meting-js>
+<h2 id="other-parameters">4 其它参数</h2>
+<p><code>music</code> shortcode 有一些可以应用于以上三种方式的其它命名参数:</p>
+<ul>
+<li>
+<p><strong>theme</strong> <em>[可选]</em></p>
+<p><a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+            class="lazyload version"
+            src="/svg/loading.min.svg"
+            data-src="/svg/version/0.2.0-changed.min.svg"
+            data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+            data-sizes="auto"
+            alt="LoveIt CHANGED | 0.2.0"
+            title="LoveIt CHANGED | 0.2.0" /></a> 音乐播放器的主题色, 默认值是 <code>#448aff</code>.</p>
+</li>
+<li>
+<p><strong>fixed</strong> <em>[可选]</em></p>
+<p>是否开启固定模式, 默认值是 <code>false</code>.</p>
+</li>
+<li>
+<p><strong>mini</strong> <em>[可选]</em></p>
+<p>是否开启迷你模式, 默认值是 <code>false</code>.</p>
+</li>
+<li>
+<p><strong>autoplay</strong> <em>[可选]</em></p>
+<p>是否自动播放音乐, 默认值是 <code>false</code>.</p>
+</li>
+<li>
+<p><strong>volume</strong> <em>[可选]</em></p>
+<p>第一次打开播放器时的默认音量, 会被保存在浏览器缓存中, 默认值是 <code>0.7</code>.</p>
+</li>
+<li>
+<p><strong>mutex</strong> <em>[可选]</em></p>
+<p>是否自动暂停其它播放器, 默认值是 <code>true</code>.</p>
+</li>
+</ul>
+<p><code>music</code> shortcode 还有一些只适用于音乐列表方式的其它命名参数:</p>
+<ul>
+<li>
+<p><strong>loop</strong> <em>[可选]</em></p>
+<p>[<code>all</code>, <code>one</code>, <code>none</code>]</p>
+<p>音乐列表的循环模式, 默认值是 <code>none</code>.</p>
+</li>
+<li>
+<p><strong>order</strong> <em>[可选]</em></p>
+<p>[<code>list</code>, <code>random</code>]</p>
+<p>音乐列表的播放顺序, 默认值是 <code>list</code>.</p>
+</li>
+<li>
+<p><strong>list-folded</strong> <em>[可选]</em></p>
+<p>初次打开的时候音乐列表是否折叠, 默认值是 <code>false</code>.</p>
+</li>
+<li>
+<p><strong>list-max-height</strong> <em>[可选]</em></p>
+<p>音乐列表的最大高度, 默认值是 <code>340px</code>.</p>
+</li>
+</ul></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-03-03</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/theme-documentation-music-shortcode/" data-title="主题文档 - music Shortcode" data-via="https://twitter.com/LeoAphro" data-hashtags="shortcodes"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/theme-documentation-music-shortcode/" data-hashtag="shortcodes"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/theme-documentation-music-shortcode/" data-title="主题文档 - music Shortcode"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/theme-documentation-music-shortcode/" data-title="主题文档 - music Shortcode"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/theme-documentation-music-shortcode/" data-title="主题文档 - music Shortcode"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shortcodes/">shortcodes</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/theme-documentation-bilibili-shortcode/" class="prev" rel="prev" title="主题文档 - bilibili Shortcode"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>主题文档 - bilibili Shortcode</a>
+            <a href="/posts/theme-documentation-mapbox-shortcode/" class="next" rel="next" title="主题文档 - mapbox Shortcode">主题文档 - mapbox Shortcode<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css"><link rel="stylesheet" href="/lib/aplayer/dark.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>

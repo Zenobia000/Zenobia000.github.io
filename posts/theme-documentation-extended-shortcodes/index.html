@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>主题文档 - 扩展 Shortcodes - </title><meta name="Description" content="LoveIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."><meta property="og:title" content="主题文档 - 扩展 Shortcodes" />
+<meta property="og:description" content="LoveIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/theme-documentation-extended-shortcodes/" /><meta property="og:image" content="/posts/theme-documentation-extended-shortcodes/featured-image.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-03T16:29:59+08:00" />
+<meta property="article:modified_time" content="2020-06-12T10:10:13+03:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/theme-documentation-extended-shortcodes/featured-image.jpg"/>
+<meta name="twitter:title" content="主题文档 - 扩展 Shortcodes"/>
+<meta name="twitter:description" content="LoveIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/theme-documentation-extended-shortcodes/" /><link rel="prev" href="/posts/basic-markdown-syntax/" /><link rel="next" href="/posts/theme-documentation-built-in-shortcodes/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "主题文档 - 扩展 Shortcodes",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/theme-documentation-extended-shortcodes\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/posts\/theme-documentation-extended-shortcodes\/featured-image.jpg",
+                            "width":  1280 ,
+                            "height":  720 
+                        }],"genre": "posts","keywords": "shortcodes","wordcount":  647 ,
+        "url": "\/posts\/theme-documentation-extended-shortcodes\/","datePublished": "2020-03-03T16:29:59+08:00","dateModified": "2020-06-12T10:10:13+03:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Dillon"
+            },"description": "LoveIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">主题文档 - 扩展 Shortcodes</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/documentation/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Documentation</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-03-03">2020-03-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;647 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/theme-documentation-extended-shortcodes/featured-image.jpg"
+        data-srcset="/posts/theme-documentation-extended-shortcodes/featured-image.jpg, /posts/theme-documentation-extended-shortcodes/featured-image.jpg 1.5x, /posts/theme-documentation-extended-shortcodes/featured-image.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/theme-documentation-extended-shortcodes/featured-image.jpg"
+        title="LoveIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-style">1 style</a></li>
+    <li><a href="#2-link">2 link</a></li>
+    <li><a href="#image">3 image</a></li>
+    <li><a href="#4-admonition">4 admonition</a></li>
+    <li><a href="#5-mermaid">5 mermaid</a></li>
+    <li><a href="#6-echarts">6 echarts</a></li>
+    <li><a href="#7-mapbox">7 mapbox</a></li>
+    <li><a href="#8-music">8 music</a></li>
+    <li><a href="#9-bilibili">9 bilibili</a></li>
+    <li><a href="#10-typeit">10 typeit</a></li>
+    <li><a href="#11-script">11 script</a></li>
+    <li><a href="#12-raw">12 raw</a></li>
+    <li><a href="#13-person">13 person</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>LoveIt</strong> 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.</p>
+<h2 id="1-style">1 style</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Hugo <strong>extended</strong> 版本对于 <code>style</code> shortcode 是必需的.</div>
+        </div>
+    </div>
+<p><code>style</code> shortcode 用来在你的文章中插入自定义样式.</p>
+<p><code>style</code> shortcode 有两个位置参数.</p>
+<p>第一个参数是自定义样式的内容. 它支持 <a href="https://sass-lang.com/documentation/style-rules/declarations#nesting" target="_blank" rel="noopener noreffer "><i class="fab fa-sass fa-fw" aria-hidden="true"></i>&nbsp;SASS</a> 中的嵌套语法,
+并且 <code>&amp;</code> 指代这个父元素.</p>
+<p>第二个参数是包裹你要更改样式的内容的 HTML 标签, 默认值是 <code>div</code>.</p>
+<p>一个 <code>style</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">style</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">text-align:right</span><span style="color:#960050;background-color:#1e0010">;</span> <span style="color:#a6e22e">strong</span><span style="color:#960050;background-color:#1e0010">{</span><span style="color:#a6e22e">color:</span><span style="color:#960050;background-color:#1e0010">#</span><span style="color:#a6e22e">00b1ff</span><span style="color:#960050;background-color:#1e0010">;}&#34;</span> &gt;<span style="color:#960050;background-color:#1e0010">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">This</span> <span style="color:#f92672">is</span> <span style="color:#f92672">a</span> <span style="font-weight:bold">**right-aligned**</span> <span style="color:#f92672">paragraph</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span>{<span style="color:#960050;background-color:#1e0010">{</span>&lt; /<span style="color:#f92672">style</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div id="id-1">This is a <strong>right-aligned</strong> paragraph.</div>
+<h2 id="2-link">2 link</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a>
+<p><code>link</code> shortcode 是 <a href="../basic-markdown-syntax#links" rel="">Markdown 链接语法</a> 的替代.
+<code>link</code> shortcode 可以提供一些其它的功能并且可以在代码块中使用.</p>
+<p><a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.10" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.10-new.min.svg"
+        data-srcset="/svg/version/0.2.10-new.min.svg, /svg/version/0.2.10-new.min.svg 1.5x, /svg/version/0.2.10-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.10"
+        title="LoveIt NEW | 0.2.10" /></a> 支持<a href="../theme-documentation-content#contents-organization" rel="">本地资源引用</a>的完整用法.</p>
+<p><code>link</code> shortcode 有以下命名参数:</p>
+<ul>
+<li>
+<p><strong>href</strong> <em>[必需]</em> (<strong>第一个</strong>位置参数)</p>
+<p>链接的目标.</p>
+</li>
+<li>
+<p><strong>content</strong> <em>[可选]</em> (<strong>第二个</strong>位置参数)</p>
+<p>链接的内容, 默认值是 <strong>href</strong> 参数的值.</p>
+<p><em>支持 Markdown 或者 HTML 格式.</em></p>
+</li>
+<li>
+<p><strong>title</strong> <em>[可选]</em> (<strong>第三个</strong>位置参数)</p>
+<p>HTML <code>a</code> 标签 的 <code>title</code> 属性, 当悬停在链接上会显示的提示.</p>
+</li>
+<li>
+<p><strong>rel</strong> <em>[可选]</em></p>
+<p>HTML <code>a</code> 标签 的 <code>rel</code> 补充属性.</p>
+</li>
+<li>
+<p><strong>class</strong> <em>[可选]</em></p>
+<p>HTML <code>a</code> 标签 的 <code>class</code> 属性.</p>
+</li>
+</ul>
+<p>一个 <code>link</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">assemble</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">io</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assemble.io&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">mailto:contact</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">revolunet</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:contact@revolunet.com&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">assemble</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">io</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">Assemble</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assemble.io&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">Assemble</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<ul>
+<li><a href="https://assemble.io" target="_blank" rel="noopener noreffer ">https://assemble.io</a></li>
+<li><a href="mailto:contact@revolunet.com" rel="">mailto:contact@revolunet.com</a></li>
+<li><a href="https://assemble.io" target="_blank" rel="noopener noreffer ">Assemble</a></li>
+</ul>
+<p>一个带有标题的 <code>link</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">github</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">upstage</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#a6e22e">Upstage</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">Visit</span> <span style="color:#a6e22e">Upstage</span><span style="color:#960050;background-color:#1e0010">!&#34;</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">link</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/upstage/&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">Upstage</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Visit Upstage!&#34;</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下 (将鼠标悬停在链接上，会有一行提示):</p>
+<a href="https://github.com/upstage/" title="Visit Upstage!" target="_blank" rel="noopener noreffer ">Upstage</a>
+<h2 id="image">3 image</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a>
+<p><code>image</code> shortcode 是 <a href="../theme-documentation-built-in-shortcodes#figure" rel=""><code>figure</code> shortcode</a> 的替代. <code>image</code> shortcode 可以充分利用 <a href="https://github.com/aFarkas/lazysizes" target="_blank" rel="noopener noreffer ">lazysizes</a> 和 <a href="https://github.com/sachinchoolur/lightgallery" target="_blank" rel="noopener noreffer ">lightGallery</a> 两个依赖库.</p>
+<p><a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.10" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.10-new.min.svg"
+        data-srcset="/svg/version/0.2.10-new.min.svg, /svg/version/0.2.10-new.min.svg 1.5x, /svg/version/0.2.10-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.10"
+        title="LoveIt NEW | 0.2.10" /></a> 支持<a href="../theme-documentation-content#contents-organization" rel="">本地资源引用</a>的完整用法.</p>
+<p><code>image</code> shortcode 有以下命名参数:</p>
+<ul>
+<li>
+<p><strong>src</strong> <em>[必需]</em> (<strong>第一个</strong>位置参数)</p>
+<p>图片的 URL.</p>
+</li>
+<li>
+<p><strong>alt</strong> <em>[可选]</em> (<strong>第二个</strong>位置参数)</p>
+<p>图片无法显示时的替代文本, 默认值是 <strong>src</strong> 参数的值.</p>
+<p><em>支持 Markdown 或者 HTML 格式.</em></p>
+</li>
+<li>
+<p><strong>caption</strong> <em>[可选]</em> (<strong>第三个</strong>位置参数)</p>
+<p>图片标题.</p>
+<p><em>支持 Markdown 或者 HTML 格式.</em></p>
+</li>
+<li>
+<p><strong>title</strong> <em>[可选]</em></p>
+<p>当悬停在图片上会显示的提示.</p>
+</li>
+<li>
+<p><strong>class</strong> <em>[可选]</em></p>
+<p>HTML <code>figure</code> 标签的 <code>class</code> 属性.</p>
+</li>
+<li>
+<p><strong>src_s</strong> <em>[可选]</em></p>
+<p>图片缩略图的 URL, 用在画廊模式中, 默认值是 <strong>src</strong> 参数的值.</p>
+</li>
+<li>
+<p><strong>src_l</strong> <em>[可选]</em></p>
+<p>高清图片的 URL, 用在画廊模式中, 默认值是 <strong>src</strong> 参数的值.</p>
+</li>
+<li>
+<p><strong>height</strong> <em>[可选]</em></p>
+<p>图片的 <code>height</code> 属性.</p>
+</li>
+<li>
+<p><strong>width</strong> <em>[可选]</em></p>
+<p>图片的 <code>width</code> 属性.</p>
+</li>
+<li>
+<p><strong>linked</strong> <em>[可选]</em></p>
+<p>图片是否需要被链接, 默认值是 <code>true</code>.</p>
+</li>
+<li>
+<p><strong>rel</strong> <em>[可选]</em></p>
+<p>HTML <code>a</code> 标签 的 <code>rel</code> 补充属性, 仅在 <strong>linked</strong> 属性设置成 <code>true</code> 时有效.</p>
+</li>
+</ul>
+<p>一个 <code>image</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">image</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/lighthouse.jpg&#34;</span> <span style="color:#a6e22e">caption</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Lighthouse (`image`)&#34;</span> <span style="color:#a6e22e">src_s</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/lighthouse-small.jpg&#34;</span> <span style="color:#a6e22e">src_l</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/images/lighthouse-large.jpg&#34;</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<figure><a class="lightgallery" href="/images/lighthouse-large.jpg" title="/images/lighthouse.jpg" data-thumbnail="/images/lighthouse-small.jpg" data-sub-html="<h2>Lighthouse (image)</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/images/lighthouse.jpg"
+            data-srcset="/images/lighthouse-small.jpg, /images/lighthouse.jpg 1.5x, /images/lighthouse-large.jpg 2x"
+            data-sizes="auto"
+            alt="/images/lighthouse.jpg" />
+    </a><figcaption class="image-caption">Lighthouse (<code>image</code>)</figcaption>
+    </figure>
+<h2 id="4-admonition">4 admonition</h2>
+<p><code>admonition</code> shortcode 支持 <strong>12</strong> 种 帮助你在页面中插入提示的横幅.</p>
+<p><em>支持 Markdown 或者 HTML 格式.</em></p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>注意</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition abstract open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ul fa-fw" aria-hidden="true"></i>Abstract<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>摘要</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition info open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-info-circle fa-fw" aria-hidden="true"></i>Info<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>信息</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>技巧</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition success open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-check-circle fa-fw" aria-hidden="true"></i>Success<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>成功</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition question open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-question-circle fa-fw" aria-hidden="true"></i>Question<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>问题</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition warning open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-exclamation-triangle fa-fw" aria-hidden="true"></i>Warning<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>警告</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition failure open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-times-circle fa-fw" aria-hidden="true"></i>Failure<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>失败</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition danger open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-skull-crossbones fa-fw" aria-hidden="true"></i>Danger<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>危险</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition bug open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-bug fa-fw" aria-hidden="true"></i>Bug<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>Bug</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition example open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-list-ol fa-fw" aria-hidden="true"></i>Example<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>示例</strong> 横幅</div>
+        </div>
+    </div>
+<div class="details admonition quote open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-quote-right fa-fw" aria-hidden="true"></i>Quote<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>引用</strong> 横幅</div>
+        </div>
+    </div>
+<p><code>admonition</code> shortcode 有以下命名参数:</p>
+<ul>
+<li>
+<p><strong>type</strong> <em>[可选]</em> (<strong>第一个</strong>位置参数)</p>
+<p><code>admonition</code> 横幅的类型, 默认值是 <code>note</code>.</p>
+</li>
+<li>
+<p><strong>title</strong> <em>[可选]</em> (<strong>第二个</strong>位置参数)</p>
+<p><code>admonition</code> 横幅的标题, 默认值是 <strong>type</strong> 参数的值.</p>
+</li>
+<li>
+<p><strong>open</strong> <em>[可选]</em> (<strong>第三个</strong>位置参数) <a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a></p>
+<p>横幅内容是否默认展开, 默认值是 <code>true</code>.</p>
+</li>
+</ul>
+<p>一个 <code>admonition</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">admonition</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">tip</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;This is a tip&#34;</span> <span style="color:#a6e22e">open</span><span style="color:#f92672">=</span><span style="color:#e6db74">false</span> &gt;}}
+</span></span><span style="display:flex;"><span>一个 <span style="font-weight:bold">**技巧**</span> 横幅
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">admonition</span> &gt;}}
+</span></span><span style="display:flex;"><span>或者
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">admonition</span> <span style="color:#a6e22e">tip</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">This</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">a</span> <span style="color:#a6e22e">tip</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#a6e22e">false</span> &gt;}}
+</span></span><span style="display:flex;"><span>一个 <span style="font-weight:bold">**技巧**</span> 横幅
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">admonition</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>This is a tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">一个 <strong>技巧</strong> 横幅</div>
+        </div>
+    </div>
+<h2 id="5-mermaid">5 mermaid</h2>
+<p><code>mermaid</code> shortcode 使用 <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener noreffer ">Mermaid</a> 库提供绘制图表和流程图的功能.</p>
+<p>完整文档请查看页面 <a href="../theme-documentation-mermaid-shortcode" rel="">主题文档 - mermaid Shortcode</a>.</p>
+<h2 id="6-echarts">6 echarts</h2>
+<p><code>echarts</code> shortcode 使用 <a href="https://echarts.apache.org/" target="_blank" rel="noopener noreffer ">ECharts</a> 库提供数据可视化的功能.</p>
+<p>完整文档请查看页面 <a href="../theme-documentation-echarts-shortcode" rel="">主题文档 - echarts Shortcode</a>.</p>
+<h2 id="7-mapbox">7 mapbox</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-new.min.svg"
+        data-srcset="/svg/version/0.2.0-new.min.svg, /svg/version/0.2.0-new.min.svg 1.5x, /svg/version/0.2.0-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.0"
+        title="LoveIt NEW | 0.2.0" /></a>
+<p><code>mapbox</code> shortcode 使用 <a href="https://docs.mapbox.com/mapbox-gl-js" target="_blank" rel="noopener noreffer ">Mapbox GL JS</a> 库提供互动式地图的功能.</p>
+<p>完整文档请查看页面 <a href="../theme-documentation-mapbox-shortcode" rel="">主题文档 - mapbox Shortcode</a>.</p>
+<h2 id="8-music">8 music</h2>
+<p><code>music</code> shortcode 基于 <a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener noreffer ">APlayer</a> 和 <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreffer ">MetingJS</a> 库提供了一个内嵌的响应式音乐播放器.</p>
+<p>完整文档请查看页面 <a href="../theme-documentation-music-shortcode" rel="">主题文档 - music Shortcode</a>.</p>
+<h2 id="9-bilibili">9 bilibili</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.0-changed.min.svg"
+        data-srcset="/svg/version/0.2.0-changed.min.svg, /svg/version/0.2.0-changed.min.svg 1.5x, /svg/version/0.2.0-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.0"
+        title="LoveIt CHANGED | 0.2.0" /></a>
+<p><code>bilibili</code> shortcode 提供了一个内嵌的用来播放 bilibili 视频的响应式播放器.</p>
+<p>完整文档请查看页面 <a href="../theme-documentation-bilibili-shortcode" rel="">主题文档 - bilibili Shortcode</a>.</p>
+<h2 id="10-typeit">10 typeit</h2>
+<p><code>typeit</code> shortcode 基于 <a href="https://typeitjs.com/" target="_blank" rel="noopener noreffer ">TypeIt</a> 库提供了打字动画.</p>
+<p>完整文档请查看页面 <a href="../theme-documentation-typeit-shortcode" rel="">主题文档 - typeit Shortcode</a>.</p>
+<h2 id="11-script">11 script</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.8" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.8-new.min.svg"
+        data-srcset="/svg/version/0.2.8-new.min.svg, /svg/version/0.2.8-new.min.svg 1.5x, /svg/version/0.2.8-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.8"
+        title="LoveIt NEW | 0.2.8" /></a>
+<p><code>script</code> shortcode 用来在你的文章中插入 <strong><i class="fab fa-js fa-fw" aria-hidden="true"></i>&nbsp;Javascript</strong> 脚本.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">脚本内容可以保证在所有的第三方库加载之后按顺序执行.
+所以你可以自由地使用第三方库.</div>
+        </div>
+    </div>
+<p>一个 <code>script</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">script</span> &gt;}}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Hello LoveIt!&#39;</span>);
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">script</span> &gt;}}
+</span></span></code></pre></div><p>你可以在开发者工具的控制台中看到输出.</p>
+
+<h2 id="12-raw">12 raw</h2>
+<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.11-new.min.svg"
+        data-srcset="/svg/version/0.2.11-new.min.svg, /svg/version/0.2.11-new.min.svg 1.5x, /svg/version/0.2.11-new.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt NEW | 0.2.11"
+        title="LoveIt NEW | 0.2.11" /></a>
+<p><code>raw</code> shortcode 用来在你的文章中插入原始 <strong><i class="fab fa-html5 fa-fw" aria-hidden="true"></i>&nbsp;HTML</strong> 内容.</p>
+<p>一个 <code>raw</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>行内公式: {{&lt; <span style="color:#f92672">raw</span> &gt;}}\(\mathbf{E}=\sum_{i} \mathbf{E}_{i}=\mathbf{E}_{1}+\mathbf{E}_{2}+\mathbf{E}_{3}+\cdots\){{&lt; /<span style="color:#f92672">raw</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>公式块:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">raw</span> &gt;}}
+</span></span><span style="display:flex;"><span>\[ a=b+c \\ d+e=f \]
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">raw</span> &gt;}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>原始的带有 Markdown 语法的内容: {{&lt; <span style="color:#f92672">raw</span> &gt;}}**Hello**{{&lt; /<span style="color:#f92672">raw</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<p>行内公式: <data id="id-2" data-raw></data></p>
+<p>公式块:</p>
+<data id="id-3" data-raw></data>
+<p>原始的带有 Markdown 语法的内容: <data id="id-4" data-raw></data></p>
+<h2 id="13-person">13 person</h2>
+<p><code>person</code> shortcode 用来在你的文章中以 <a href="http://microformats.org/wiki/h-card" target="_blank" rel="noopener noreffer ">h-card</a> 的格式插入个人网站链接.</p>
+<p><code>person</code> shortcode 有以下命名参数:</p>
+<ul>
+<li>
+<p><strong>url</strong> <em>[必需]</em> (<strong>第一个</strong>位置参数)</p>
+<p>URL of the personal page.</p>
+</li>
+<li>
+<p><strong>name</strong> <em>[必需]</em> (<strong>第二个</strong>位置参数)</p>
+<p>Name of the person.</p>
+</li>
+<li>
+<p><strong>text</strong> <em>[可选]</em> (<strong>第三个</strong>位置参数)</p>
+<p>Text to display as hover tooltip of the link.</p>
+</li>
+<li>
+<p><strong>picture</strong> <em>[可选]</em> (<strong>第四个</strong>位置参数)</p>
+<p>A picture to use as person&rsquo;s avatar.</p>
+</li>
+<li>
+<p><strong>nick</strong> <em>[可选]</em></p>
+<p>Nickame of the person.</p>
+</li>
+</ul>
+<p>一个 <code>person</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">person</span> <span style="color:#a6e22e">url</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://evgenykuznetsov.org&#34;</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Evgeny Kuznetsov&#34;</span> <span style="color:#a6e22e">nick</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;nekr0z&#34;</span> <span style="color:#a6e22e">text</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;author of this shortcode&#34;</span> <span style="color:#a6e22e">picture</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://evgenykuznetsov.org/img/avatar.jpg&#34;</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果为 <span class="h-card person-mention"><a href="https://evgenykuznetsov.org" class="u-url url" title="author of this shortcode"><img class="u-photo photo" src="https://evgenykuznetsov.org/img/avatar.jpg" alt="nekr0z">&#8201;<span class="p-name fn">Evgeny Kuznetsov</span> (<span class="p-nickname nickname">nekr0z</span>)</a></span>.</p>
+<p>一个使用通用图标的 <code>person</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">person</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">dillonzq</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span><span style="color:#960050;background-color:#1e0010">/&#34;</span> <span style="color:#a6e22e">Dillon</span> <span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#a6e22e">author</span> <span style="color:#a6e22e">of</span> <span style="color:#a6e22e">the</span> <span style="color:#a6e22e">LoveIt</span> <span style="color:#a6e22e">theme</span><span style="color:#960050;background-color:#1e0010">&#34;</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果为 <span class="h-card person-mention"><a href="https://dillonzq.com/" class="u-url url" title="author of the LoveIt theme"><i class="far fa-user-circle" aria-hidden="true"></i>&#8201;<span class="p-name fn">Dillon</span></a></span>.</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-06-12</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes" data-via="https://twitter.com/LeoAphro" data-hashtags="shortcodes"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/theme-documentation-extended-shortcodes/" data-hashtag="shortcodes"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/theme-documentation-extended-shortcodes/" data-title="主题文档 - 扩展 Shortcodes"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shortcodes/">shortcodes</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/basic-markdown-syntax/" class="prev" rel="prev" title="Markdown 基本语法"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Markdown 基本语法</a>
+            <a href="/posts/theme-documentation-built-in-shortcodes/" class="next" rel="next" title="主题文档 - 内置 Shortcodes">主题文档 - 内置 Shortcodes<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><link rel="stylesheet" href="/css/2f1ef0.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-2":"\\(\\mathbf{E}=\\sum_{i} \\mathbf{E}_{i}=\\mathbf{E}_{1}+\\mathbf{E}_{2}+\\mathbf{E}_{3}+\\cdots\\)","id-3":"\n\\[ a=b+c \\\\ d+e=f \\]\n","id-4":"**Hello**"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">console.log('Hello LoveIt!');</script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>

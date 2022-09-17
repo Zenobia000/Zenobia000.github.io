@@ -1,0 +1,91 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title></title>
+        <link>/</link>
+        <description>This is my cool site</description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 17 Sep 2022 16:29:59 &#43;0800</lastBuildDate>
+            <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>主题文档 - 基本概念</title>
+    <link>/posts/theme-documentation-basics/</link>
+    <pubDate>Fri, 06 Mar 2020 21:40:32 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-basics/</guid>
+    <description><![CDATA[<p>探索 Hugo - <strong>LoveIt</strong> 主题的全部内容和背后的核心概念.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - 内容</title>
+    <link>/posts/theme-documentation-content/</link>
+    <pubDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-content/</guid>
+    <description><![CDATA[<p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - 内置 Shortcodes</title>
+    <link>/posts/theme-documentation-built-in-shortcodes/</link>
+    <pubDate>Wed, 04 Mar 2020 16:29:59 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-built-in-shortcodes/</guid>
+    <description><![CDATA[<p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - 扩展 Shortcodes</title>
+    <link>/posts/theme-documentation-extended-shortcodes/</link>
+    <pubDate>Tue, 03 Mar 2020 16:29:59 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-extended-shortcodes/</guid>
+    <description><![CDATA[<p><strong>LoveIt</strong> 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.</p>]]></description>
+</item>
+<item>
+    <title>Markdown 基本语法</title>
+    <link>/posts/basic-markdown-syntax/</link>
+    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/basic-markdown-syntax/</guid>
+    <description><![CDATA[<p>这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - mermaid Shortcode</title>
+    <link>/posts/theme-documentation-mermaid-shortcode/</link>
+    <pubDate>Tue, 03 Mar 2020 15:29:59 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-mermaid-shortcode/</guid>
+    <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"></a>
+<p><code>mermaid</code> shortcode 使用 <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener noreffer ">Mermaid</a> 库提供绘制图表和流程图的功能.</p>]]></description>
+</item>
+<item>
+    <title>Emoji 支持</title>
+    <link>/posts/emoji-support/</link>
+    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/emoji-support/</guid>
+    <description><![CDATA[<p>Emoji 可以通过多种方式在 Hugo 项目中启用.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - echarts Shortcode</title>
+    <link>/posts/theme-documentation-echarts-shortcode/</link>
+    <pubDate>Tue, 03 Mar 2020 14:29:59 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-echarts-shortcode/</guid>
+    <description><![CDATA[<p><code>echarts</code> shortcode 使用 <a href="https://echarts.apache.org/" target="_blank" rel="noopener noreffer ">ECharts</a> 库提供数据可视化的功能.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - mapbox Shortcode</title>
+    <link>/posts/theme-documentation-mapbox-shortcode/</link>
+    <pubDate>Tue, 03 Mar 2020 13:29:59 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-mapbox-shortcode/</guid>
+    <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"></a>
+<p><code>mapbox</code> shortcode 使用 <a href="https://docs.mapbox.com/mapbox-gl-js" target="_blank" rel="noopener noreffer ">Mapbox GL JS</a> 库提供互动式地图的功能.</p>]]></description>
+</item>
+<item>
+    <title>主题文档 - music Shortcode</title>
+    <link>/posts/theme-documentation-music-shortcode/</link>
+    <pubDate>Tue, 03 Mar 2020 12:29:59 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/theme-documentation-music-shortcode/</guid>
+    <description><![CDATA[<p><code>music</code> shortcode 基于 <a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener noreffer ">APlayer</a> 和 <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreffer ">MetingJS</a> 库提供了一个内嵌的响应式音乐播放器.</p>]]></description>
+</item>
+</channel>
+</rss>

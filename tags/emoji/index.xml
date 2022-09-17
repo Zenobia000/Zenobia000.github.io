@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>emoji - Tag - </title>
+        <link>/tags/emoji/</link>
+        <description>emoji - Tag - </description>
+        <generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</lastBuildDate><atom:link href="/tags/emoji/" rel="self" type="application/rss+xml" /><item>
+    <title>Emoji 支持</title>
+    <link>/posts/emoji-support/</link>
+    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
+    <author>Dillon</author>
+    <guid>/posts/emoji-support/</guid>
+    <description><![CDATA[<p>Emoji 可以通过多种方式在 Hugo 项目中启用.</p>]]></description>
+</item>
+</channel>
+</rss>

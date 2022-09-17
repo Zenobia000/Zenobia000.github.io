@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>主题文档 - mermaid Shortcode - </title><meta name="Description" content="mermaid shortcode 使用 Mermaid 库提供绘制图表和流程图的功能."><meta property="og:title" content="主题文档 - mermaid Shortcode" />
+<meta property="og:description" content="mermaid shortcode 使用 Mermaid 库提供绘制图表和流程图的功能." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/theme-documentation-mermaid-shortcode/" /><meta property="og:image" content="/posts/theme-documentation-mermaid-shortcode/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-03-03T15:29:59+08:00" />
+<meta property="article:modified_time" content="2020-03-03T15:29:59+08:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/theme-documentation-mermaid-shortcode/featured-image.png"/>
+<meta name="twitter:title" content="主题文档 - mermaid Shortcode"/>
+<meta name="twitter:description" content="mermaid shortcode 使用 Mermaid 库提供绘制图表和流程图的功能."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/theme-documentation-mermaid-shortcode/" /><link rel="prev" href="/posts/emoji-support/" /><link rel="next" href="/posts/basic-markdown-syntax/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "主题文档 - mermaid Shortcode",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/theme-documentation-mermaid-shortcode\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/posts\/theme-documentation-mermaid-shortcode\/featured-image.png",
+                            "width":  1170 ,
+                            "height":  497 
+                        }],"genre": "posts","keywords": "shortcodes","wordcount":  391 ,
+        "url": "\/posts\/theme-documentation-mermaid-shortcode\/","datePublished": "2020-03-03T15:29:59+08:00","dateModified": "2020-03-03T15:29:59+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Dillon"
+            },"description": "mermaid shortcode 使用 Mermaid 库提供绘制图表和流程图的功能."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">主题文档 - mermaid Shortcode</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/documentation/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Documentation</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2020-03-03">2020-03-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;391 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;2 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/theme-documentation-mermaid-shortcode/featured-image.png"
+        data-srcset="/posts/theme-documentation-mermaid-shortcode/featured-image.png, /posts/theme-documentation-mermaid-shortcode/featured-image.png 1.5x, /posts/theme-documentation-mermaid-shortcode/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/theme-documentation-mermaid-shortcode/featured-image.png"
+        title="mermaid shortcode 使用 Mermaid 库提供绘制图表和流程图的功能." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#flowchart">流程图</a></li>
+    <li><a href="#sequence-diagram">时序图</a></li>
+    <li><a href="#gantt">甘特图</a></li>
+    <li><a href="#class-diagram">类图</a></li>
+    <li><a href="#state-diagram">状态图</a></li>
+    <li><a href="#git-graph">Git 图</a></li>
+    <li><a href="#entity-relationship-diagram">实体关系图</a></li>
+    <li><a href="#user-journey">用户体验旅程图</a></li>
+    <li><a href="#pie">饼图</a></li>
+    <li><a href="#requirement-diagram">依赖图</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"><img
+        class="lazyload version"
+        src="/svg/loading.min.svg"
+        data-src="/svg/version/0.2.11-changed.min.svg"
+        data-srcset="/svg/version/0.2.11-changed.min.svg, /svg/version/0.2.11-changed.min.svg 1.5x, /svg/version/0.2.11-changed.min.svg 2x"
+        data-sizes="auto"
+        alt="LoveIt CHANGED | 0.2.11"
+        title="LoveIt CHANGED | 0.2.11" /></a>
+<p><code>mermaid</code> shortcode 使用 <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener noreffer ">Mermaid</a> 库提供绘制图表和流程图的功能.</p>
+<p><a href="https://mermaidjs.github.io/" target="_blank" rel="noopener noreffer ">mermaid</a> 是一个可以帮助你在文章中绘制图表和流程图的库, 类似 Markdown 的语法.</p>
+<p>只需将你的 mermaid 代码插入 <code>mermaid</code> shortcode 中即可.</p>
+<h2 id="flowchart">流程图</h2>
+<p>一个 <strong>流程图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>graph LR;
+</span></span><span style="display:flex;"><span>    A[Hard edge] --&gt;|Link text| B(Round edge)
+</span></span><span style="display:flex;"><span>    B --&gt; C{Decision}
+</span></span><span style="display:flex;"><span>    C --&gt;|One| D[Result one]
+</span></span><span style="display:flex;"><span>    C --&gt;|Two| E[Result two]
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-1"></div>
+<h2 id="sequence-diagram">时序图</h2>
+<p>一个 <strong>时序图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>sequenceDiagram
+</span></span><span style="display:flex;"><span>    participant Alice
+</span></span><span style="display:flex;"><span>    participant Bob
+</span></span><span style="display:flex;"><span>    Alice-&gt;&gt;John: Hello John, how are you?
+</span></span><span style="display:flex;"><span>    loop Healthcheck
+</span></span><span style="display:flex;"><span>        John-&gt;John: Fight against hypochondria
+</span></span><span style="display:flex;"><span>    end
+</span></span><span style="display:flex;"><span>    Note right of John: Rational thoughts &lt;<span style="color:#f92672">br</span>/&gt;prevail...
+</span></span><span style="display:flex;"><span>    John--&gt;Alice: Great!
+</span></span><span style="display:flex;"><span>    John-&gt;Bob: How about you?
+</span></span><span style="display:flex;"><span>    Bob--&gt;John: Jolly good!
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-2"></div>
+<h2 id="gantt">甘特图</h2>
+<p>一个 <strong>甘特图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>gantt
+</span></span><span style="display:flex;"><span>dateFormat  YYYY-MM-DD
+</span></span><span style="display:flex;"><span>title Adding GANTT diagram to mermaid
+</span></span><span style="display:flex;"><span>excludes weekdays 2014-01-10
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>section A section
+</span></span><span style="display:flex;"><span>Completed task            :done,    des1, 2014-01-06,2014-01-08
+</span></span><span style="display:flex;"><span>Active task               :active,  des2, 2014-01-09, 3d
+</span></span><span style="display:flex;"><span>Future task               :         des3, after des2, 5d
+</span></span><span style="display:flex;"><span>Future task2              :         des4, after des3, 5d
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-3"></div>
+<h2 id="class-diagram">类图</h2>
+<p>一个 <strong>类图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>classDiagram
+</span></span><span style="display:flex;"><span>    Animal <span style="color:#960050;background-color:#1e0010">&lt;</span>|-- Duck
+</span></span><span style="display:flex;"><span>    Animal <span style="color:#960050;background-color:#1e0010">&lt;</span>|-- Fish
+</span></span><span style="display:flex;"><span>    Animal <span style="color:#960050;background-color:#1e0010">&lt;</span>|-- Zebra
+</span></span><span style="display:flex;"><span>    Animal : +int age
+</span></span><span style="display:flex;"><span>    Animal : +String gender
+</span></span><span style="display:flex;"><span>    Animal: +isMammal()
+</span></span><span style="display:flex;"><span>    Animal: +mate()
+</span></span><span style="display:flex;"><span>    class Duck{
+</span></span><span style="display:flex;"><span>        +String beakColor
+</span></span><span style="display:flex;"><span>        +swim()
+</span></span><span style="display:flex;"><span>        +quack()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    class Fish{
+</span></span><span style="display:flex;"><span>        -int sizeInFeet
+</span></span><span style="display:flex;"><span>        -canEat()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    class Zebra{
+</span></span><span style="display:flex;"><span>        +bool is_wild
+</span></span><span style="display:flex;"><span>        +run()
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-4"></div>
+<h2 id="state-diagram">状态图</h2>
+<p>一个 <strong>状态图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>stateDiagram-v2
+</span></span><span style="display:flex;"><span>    [*] --&gt; Still
+</span></span><span style="display:flex;"><span>    Still --&gt; [*]
+</span></span><span style="display:flex;"><span>    Still --&gt; Moving
+</span></span><span style="display:flex;"><span>    Moving --&gt; Still
+</span></span><span style="display:flex;"><span>    Moving --&gt; Crash
+</span></span><span style="display:flex;"><span>    Crash --&gt; [*]
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-5"></div>
+<h2 id="git-graph">Git 图</h2>
+<p>一个 <strong>Git 图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>gitGraph
+</span></span><span style="display:flex;"><span>    commit
+</span></span><span style="display:flex;"><span>    commit
+</span></span><span style="display:flex;"><span>    branch develop
+</span></span><span style="display:flex;"><span>    checkout develop
+</span></span><span style="display:flex;"><span>    commit
+</span></span><span style="display:flex;"><span>    commit
+</span></span><span style="display:flex;"><span>    checkout main
+</span></span><span style="display:flex;"><span>    merge develop
+</span></span><span style="display:flex;"><span>    commit
+</span></span><span style="display:flex;"><span>    commit
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-6"></div>
+<h2 id="entity-relationship-diagram">实体关系图</h2>
+<p>一个 <strong>实体关系图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>erDiagram
+</span></span><span style="display:flex;"><span>    CUSTOMER ||--o{ ORDER : places
+</span></span><span style="display:flex;"><span>    ORDER ||--|{ LINE-ITEM : contains
+</span></span><span style="display:flex;"><span>    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-7"></div>
+<h2 id="user-journey">用户体验旅程图</h2>
+<p>一个 <strong>用户体验旅程图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>journey
+</span></span><span style="display:flex;"><span>    title My working day
+</span></span><span style="display:flex;"><span>    section Go to work
+</span></span><span style="display:flex;"><span>      Make tea: 5: Me
+</span></span><span style="display:flex;"><span>      Go upstairs: 3: Me
+</span></span><span style="display:flex;"><span>      Do work: 1: Me, Cat
+</span></span><span style="display:flex;"><span>    section Go home
+</span></span><span style="display:flex;"><span>      Go downstairs: 5: Me
+</span></span><span style="display:flex;"><span>      Sit down: 5: Me
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-8"></div>
+<h2 id="pie">饼图</h2>
+<p>一个 <strong>饼图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>pie
+</span></span><span style="display:flex;"><span>    &#34;Dogs&#34; : 386
+</span></span><span style="display:flex;"><span>    &#34;Cats&#34; : 85
+</span></span><span style="display:flex;"><span>    &#34;Rats&#34; : 15
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-9"></div>
+<h2 id="requirement-diagram">依赖图</h2>
+<p>一个 <strong>依赖图</strong> <code>mermaid</code> 示例:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>{{&lt; <span style="color:#f92672">mermaid</span> &gt;}}
+</span></span><span style="display:flex;"><span>requirementDiagram
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>requirement test_req {
+</span></span><span style="display:flex;"><span>id: 1
+</span></span><span style="display:flex;"><span>text: the test text.
+</span></span><span style="display:flex;"><span>risk: high
+</span></span><span style="display:flex;"><span>verifymethod: test
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>element test_entity {
+</span></span><span style="display:flex;"><span>type: simulation
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>test_entity - satisfies -&gt; test_req
+</span></span><span style="display:flex;"><span>{{&lt; /<span style="color:#f92672">mermaid</span> &gt;}}
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<div class="mermaid" id="id-10"></div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-03-03</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/theme-documentation-mermaid-shortcode/" data-title="主题文档 - mermaid Shortcode" data-via="https://twitter.com/LeoAphro" data-hashtags="shortcodes"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/theme-documentation-mermaid-shortcode/" data-hashtag="shortcodes"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/theme-documentation-mermaid-shortcode/" data-title="主题文档 - mermaid Shortcode"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/theme-documentation-mermaid-shortcode/" data-title="主题文档 - mermaid Shortcode"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/theme-documentation-mermaid-shortcode/" data-title="主题文档 - mermaid Shortcode"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/shortcodes/">shortcodes</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/emoji-support/" class="prev" rel="prev" title="Emoji 支持"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Emoji 支持</a>
+            <a href="/posts/basic-markdown-syntax/" class="next" rel="next" title="Markdown 基本语法">Markdown 基本语法<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid@9.1.3/dist/mermaid.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"graph LR;\n    A[Hard edge] --\u003e|Link text| B(Round edge)\n    B --\u003e C{Decision}\n    C --\u003e|One| D[Result one]\n    C --\u003e|Two| E[Result two]","id-10":"requirementDiagram\n\nrequirement test_req {\nid: 1\ntext: the test text.\nrisk: high\nverifymethod: test\n}\n\nelement test_entity {\ntype: simulation\n}\n\ntest_entity - satisfies -\u003e test_req","id-2":"sequenceDiagram\n    participant Alice\n    participant Bob\n    Alice-\u003e\u003eJohn: Hello John, how are you?\n    loop Healthcheck\n        John-\u003eJohn: Fight against hypochondria\n    end\n    Note right of John: Rational thoughts \u003cbr/\u003eprevail...\n    John--\u003eAlice: Great!\n    John-\u003eBob: How about you?\n    Bob--\u003eJohn: Jolly good!","id-3":"gantt\ndateFormat  YYYY-MM-DD\ntitle Adding GANTT diagram to mermaid\nexcludes weekdays 2014-01-10\n\nsection A section\nCompleted task            :done,    des1, 2014-01-06,2014-01-08\nActive task               :active,  des2, 2014-01-09, 3d\nFuture task               :         des3, after des2, 5d\nFuture task2              :         des4, after des3, 5d","id-4":"classDiagram\n    Animal \u003c|-- Duck\n    Animal \u003c|-- Fish\n    Animal \u003c|-- Zebra\n    Animal : +int age\n    Animal : +String gender\n    Animal: +isMammal()\n    Animal: +mate()\n    class Duck{\n        +String beakColor\n        +swim()\n        +quack()\n    }\n    class Fish{\n        -int sizeInFeet\n        -canEat()\n    }\n    class Zebra{\n        +bool is_wild\n        +run()\n    }","id-5":"stateDiagram-v2\n    [*] --\u003e Still\n    Still --\u003e [*]\n    Still --\u003e Moving\n    Moving --\u003e Still\n    Moving --\u003e Crash\n    Crash --\u003e [*]","id-6":"gitGraph\n    commit\n    commit\n    branch develop\n    checkout develop\n    commit\n    commit\n    checkout main\n    merge develop\n    commit\n    commit","id-7":"erDiagram\n    CUSTOMER ||--o{ ORDER : places\n    ORDER ||--|{ LINE-ITEM : contains\n    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses","id-8":"journey\n    title My working day\n    section Go to work\n      Make tea: 5: Me\n      Go upstairs: 3: Me\n      Do work: 1: Me, Cat\n    section Go home\n      Go downstairs: 5: Me\n      Sit down: 5: Me","id-9":"pie\n    \"Dogs\" : 386\n    \"Cats\" : 85\n    \"Rats\" : 15"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>

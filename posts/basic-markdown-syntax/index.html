@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Markdown 基本语法 - </title><meta name="Description" content="这篇文章展示了基本的 Markdown 语法和格式."><meta property="og:title" content="Markdown 基本语法" />
+<meta property="og:description" content="这篇文章展示了基本的 Markdown 语法和格式." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/basic-markdown-syntax/" /><meta property="og:image" content="/posts/basic-markdown-syntax/featured-image.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-12-01T21:57:40+08:00" />
+<meta property="article:modified_time" content="2020-01-01T16:45:40+08:00" /><meta property="og:site_name" content="Sunnie Blog" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/posts/basic-markdown-syntax/featured-image.png"/>
+<meta name="twitter:title" content="Markdown 基本语法"/>
+<meta name="twitter:description" content="这篇文章展示了基本的 Markdown 语法和格式."/>
+<meta name="application-name" content="Sunny Blog">
+<meta name="apple-mobile-web-app-title" content="Sunny Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="lib/images/favicon.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/basic-markdown-syntax/" /><link rel="prev" href="/posts/theme-documentation-mermaid-shortcode/" /><link rel="next" href="/posts/theme-documentation-extended-shortcodes/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Markdown 基本语法",
+        "inLanguage": "",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/basic-markdown-syntax\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "\/posts\/basic-markdown-syntax\/featured-image.png",
+                            "width":  1420 ,
+                            "height":  708 
+                        }],"genre": "posts","keywords": "Markdown, HTML","wordcount":  1528 ,
+        "url": "\/posts\/basic-markdown-syntax\/","datePublished": "2019-12-01T21:57:40+08:00","dateModified": "2020-01-01T16:45:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": "","logo": "lib\/black.jpg"},"author": {
+                "@type": "Person",
+                "name": "Dillon"
+            },"description": "这篇文章展示了基本的 Markdown 语法和格式."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="">Sunnie Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/life/"> 生活 </a><a class="menu-item" href="/invest/"> 投資 </a><a class="menu-item" href="/code/"> 程式 </a><a class="menu-item" href="/tags/"> 標籤 </a><a class="menu-item" href="/categories/"> 分類 </a><a class="menu-item" href="/about/"> 關於我 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="">Sunnie Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/life/" title="">生活</a><a class="menu-item" href="/invest/" title="">投資</a><a class="menu-item" href="/code/" title="">程式</a><a class="menu-item" href="/tags/" title="">標籤</a><a class="menu-item" href="/categories/" title="">分類</a><a class="menu-item" href="/about/" title="">關於我</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Markdown 基本语法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/markdown/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>Markdown</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2019-12-01">2019-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;1528 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;8 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/basic-markdown-syntax/featured-image.png"
+        data-srcset="/posts/basic-markdown-syntax/featured-image.png, /posts/basic-markdown-syntax/featured-image.png 1.5x, /posts/basic-markdown-syntax/featured-image.png 2x"
+        data-sizes="auto"
+        alt="/posts/basic-markdown-syntax/featured-image.png"
+        title="这篇文章展示了基本的 Markdown 语法和格式." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-标题">1 标题</a></li>
+    <li><a href="#2-注释">2 注释</a></li>
+    <li><a href="#3-水平线">3 水平线</a></li>
+    <li><a href="#4-段落">4 段落</a></li>
+    <li><a href="#5-内联-html-元素">5 内联 HTML 元素</a></li>
+    <li><a href="#6-强调">6 强调</a>
+      <ul>
+        <li><a href="#加粗">加粗</a></li>
+        <li><a href="#斜体">斜体</a></li>
+        <li><a href="#删除线">删除线</a></li>
+        <li><a href="#组合">组合</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-引用">7 引用</a></li>
+    <li><a href="#8-列表">8 列表</a>
+      <ul>
+        <li><a href="#无序列表">无序列表</a></li>
+        <li><a href="#有序列表">有序列表</a></li>
+        <li><a href="#任务列表">任务列表</a></li>
+      </ul>
+    </li>
+    <li><a href="#9-代码">9 代码</a>
+      <ul>
+        <li><a href="#行内代码">行内代码</a></li>
+        <li><a href="#缩进代码">缩进代码</a></li>
+        <li><a href="#围栏代码块">围栏代码块</a></li>
+        <li><a href="#语法高亮">语法高亮</a></li>
+      </ul>
+    </li>
+    <li><a href="#10-表格">10 表格</a></li>
+    <li><a href="#links">11 链接</a>
+      <ul>
+        <li><a href="#基本链接">基本链接</a></li>
+        <li><a href="#添加一个标题">添加一个标题</a></li>
+        <li><a href="#定位标记">定位标记</a></li>
+      </ul>
+    </li>
+    <li><a href="#12-脚注">12 脚注</a></li>
+    <li><a href="#13-图片">13 图片</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.</p>
+<div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>这篇文章借鉴了一篇很棒的<a href="http://learn.getgrav.org/content/markdown" target="_blank" rel="noopener noreffer ">来自 Grav 的文章</a>.</p>
+<p>如果你想了解 <strong>Loveit</strong> 主题的扩展 Markdown 语法, 请阅读<a href="../theme-documentation-content#extended-markdown-syntax" rel="">扩展 Markdown 语法页面</a>.</p>
+</div>
+        </div>
+    </div>
+<p>事实上, 编写 Web 内容很麻烦. <strong><ruby>WYSIWYG<rt>所见即所得</rt></ruby></strong> 编辑器帮助减轻了这一任务. 但通常会导致代码太糟, 或更糟糕的是, 网页也会很丑.</p>
+<p>没有通常伴随的所有复杂和丑陋的问题, <strong>Markdown</strong> 是一种更好的生成 <strong>HTML</strong> 内容的方式.</p>
+<p>一些主要好处是:</p>
+<ol>
+<li>Markdown 简单易学, 几乎没有多余的字符, 因此编写内容也更快.</li>
+<li>用 Markdown 书写时出错的机会更少.</li>
+<li>可以产生有效的 XHTML 输出.</li>
+<li>将内容和视觉显示保持分开, 这样就不会打乱网站的外观.</li>
+<li>可以在你喜欢的任何文本编辑器或 Markdown 应用程序中编写内容.</li>
+<li>Markdown 使用起来很有趣!</li>
+</ol>
+<p>John Gruber, Markdown 的作者如是说:</p>
+<blockquote>
+<p>Markdown 格式的首要设计目标是更具可读性.
+最初的想法是 Markdown 格式的文档应当以纯文本形式发布,
+而不会看起来像被标签或格式说明所标记.
+虽然 Markdown 的语法受到几种现有的文本到 HTML 转换工具的影响,
+但 Markdown 语法的最大灵感来源是纯文本电子邮件的格式.</p>
+<div id="id-1">&ndash; <em>John Gruber</em></div>
+</blockquote>
+<p>话不多说, 我们来回顾一下 Markdown 的主要语法以及生成的 HTML 样式!</p>
+<div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><i class="far fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;将此页保存为书签，以备将来参考!</div>
+        </div>
+    </div>
+<h2 id="1-标题">1 标题</h2>
+<p>从 <code>h2</code> 到 <code>h6</code> 的标题在每个级别上都加上一个 <code>＃</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">## h2 标题
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">### h3 标题
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#### h4 标题
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">##### h5 标题
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">###### h6 标题
+</span></span></span></code></pre></div><p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h2</span>&gt;h2 标题&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h3</span>&gt;h3 标题&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h4</span>&gt;h4 标题&lt;/<span style="color:#f92672">h4</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h5</span>&gt;h5 标题&lt;/<span style="color:#f92672">h5</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">h6</span>&gt;h6 标题&lt;/<span style="color:#f92672">h6</span>&gt;
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>标题 ID<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>要添加自定义标题 ID, 请在与标题相同的行中将自定义 ID 放在花括号中:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">### 一个很棒的标题 {#custom-id}
+</span></span></span></code></pre></div><p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h3</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;custom-id&#34;</span>&gt;一个很棒的标题&lt;/<span style="color:#f92672">h3</span>&gt;
+</span></span></code></pre></div></div>
+        </div>
+    </div>
+<h2 id="2-注释">2 注释</h2>
+<p>注释是和 HTML 兼容的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!--
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">这是一段注释
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">--&gt;</span>
+</span></span></code></pre></div><p><strong>不能</strong>看到以下的注释:</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="3-水平线">3 水平线</h2>
+<p>HTML 中的 <code>&lt;hr&gt;</code> 标签是用来在段落元素之间创建一个 &ldquo;专题间隔&rdquo; 的.
+使用 Markdown, 你可以用以下方式创建一个 <code>&lt;hr&gt;</code> 标签:</p>
+<ul>
+<li><code>___</code>: 三个连续的下划线</li>
+<li><code>---</code>: 三个连续的破折号</li>
+<li><code>***</code>: 三个连续的星号</li>
+</ul>
+<p>呈现的输出效果如下:</p>
+<hr>
+<hr>
+<hr>
+<h2 id="4-段落">4 段落</h2>
+<p>按照纯文本的方式书写段落, 纯文本在呈现的 HTML 中将用 <code>&lt;p&gt;</code>/<code>&lt;/p&gt;</code> 标签包裹.</p>
+<p>如下段落:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri,
+</span></span><span style="display:flex;"><span>animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex,
+</span></span><span style="display:flex;"><span>soluta officiis concludaturque ei qui, vide sensibus vim ad.
+</span></span></code></pre></div><p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><p>可以使用一个空白行进行<strong>换行</strong>.</p>
+<h2 id="5-内联-html-元素">5 内联 HTML 元素</h2>
+<p>如果你需要某个 HTML 标签 (带有一个类), 则可以简单地像这样使用:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>Markdown 格式的段落.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;class&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    这是 &lt;<span style="color:#f92672">b</span>&gt;HTML&lt;/<span style="color:#f92672">b</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Markdown 格式的段落.
+</span></span></code></pre></div><h2 id="6-强调">6 强调</h2>
+<h3 id="加粗">加粗</h3>
+<p>用于强调带有较粗字体的文本片段.</p>
+<p>以下文本片段会被 <strong>渲染为粗体</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>**渲染为粗体**
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">__渲染为粗体__</span>
+</span></span></code></pre></div><p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">strong</span>&gt;渲染为粗体&lt;/<span style="color:#f92672">strong</span>&gt;
+</span></span></code></pre></div><h3 id="斜体">斜体</h3>
+<p>用于强调带有斜体的文本片段.</p>
+<p>以下文本片段被 <em>渲染为斜体</em>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>*渲染为斜体*
+</span></span><span style="display:flex;"><span><span style="font-style:italic">_渲染为斜体_</span>
+</span></span></code></pre></div><p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">em</span>&gt;渲染为斜体&lt;/<span style="color:#f92672">em</span>&gt;
+</span></span></code></pre></div><h3 id="删除线">删除线</h3>
+<p>按照 <a href="https://github.github.com/gfm/" target="_blank" rel="noopener noreffer "><strong><ruby>GFM<rt>GitHub flavored Markdown</rt></ruby></strong></a> 你可以使用删除线.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>~~这段文本带有删除线.~~
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<p><del>这段文本带有删除线.</del></p>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">del</span>&gt;这段文本带有删除线.&lt;/<span style="color:#f92672">del</span>&gt;
+</span></span></code></pre></div><h3 id="组合">组合</h3>
+<p>加粗, 斜体, 和删除线可以 组合使用.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>***加粗和斜体***
+</span></span><span style="display:flex;"><span><span style="color:#f92672">~~**删除线和加粗**~~</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">~~*删除线和斜体*~~</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">~~***加粗, 斜体和删除线***~~</span>
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<p><em><strong>加粗和斜体</strong></em></p>
+<p><del><strong>删除线和加粗</strong></del></p>
+<p><del><em>删除线和斜体</em></del></p>
+<p><del><em><strong>加粗, 斜体和删除线</strong></em></del></p>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">em</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt;加粗和斜体&lt;/<span style="color:#f92672">strong</span>&gt;&lt;/<span style="color:#f92672">em</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">del</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt;删除线和加粗&lt;/<span style="color:#f92672">strong</span>&gt;&lt;/<span style="color:#f92672">del</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">del</span>&gt;&lt;<span style="color:#f92672">em</span>&gt;删除线和斜体&lt;/<span style="color:#f92672">em</span>&gt;&lt;/<span style="color:#f92672">del</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">del</span>&gt;&lt;<span style="color:#f92672">em</span>&gt;&lt;<span style="color:#f92672">strong</span>&gt;加粗, 斜体和删除线&lt;/<span style="color:#f92672">strong</span>&gt;&lt;/<span style="color:#f92672">em</span>&gt;&lt;/<span style="color:#f92672">del</span>&gt;
+</span></span></code></pre></div><h2 id="7-引用">7 引用</h2>
+<p>用于在文档中引用其他来源的内容块.</p>
+<p>在要引用的任何文本之前添加 <code>&gt;</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">**Fusion Drive** combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.
+</span></span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<blockquote>
+<p><strong>Fusion Drive</strong> combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.</p>
+</blockquote>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">blockquote</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">strong</span>&gt;Fusion Drive&lt;/<span style="color:#f92672">strong</span>&gt; combines a hard drive with a flash storage (solid-state drive) and presents it as a single logical volume with the space of both drives combined.
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">blockquote</span>&gt;
+</span></span></code></pre></div><p>引用也可以嵌套:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">&gt; </span><span style="font-style:italic">Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+</span></span></span><span style="display:flex;"><span><span style="font-style:italic"></span>Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
+</span></span><span style="display:flex;"><span>&gt;&gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+</span></span><span style="display:flex;"><span>odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue.
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.</p>
+<blockquote>
+<p>Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.</p>
+</blockquote>
+</blockquote>
+<h2 id="8-列表">8 列表</h2>
+<h3 id="无序列表">无序列表</h3>
+<p>一系列项的列表, 其中项的顺序没有明显关系.</p>
+<p>你可以使用以下任何符号来表示无序列表中的项:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">*</span> 一项内容
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> 一项内容
+</span></span><span style="display:flex;"><span>+ 一项内容
+</span></span></code></pre></div><p>例如:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Lorem ipsum dolor sit amet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Consectetur adipiscing elit
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Integer molestie lorem at massa
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Facilisis in pretium nisl aliquet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Nulla volutpat aliquam velit
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> Phasellus iaculis neque
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> Purus sodales ultricies
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> Vestibulum laoreet porttitor sem
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> Ac tristique libero volutpat at
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Faucibus porta lacus fringilla vel
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Aenean sit amet erat nunc
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">*</span> Eget porttitor lorem
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit
+<ul>
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Consectetur adipiscing elit&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Integer molestie lorem at massa&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Facilisis in pretium nisl aliquet&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Nulla volutpat aliquam velit
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;Phasellus iaculis neque&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;Purus sodales ultricies&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;Vestibulum laoreet porttitor sem&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">li</span>&gt;Ac tristique libero volutpat at&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Aenean sit amet erat nunc&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Eget porttitor lorem&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ul</span>&gt;
+</span></span></code></pre></div><h3 id="有序列表">有序列表</h3>
+<p>一系列项的列表, 其中项的顺序确实很重要.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Lorem ipsum dolor sit amet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">2.</span> Consectetur adipiscing elit
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">3.</span> Integer molestie lorem at massa
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">4.</span> Facilisis in pretium nisl aliquet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">5.</span> Nulla volutpat aliquam velit
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">6.</span> Faucibus porta lacus fringilla vel
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">7.</span> Aenean sit amet erat nunc
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">8.</span> Eget porttitor lorem
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">ol</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Consectetur adipiscing elit&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Integer molestie lorem at massa&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Facilisis in pretium nisl aliquet&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Nulla volutpat aliquam velit&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Aenean sit amet erat nunc&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">li</span>&gt;Eget porttitor lorem&lt;/<span style="color:#f92672">li</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">ol</span>&gt;
+</span></span></code></pre></div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>如果你对每一项使用 <code>1.</code>, Markdown 将自动为每一项编号. 例如:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Lorem ipsum dolor sit amet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Consectetur adipiscing elit
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Integer molestie lorem at massa
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Facilisis in pretium nisl aliquet
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Nulla volutpat aliquam velit
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Faucibus porta lacus fringilla vel
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Aenean sit amet erat nunc
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">1.</span> Eget porttitor lorem
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+</div>
+        </div>
+    </div>
+<h3 id="任务列表">任务列表</h3>
+<p>任务列表使你可以创建带有复选框的列表.
+要创建任务列表, 请在任务列表项之前添加破折号 (<code>-</code>) 和带有空格的方括号 (<code>[ ]</code>). 要选择一个复选框，请在方括号之间添加 x (<code>[x]</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">- [x]</span> Write the press release
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Update the website
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">- [ ]</span> Contact the media
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<ul>
+<li><i class="far fa-check-square fa-fw" aria-hidden="true"></i> Write the press release</li>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> Update the website</li>
+<li><i class="far fa-square fa-fw" aria-hidden="true"></i> Contact the media</li>
+</ul>
+<h2 id="9-代码">9 代码</h2>
+<h3 id="行内代码">行内代码</h3>
+<p>用 <!-- raw HTML omitted -->`<!-- raw HTML omitted --> 包装行内代码段.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>在这个例子中, <span style="color:#e6db74">`&lt;section&gt;&lt;/section&gt;`</span> 会被包裹成 <span style="font-weight:bold">**代码**</span>.
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<p>在这个例子中, <code>&lt;section&gt;&lt;/section&gt;</code> 会被包裹成 <strong>代码</strong>.</p>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>  在这个例子中, &lt;<span style="color:#f92672">code</span>&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/<span style="color:#f92672">code</span>&gt; 会被包裹成 &lt;<span style="color:#f92672">strong</span>&gt;代码&lt;/<span style="color:#f92672">strong</span>&gt;.
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h3 id="缩进代码">缩进代码</h3>
+<p>将几行代码缩进至少四个空格，例如:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>    // Some comments
+</span></span><span style="display:flex;"><span>    line 1 of code
+</span></span><span style="display:flex;"><span>    line 2 of code
+</span></span><span style="display:flex;"><span>    line 3 of code
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+</code></pre>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">pre</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">code</span>&gt;
+</span></span><span style="display:flex;"><span>    // Some comments
+</span></span><span style="display:flex;"><span>    line 1 of code
+</span></span><span style="display:flex;"><span>    line 2 of code
+</span></span><span style="display:flex;"><span>    line 3 of code
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">code</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">pre</span>&gt;
+</span></span></code></pre></div><h3 id="围栏代码块">围栏代码块</h3>
+<p>使用 &ldquo;围栏&rdquo; <!-- raw HTML omitted -->```<!-- raw HTML omitted --> 来生成一段带有语言属性的代码块.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#e6db74">```markdown
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span>Sample text here...
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span></span></span></code></pre></div>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">pre</span> <span style="color:#a6e22e">language-html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">code</span>&gt;Sample text here...&lt;/<span style="color:#f92672">code</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">pre</span>&gt;
+</span></span></code></pre></div><h3 id="语法高亮">语法高亮</h3>
+<p><strong><ruby>GFM<rt>GitHub Flavored Markdown</rt></ruby></strong> 也支持语法高亮.</p>
+<p>要激活它，只需在第一个代码 &ldquo;围栏&rdquo; 之后直接添加你要使用的语言的文件扩展名,
+<!-- raw HTML omitted -->```js<!-- raw HTML omitted -->, 语法高亮显示将自动应用于渲染的 HTML 中.</p>
+<p>例如, 在以下 JavaScript 代码中应用语法高亮:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#e6db74">```js
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">initConfig</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">assemble</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">assets</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;docs/assets&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/data/*.{json,yml}&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">helpers</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/custom-helpers.js&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">partials</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/partials/**/*.{hbs,md}&#39;</span>]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pages</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">layout</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;default.hbs&#39;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">files</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;./&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/templates/pages/index.hbs&#39;</span>]
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span></span></span></code></pre></div>
+<p>呈现的输出效果如下:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">grunt</span>.<span style="color:#a6e22e">initConfig</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">assemble</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">assets</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;docs/assets&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/data/*.{json,yml}&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">helpers</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;src/custom-helpers.js&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">partials</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/partials/**/*.{hbs,md}&#39;</span>]
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pages</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">layout</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;default.hbs&#39;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">files</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;./&#39;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;src/templates/pages/index.hbs&#39;</span>]
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>Hugo</strong> 文档中的 <a href="https://gohugo.io/content-management/syntax-highlighting/" target="_blank" rel="noopener noreffer ">语法高亮页面</a> 介绍了有关语法高亮的更多信息,
+包括语法高亮的 shortcode.</div>
+        </div>
+    </div>
+<h2 id="10-表格">10 表格</h2>
+<p>通过在每个单元格之间添加竖线作为分隔线, 并在标题下添加一行破折号 (也由竖线分隔) 来创建表格. 注意, 竖线不需要垂直对齐.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>| Option | Description |
+</span></span><span style="display:flex;"><span>| ------ | ----------- |
+</span></span><span style="display:flex;"><span>| data   | path to data files to supply the data that will be passed into templates. |
+</span></span><span style="display:flex;"><span>| engine | engine to be used for processing templates. Handlebars is the default. |
+</span></span><span style="display:flex;"><span>| ext    | extension to be used for dest files. |
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">thead</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">th</span>&gt;Option&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">th</span>&gt;Description&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">thead</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">td</span>&gt;data&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">td</span>&gt;path to data files to supply the data that will be passed into templates.&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">td</span>&gt;engine&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">td</span>&gt;engine to be used for processing templates. Handlebars is the default.&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">td</span>&gt;ext&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">td</span>&gt;extension to be used for dest files.&lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">table</span>&gt;
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>文本右对齐或居中对齐<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><p>在任何标题下方的破折号右侧添加冒号将使该列的文本右对齐.</p>
+<p>在任何标题下方的破折号两边添加冒号将使该列的对齐文本居中.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>| Option | Description |
+</span></span><span style="display:flex;"><span>|:------:| -----------:|
+</span></span><span style="display:flex;"><span>| data   | path to data files to supply the data that will be passed into templates. |
+</span></span><span style="display:flex;"><span>| engine | engine to be used for processing templates. Handlebars is the default. |
+</span></span><span style="display:flex;"><span>| ext    | extension to be used for dest files. |
+</span></span></code></pre></div><p>呈现的输出效果如下:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Option</th>
+<th style="text-align:right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">data</td>
+<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align:center">engine</td>
+<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align:center">ext</td>
+<td style="text-align:right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+    </div>
+<h2 id="links">11 链接</h2>
+<h3 id="基本链接">基本链接</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>&lt;<span style="color:#f92672">https:</span><span style="color:#960050;background-color:#1e0010">//</span><span style="color:#a6e22e">assemble</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">io</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">contact</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#a6e22e">revolunet</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">com</span>&gt;
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">Assemble</span>](<span style="color:#a6e22e">https://assemble.io</span>)
+</span></span></code></pre></div><p>呈现的输出效果如下 (将鼠标悬停在链接上，没有提示):</p>
+<p><a href="https://assemble.io" target="_blank" rel="noopener noreffer ">https://assemble.io</a></p>
+<p><a href="mailto:contact@revolunet.com" rel="">contact@revolunet.com</a></p>
+<p><a href="https://assemble.io" target="_blank" rel="noopener noreffer ">Assemble</a></p>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assemble.io&#34;</span>&gt;https://assemble.io&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:contact@revolunet.com&#34;</span>&gt;contact@revolunet.com&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://assemble.io&#34;</span>&gt;Assemble&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><h3 id="添加一个标题">添加一个标题</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[<span style="color:#f92672">Upstage</span>](<span style="color:#a6e22e">https://github.com/upstage/ &#34;Visit Upstage!&#34;</span>)
+</span></span></code></pre></div><p>呈现的输出效果如下 (将鼠标悬停在链接上，会有一行提示):</p>
+<p><a href="https://github.com/upstage/" title="Visit Upstage!" target="_blank" rel="noopener noreffer ">Upstage</a></p>
+<p>输出的 HTML 看起来像这样:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://github.com/upstage/&#34;</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Visit Upstage!&#34;</span>&gt;Upstage&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><h3 id="定位标记">定位标记</h3>
+<p>定位标记使你可以跳至同一页面上的指定锚点. 例如, 每个章节:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">## Table of Contents
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">*</span> [<span style="color:#f92672">Chapter 1</span>](<span style="color:#a6e22e">#chapter-1</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> [<span style="color:#f92672">Chapter 2</span>](<span style="color:#a6e22e">#chapter-2</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">*</span> [<span style="color:#f92672">Chapter 3</span>](<span style="color:#a6e22e">#chapter-3</span>)
+</span></span></code></pre></div><p>将跳转到这些部分:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#75715e">## Chapter 1 &lt;a id=&#34;chapter-1&#34;&gt;&lt;/a&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Content for chapter one.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Chapter 2 &lt;a id=&#34;chapter-2&#34;&gt;&lt;/a&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Content for chapter one.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">## Chapter 3 &lt;a id=&#34;chapter-3&#34;&gt;&lt;/a&gt;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Content for chapter one.
+</span></span></code></pre></div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true"></i>Note<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">定位标记的位置几乎是任意的. 因为它们并不引人注目, 所以它们通常被放在同一行了.</div>
+        </div>
+    </div>
+<h2 id="12-脚注">12 脚注</h2>
+<p>脚注使你可以添加注释和参考, 而不会使文档正文混乱.
+当你创建脚注时, 会在添加脚注引用的位置出现带有链接的上标编号.
+读者可以单击链接以跳至页面底部的脚注内容.</p>
+<p>要创建脚注引用, 请在方括号中添加插入符号和标识符 (<code>[^1]</code>).
+标识符可以是数字或单词, 但不能包含空格或制表符.
+标识符仅将脚注引用与脚注本身相关联 - 在脚注输出中, 脚注按顺序编号.</p>
+<p>在中括号内使用插入符号和数字以及用冒号和文本来添加脚注内容 (<code>[^1]：这是一段脚注</code>).
+你不一定要在文档末尾添加脚注. 可以将它们放在除列表, 引用和表格等元素之外的任何位置.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>这是一个数字脚注[^1].
+</span></span><span style="display:flex;"><span>这是一个带标签的脚注[^label]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[^1]: 这是一个数字脚注
+</span></span><span style="display:flex;"><span>[^label]: 这是一个带标签的脚注
+</span></span></code></pre></div><p>这是一个数字脚注<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>这是一个带标签的脚注<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<h2 id="13-图片">13 图片</h2>
+<p>图片的语法与链接相似, 但包含一个在前面的感叹号.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Minion</span>](<span style="color:#a6e22e">https://octodex.github.com/images/minion.png</span>)
+</span></span></code></pre></div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://octodex.github.com/images/minion.png"
+        data-srcset="https://octodex.github.com/images/minion.png, https://octodex.github.com/images/minion.png 1.5x, https://octodex.github.com/images/minion.png 2x"
+        data-sizes="auto"
+        alt="https://octodex.github.com/images/minion.png"
+        title="Minion" /></p>
+<p>或者:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Alt text</span>](<span style="color:#a6e22e">https://octodex.github.com/images/stormtroopocat.jpg &#34;The Stormtroopocat&#34;</span>)
+</span></span></code></pre></div><p><figure><a class="lightgallery" href="https://octodex.github.com/images/stormtroopocat.jpg" title="Alt text" data-thumbnail="https://octodex.github.com/images/stormtroopocat.jpg" data-sub-html="<h2>The Stormtroopocat</h2><p>Alt text</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://octodex.github.com/images/stormtroopocat.jpg"
+            data-srcset="https://octodex.github.com/images/stormtroopocat.jpg, https://octodex.github.com/images/stormtroopocat.jpg 1.5x, https://octodex.github.com/images/stormtroopocat.jpg 2x"
+            data-sizes="auto"
+            alt="https://octodex.github.com/images/stormtroopocat.jpg" />
+    </a><figcaption class="image-caption">The Stormtroopocat</figcaption>
+    </figure></p>
+<p>像链接一样, 图片也具有脚注样式的语法:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![Alt text][id]
+</span></span></code></pre></div><p><figure><a class="lightgallery" href="https://octodex.github.com/images/dojocat.jpg" title="Alt text" data-thumbnail="https://octodex.github.com/images/dojocat.jpg" data-sub-html="<h2>The Dojocat</h2><p>Alt text</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://octodex.github.com/images/dojocat.jpg"
+            data-srcset="https://octodex.github.com/images/dojocat.jpg, https://octodex.github.com/images/dojocat.jpg 1.5x, https://octodex.github.com/images/dojocat.jpg 2x"
+            data-sizes="auto"
+            alt="https://octodex.github.com/images/dojocat.jpg" />
+    </a><figcaption class="image-caption">The Dojocat</figcaption>
+    </figure></p>
+<p>稍后在文档中提供参考内容, 用来定义 URL 的位置:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>[id]: https://octodex.github.com/images/dojocat.jpg  &#34;The Dojocat&#34;
+</span></span></code></pre></div><div class="details admonition tip open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw" aria-hidden="true"></i>Tip<i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>LoveIt</strong> 主题提供了一个包含更多功能的 <a href="../theme-documentation-extended-shortcodes#image" rel="">图片的 shortcode</a>.</div>
+        </div>
+    </div>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>这是一个数字脚注&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>这是一个带标签的脚注&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/basic-markdown-syntax/" data-title="Markdown 基本语法" data-via="https://twitter.com/LeoAphro" data-hashtags="Markdown,HTML"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/basic-markdown-syntax/" data-hashtag="Markdown"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/posts/basic-markdown-syntax/" data-title="Markdown 基本语法"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/basic-markdown-syntax/" data-title="Markdown 基本语法"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/posts/basic-markdown-syntax/" data-title="Markdown 基本语法"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/markdown/">Markdown</a>,&nbsp;<a href="/tags/html/">HTML</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/theme-documentation-mermaid-shortcode/" class="prev" rel="prev" title="主题文档 - mermaid Shortcode"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>主题文档 - mermaid Shortcode</a>
+            <a href="/posts/theme-documentation-extended-shortcodes/" class="next" rel="next" title="主题文档 - 扩展 Shortcodes">主题文档 - 扩展 Shortcodes<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">桑尼</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"><link rel="stylesheet" href="/css/790698.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/twemoji@14.0.2/dist/twemoji.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'UA-238955663-1', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-238955663-1" async></script></body>
+</html>
